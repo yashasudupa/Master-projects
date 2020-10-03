@@ -1,0 +1,16 @@
+Real-Time Operating System - SS 2017
+
+This is the template for the group directory. Copy this template into your repository, in such way that your structure looks like this:
+
+Root
+	RTOS_SS17_GroupXX
+		apps
+		middleware
+		groupXX.txt
+	RTOS_Public_SS17
+		apps
+		buildenv
+		middleware
+		
+		
+When you create a new app or middleware, keep the structure and copy the correspondent Makefiles. Note that Makefiles in different levels might be slightly different.		

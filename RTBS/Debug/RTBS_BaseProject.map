@@ -1,0 +1,2540 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                              ./src/can.o (__mspabi_divul)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(slli.o)
+                              ./src/can.o (__mspabi_slli)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srai.o)
+                              ./src/can.o (__mspabi_srai)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srli.o)
+                              ./src/can.o (__mspabi_srll_10)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o) (__mspabi_divull)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o) (__lshrdi3)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o) (__ashldi3)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o) (__clzdi2)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o) (__clz_tab)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(core.o)
+                              ./src/main.o (__hwirq_43)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(core.o) (OSPanic)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o) (os_initSystemTimer)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o) (os_printSystemInformation)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+                              ./src/can.o (printf)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+                              ./src/main.o (sysclk_setClocks)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o) (putchar)
+F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o) (PMM_setVCore)
+F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+                              ./src/can.o (TEST_sendBit)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o) (__mspabi_divu)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o) (__mulhi2_f5)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o) (memcmp)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o) (memcpy)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+                              F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o) (memset)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+                              ./src/can.o (puts)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o) (strlen)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o) (__sinit)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o) (__sfvwrite_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o) (_fwalk)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o) (_global_impure_ptr)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o) (memchr)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o) (memmove)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o) (_free_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o) (_malloc_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o) (_realloc_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o) (_sbrk_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o) (__sread)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o) (_write_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o) (__swsetup_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o) (_close_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o) (_fclose_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o) (__sflush_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o) (_lseek_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o) (__smakebuf_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o) (_read_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o) (errno)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o) (_fstat_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o) (_isatty_r)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o) (__mspabi_mpyll)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_bss.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o (__crt0_init_bss)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_movedata.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o (__crt0_movedata)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_main.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o (__crt0_call_init_then_main)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o)
+                              ./src/main.o (__crt0_call_exit)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o) (_exit)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o) (write)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o) (sbrk)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(cio.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o) (__CIOBUF__)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o) (abort)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o) (__errno)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o) (raise)
+c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+                              c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o) (_kill_r)
+
+Allocating common symbols
+Common symbol       size              file
+
+os_sca              0x2               F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+os_timeline         0x8               F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+errno               0x2               c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+os_sp               0x2               F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+os_taskCount        0x1               F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+time                0x8               ./src/main.o
+CANConfig           0x8               ./src/can.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+SFR              0x00000000         0x00000010
+PERIPHERAL_8BIT  0x00000010         0x000000f0
+PERIPHERAL_16BIT 0x00000100         0x00000100
+BSL              0x00001000         0x00000800
+INFOMEM          0x00001800         0x00000200
+INFOD            0x00001800         0x00000080
+INFOC            0x00001880         0x00000080
+INFOB            0x00001900         0x00000080
+INFOA            0x00001980         0x00000080
+USBRAM           0x00001c00         0x00000800
+RAM              0x00002400         0x00002000
+ROM              0x00004400         0x0000bb80         xr
+VECT1            0x0000ff80         0x00000002
+VECT2            0x0000ff82         0x00000002
+VECT3            0x0000ff84         0x00000002
+VECT4            0x0000ff86         0x00000002
+VECT5            0x0000ff88         0x00000002
+VECT6            0x0000ff8a         0x00000002
+VECT7            0x0000ff8c         0x00000002
+VECT8            0x0000ff8e         0x00000002
+VECT9            0x0000ff90         0x00000002
+VECT10           0x0000ff92         0x00000002
+VECT11           0x0000ff94         0x00000002
+VECT12           0x0000ff96         0x00000002
+VECT13           0x0000ff98         0x00000002
+VECT14           0x0000ff9a         0x00000002
+VECT15           0x0000ff9c         0x00000002
+VECT16           0x0000ff9e         0x00000002
+VECT17           0x0000ffa0         0x00000002
+VECT18           0x0000ffa2         0x00000002
+VECT19           0x0000ffa4         0x00000002
+VECT20           0x0000ffa6         0x00000002
+VECT21           0x0000ffa8         0x00000002
+VECT22           0x0000ffaa         0x00000002
+VECT23           0x0000ffac         0x00000002
+VECT24           0x0000ffae         0x00000002
+VECT25           0x0000ffb0         0x00000002
+VECT26           0x0000ffb2         0x00000002
+VECT27           0x0000ffb4         0x00000002
+VECT28           0x0000ffb6         0x00000002
+VECT29           0x0000ffb8         0x00000002
+VECT30           0x0000ffba         0x00000002
+VECT31           0x0000ffbc         0x00000002
+VECT32           0x0000ffbe         0x00000002
+VECT33           0x0000ffc0         0x00000002
+VECT34           0x0000ffc2         0x00000002
+VECT35           0x0000ffc4         0x00000002
+VECT36           0x0000ffc6         0x00000002
+VECT37           0x0000ffc8         0x00000002
+VECT38           0x0000ffca         0x00000002
+VECT39           0x0000ffcc         0x00000002
+VECT40           0x0000ffce         0x00000002
+VECT41           0x0000ffd0         0x00000002
+VECT42           0x0000ffd2         0x00000002
+VECT43           0x0000ffd4         0x00000002
+VECT44           0x0000ffd6         0x00000002
+VECT45           0x0000ffd8         0x00000002
+VECT46           0x0000ffda         0x00000002
+VECT47           0x0000ffdc         0x00000002
+VECT48           0x0000ffde         0x00000002
+VECT49           0x0000ffe0         0x00000002
+VECT50           0x0000ffe2         0x00000002
+VECT51           0x0000ffe4         0x00000002
+VECT52           0x0000ffe6         0x00000002
+VECT53           0x0000ffe8         0x00000002
+VECT54           0x0000ffea         0x00000002
+VECT55           0x0000ffec         0x00000002
+VECT56           0x0000ffee         0x00000002
+VECT57           0x0000fff0         0x00000002
+VECT58           0x0000fff2         0x00000002
+VECT59           0x0000fff4         0x00000002
+VECT60           0x0000fff6         0x00000002
+VECT61           0x0000fff8         0x00000002
+VECT62           0x0000fffa         0x00000002
+VECT63           0x0000fffc         0x00000002
+RESETVEC         0x0000fffe         0x00000002
+HIROM            0x00010000         0x000143ff         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+LOAD ./src/can.o
+LOAD ./src/main.o
+START GROUP
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a
+LOAD F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a
+LOAD F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a
+END GROUP
+LOAD ../libs/RTOS/libBase_RTOS_lib.a
+LOAD ../libs/libRTBS_CAN_Tests.a
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a
+START GROUP
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a
+END GROUP
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+LOAD c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a
+
+__interrupt_vector_1
+ *(__interrupt_vector_1)
+
+__interrupt_vector_2
+ *(__interrupt_vector_2)
+
+__interrupt_vector_3
+ *(__interrupt_vector_3)
+
+__interrupt_vector_4
+ *(__interrupt_vector_4)
+
+__interrupt_vector_5
+ *(__interrupt_vector_5)
+
+__interrupt_vector_6
+ *(__interrupt_vector_6)
+
+__interrupt_vector_7
+ *(__interrupt_vector_7)
+
+__interrupt_vector_8
+ *(__interrupt_vector_8)
+
+__interrupt_vector_9
+ *(__interrupt_vector_9)
+
+__interrupt_vector_10
+ *(__interrupt_vector_10)
+
+__interrupt_vector_11
+ *(__interrupt_vector_11)
+
+__interrupt_vector_12
+ *(__interrupt_vector_12)
+
+__interrupt_vector_13
+ *(__interrupt_vector_13)
+
+__interrupt_vector_14
+ *(__interrupt_vector_14)
+
+__interrupt_vector_15
+ *(__interrupt_vector_15)
+
+__interrupt_vector_16
+ *(__interrupt_vector_16)
+
+__interrupt_vector_17
+ *(__interrupt_vector_17)
+
+__interrupt_vector_18
+ *(__interrupt_vector_18)
+
+__interrupt_vector_19
+ *(__interrupt_vector_19)
+
+__interrupt_vector_20
+ *(__interrupt_vector_20)
+
+__interrupt_vector_21
+ *(__interrupt_vector_21)
+
+__interrupt_vector_22
+ *(__interrupt_vector_22)
+
+__interrupt_vector_23
+ *(__interrupt_vector_23)
+
+__interrupt_vector_24
+ *(__interrupt_vector_24)
+
+__interrupt_vector_25
+ *(__interrupt_vector_25)
+
+__interrupt_vector_26
+ *(__interrupt_vector_26)
+
+__interrupt_vector_27
+ *(__interrupt_vector_27)
+
+__interrupt_vector_28
+ *(__interrupt_vector_28)
+
+__interrupt_vector_29
+ *(__interrupt_vector_29)
+
+__interrupt_vector_30
+ *(__interrupt_vector_30)
+
+__interrupt_vector_31
+ *(__interrupt_vector_31)
+
+__interrupt_vector_32
+ *(__interrupt_vector_32)
+
+__interrupt_vector_33
+ *(__interrupt_vector_33)
+
+__interrupt_vector_34
+ *(__interrupt_vector_34)
+
+__interrupt_vector_35
+ *(__interrupt_vector_35)
+
+__interrupt_vector_36
+ *(__interrupt_vector_36)
+
+__interrupt_vector_37
+ *(__interrupt_vector_37)
+
+__interrupt_vector_38
+ *(__interrupt_vector_38)
+
+__interrupt_vector_39
+ *(__interrupt_vector_39)
+
+__interrupt_vector_40
+ *(__interrupt_vector_40)
+
+__interrupt_vector_41
+ *(__interrupt_vector_41)
+
+__interrupt_vector_42
+ *(__interrupt_vector_42)
+ *(__interrupt_vector_rtc)
+
+__interrupt_vector_43
+                0x0000ffd4        0x2
+ *(__interrupt_vector_43)
+ __interrupt_vector_43
+                0x0000ffd4        0x2 ./src/main.o
+ *(__interrupt_vector_port2)
+
+__interrupt_vector_44
+ *(__interrupt_vector_44)
+ *(__interrupt_vector_timer2_a1)
+
+__interrupt_vector_45
+ *(__interrupt_vector_45)
+ *(__interrupt_vector_timer2_a0)
+
+__interrupt_vector_46
+ *(__interrupt_vector_46)
+ *(__interrupt_vector_usci_b1)
+
+__interrupt_vector_47
+ *(__interrupt_vector_47)
+ *(__interrupt_vector_usci_a1)
+
+__interrupt_vector_48
+                0x0000ffde        0x2
+ *(__interrupt_vector_48)
+ __interrupt_vector_48
+                0x0000ffde        0x2 ./src/main.o
+ *(__interrupt_vector_port1)
+
+__interrupt_vector_49
+ *(__interrupt_vector_49)
+ *(__interrupt_vector_timer1_a1)
+
+__interrupt_vector_50
+ *(__interrupt_vector_50)
+ *(__interrupt_vector_timer1_a0)
+
+__interrupt_vector_51
+ *(__interrupt_vector_51)
+ *(__interrupt_vector_dma)
+
+__interrupt_vector_52
+ *(__interrupt_vector_52)
+ *(__interrupt_vector_usb_ubm)
+
+__interrupt_vector_53
+                0x0000ffe8        0x2
+ *(__interrupt_vector_53)
+ __interrupt_vector_53
+                0x0000ffe8        0x2 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ *(__interrupt_vector_timer0_a1)
+
+__interrupt_vector_54
+ *(__interrupt_vector_54)
+ *(__interrupt_vector_timer0_a0)
+
+__interrupt_vector_55
+ *(__interrupt_vector_55)
+ *(__interrupt_vector_adc12)
+
+__interrupt_vector_56
+ *(__interrupt_vector_56)
+ *(__interrupt_vector_usci_b0)
+
+__interrupt_vector_57
+ *(__interrupt_vector_57)
+ *(__interrupt_vector_usci_a0)
+
+__interrupt_vector_58
+ *(__interrupt_vector_58)
+ *(__interrupt_vector_wdt)
+
+__interrupt_vector_59
+ *(__interrupt_vector_59)
+ *(__interrupt_vector_timer0_b1)
+
+__interrupt_vector_60
+ *(__interrupt_vector_60)
+ *(__interrupt_vector_timer0_b0)
+
+__interrupt_vector_61
+ *(__interrupt_vector_61)
+ *(__interrupt_vector_comp_b)
+
+__interrupt_vector_62
+ *(__interrupt_vector_62)
+ *(__interrupt_vector_unmi)
+
+__interrupt_vector_63
+ *(__interrupt_vector_63)
+ *(__interrupt_vector_sysnmi)
+
+__reset_vector  0x0000fffe        0x2
+ *(__interrupt_vector_64)
+ *(__interrupt_vector_reset)
+ *(.resetvec)
+ .resetvec      0x0000fffe        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+
+.rodata         0x00004400      0xa9c
+                0x00004400                . = ALIGN (0x2)
+ *(.plt)
+                0x00004400                . = ALIGN (0x2)
+ *(.lower.rodata.* .lower.rodata)
+                0x00004400                . = ALIGN (0x2)
+ *(.rodata .rodata.* .gnu.linkonce.r.* .const .const:*)
+ .rodata        0x00004400       0xe8 ./src/can.o
+ .rodata        0x000044e8        0x9 ./src/main.o
+ .rodata.__clz_tab
+                0x000044f1      0x100 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+                0x000044f1                __clz_tab
+ .rodata        0x000045f1       0xec F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .rodata        0x000046dd      0x115 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .rodata        0x000047f2       0x95 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .rodata        0x00004887      0x568 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+ .rodata        0x00004def        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+ *fill*         0x00004df1        0x1 
+ .rodata.__sf_fake_stderr
+                0x00004df2       0x12 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00004df2                __sf_fake_stderr
+ .rodata.__sf_fake_stdout
+                0x00004e04       0x12 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00004e04                __sf_fake_stdout
+ .rodata.__sf_fake_stdin
+                0x00004e16       0x12 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00004e16                __sf_fake_stdin
+ .rodata._global_impure_ptr
+                0x00004e28        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+                0x00004e28                _global_impure_ptr
+ .rodata        0x00004e2a        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .rodata        0x00004e2c       0x1a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ *(.rodata1)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ *fill*         0x00004e46        0x2 
+ .eh_frame      0x00004e48        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .eh_frame      0x00004e48       0x44 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+ .eh_frame      0x00004e8c        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ *(.gcc_except_table)
+ *(.gcc_except_table.*)
+                0x00004e90                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x00004e90                PROVIDE (__preinit_array_end, .)
+                0x00004e90                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x00004e90                PROVIDE (__init_array_end, .)
+                0x00004e90                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x00004e90                PROVIDE (__fini_array_end, .)
+                0x00004e90        0x4 LONG 0x0
+ *crtbegin*.o(.ctors)
+ .ctors         0x00004e94        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ *(EXCLUDE_FILE(*crtend*.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x00004e96        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ *crtbegin*.o(.dtors)
+ .dtors         0x00004e98        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ *(EXCLUDE_FILE(*crtend*.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x00004e9a        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+                0x00004e9a                __DTOR_END__
+
+.upper.rodata
+ *(.upper.rodata.* .upper.rodata)
+
+.data           0x00002400      0x630 load address 0x00004e9c
+                0x00002400                . = ALIGN (0x2)
+                0x00002400                PROVIDE (__datastart, .)
+ *(.lower.data.* .lower.data)
+                0x00002400                . = ALIGN (0x2)
+                0x00002400                os_tasks = .
+                0x00002400                __os_tasksBegin = .
+ *(.os_idletask)
+ .os_idletask   0x00002400       0x32 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                0x00002400                __task_TaskIdle
+                0x00002432                __os_tasksOther = .
+ *(.os_tasks)
+ .os_tasks      0x00002432       0x32 ./src/main.o
+                0x00002432                __task_testTask
+                0x00002464                __os_tasksEnd = .
+                0x00002464                . = ALIGN (0x2)
+ *(.os_events)
+                0x00002464                . = ALIGN (0x2)
+                0x00002464                __os_stacksBegin = .
+ *(.os_stacks)
+ .os_stacks     0x00002464      0x410 ./src/main.o
+ .os_stacks     0x00002874       0x88 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                0x000028fc                __os_stacksEnd = .
+                0x000028fc                . = ALIGN (0x2)
+                0x000028fc                os_resources = .
+                0x000028fc                __os_resourcesBegin = .
+ *(.os_resources)
+                0x000028fc                __os_resourcesEnd = .
+                0x000028fc                . = ALIGN (0x2)
+ *(.either.data.* .either.data)
+                0x000028fc                . = ALIGN (0x2)
+ *(.jcr)
+ .jcr           0x000028fc        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .jcr           0x000028fc        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ *(.data.rel.ro.local)
+ *(.data.rel.ro*)
+ *(.dynamic)
+                0x000028fe                . = ALIGN (0x2)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000028fe        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+ .data          0x000028fe        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .data.__dso_handle
+                0x000028fe        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+                0x000028fe                __dso_handle
+ .data          0x00002900        0x0 ./src/can.o
+ .data          0x00002900        0x4 ./src/main.o
+                0x00002900                recvEv
+                0x00002902                sendEv
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(slli.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srai.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srli.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+ .data          0x00002904        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+ .data          0x00002904        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(core.o)
+ .data          0x00002904        0xa F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                0x00002904                os_timeoutQueueDirty
+                0x00002906                os_timeoutQueue
+                0x00002907                os_readyQueue
+                0x00002908                os_runningTask
+                0x0000290a                os_kernel_mode
+                0x0000290c                os_running
+ .data          0x0000290e        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .data          0x0000290e        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .data          0x0000290e        0x6 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .data          0x00002914        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .data          0x00002914        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .data          0x00002914        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .data          0x00002914       0x54 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+ .data          0x00002968        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00002968        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+                0x00002968                _impure_ptr
+ .data.impure_data
+                0x0000296a       0x78 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_bss.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_movedata.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_main.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+ .data          0x000029e2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ .data.heap.1381
+                0x000029e2        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ .data          0x000029e4       0x4b c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(cio.o)
+                0x000029e4                _CIOBUF_
+                0x000029e4                __CIOBUF__
+ .data          0x00002a2f        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+ .data          0x00002a2f        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+ .data          0x00002a2f        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+ .data          0x00002a2f        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+ .data          0x00002a2f        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .data          0x00002a2f        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+ *(.gnu.linkonce.d.*personality*)
+ *(.data1)
+ *(.got.plt)
+ *(.got)
+                0x00002a30                . = ALIGN (0x2)
+ *fill*         0x00002a2f        0x1 
+ *(.sdata .sdata.* .gnu.linkonce.s.* D_2 D_1)
+                0x00002a30                . = ALIGN (0x2)
+                0x00002a30                _edata = .
+                [!provide]                PROVIDE (edata, .)
+                [!provide]                PROVIDE (__dataend, .)
+                0x00004e9c                PROVIDE (__romdatastart, LOADADDR (.data))
+                0x00000630                PROVIDE (__romdatacopysize, SIZEOF (.data))
+
+.bss            0x00002a30       0x40 load address 0x000054cc
+                0x00002a30                . = ALIGN (0x2)
+                0x00002a30                PROVIDE (__bssstart, .)
+ *(.lower.bss.* .lower.bss)
+                0x00002a30                . = ALIGN (0x2)
+ *(.either.bss.* .either.bss)
+ *(.dynbss)
+ *(.sbss .sbss.*)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00002a30        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+ .bss           0x00002a30        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .bss.completed.3086
+                0x00002a30        0x1 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ *fill*         0x00002a31        0x1 
+ .bss.dtor_idx.3088
+                0x00002a32        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .bss.object.3101
+                0x00002a34        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .bss           0x00002a42        0x0 ./src/can.o
+ .bss           0x00002a42        0x0 ./src/main.o
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(slli.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srai.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srli.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+ .bss           0x00002a42        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+ .bss           0x00002a42        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(core.o)
+ .bss           0x00002a42        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .bss           0x00002a42        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .bss           0x00002a42        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .bss           0x00002a42        0x1 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .bss           0x00002a43        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .bss           0x00002a43        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .bss           0x00002a43        0x0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ *fill*         0x00002a43        0x1 
+ .bss           0x00002a44        0x8 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+ .bss           0x00002a4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x00002a4c        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+                0x00002a4c                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x00002a4e        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+                0x00002a4e                __malloc_free_list
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_bss.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_movedata.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_main.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(cio.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .bss           0x00002a50        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+                0x00002a50                . = ALIGN (0x2)
+ *(COMMON)
+ COMMON         0x00002a50        0x8 ./src/can.o
+                0x00002a50                CANConfig
+ COMMON         0x00002a58        0x8 ./src/main.o
+                0x00002a58                time
+ COMMON         0x00002a60        0x5 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                0x00002a60                os_sca
+                0x00002a62                os_sp
+ *fill*         0x00002a65        0x1 
+ COMMON         0x00002a66        0x8 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+                0x00002a66                os_timeline
+ COMMON         0x00002a6e        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+                0x00002a6e                errno
+                [!provide]                PROVIDE (__bssend, .)
+                0x00000040                PROVIDE (__bsssize, SIZEOF (.bss))
+
+.noinit         0x00002a70        0x0 load address 0x000054cc
+                0x00002a70                . = ALIGN (0x2)
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit)
+                0x00002a70                . = ALIGN (0x2)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00002a70                _end = .
+                0x00002a70                PROVIDE (end, .)
+
+.stack          0x00004400        0x0
+                0x00004400                PROVIDE (__stack, .)
+ *(.stack)
+
+.lowtext        0x000054cc       0x6a
+                0x000054cc                PROVIDE (_start, .)
+                0x000054cc                . = ALIGN (0x2)
+ *(SORT(.crt_*))
+ .crt_0000start
+                0x000054cc        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+                0x000054cc                __crt0_start
+ .crt_0100init_bss
+                0x000054d0        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_bss.o)
+                0x000054d0                __crt0_init_bss
+ .crt_0300movedata
+                0x000054de       0x14 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_movedata.o)
+                0x000054de                __crt0_movedata
+ .crt_0700call_init_then_main
+                0x000054f2        0xa c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_main.o)
+                0x000054f2                __crt0_call_init_then_main
+ .crt_0800call_exit
+                0x000054fc        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o)
+                0x000054fc                __crt0_call_exit
+ .crt_0900main_init
+                0x00005500       0x36 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+                0x00005500                _msp430_run_init_array
+                0x0000550c                _msp430_run_preinit_array
+                0x00005518                _msp430_run_fini_array
+ *(.lowtext)
+
+.text           0x00005536     0x5c2b
+                0x00005536                . = ALIGN (0x2)
+ *(.lower.text.* .lower.text)
+                0x00005536                . = ALIGN (0x2)
+ *(.text .stub .text.* .gnu.linkonce.t.* .text:*)
+ .text          0x00005536        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+ .text          0x00005536        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text.deregister_tm_clones
+                0x0000553a       0x1e c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text.register_tm_clones
+                0x00005558       0x2c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text.__do_global_dtors_aux
+                0x00005584       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text.call___do_global_dtors_aux
+                0x000055ce        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text.frame_dummy
+                0x000055ce       0x2c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text.call_frame_dummy
+                0x000055fa        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .text          0x000055fa     0x12d2 ./src/can.o
+                0x000055fa                setBit
+                0x00005614                clearBit
+                0x0000562e                testBit
+                0x00005642                writeBuffer
+                0x000056aa                readBuffer
+                0x0000570c                CAN_shiftReg
+                0x00005760                CAN_createCRC
+                0x00005836                CAN_init
+                0x00005880                CAN_setBaudrate
+                0x000058aa                CAN_sendBit
+                0x000058b0                CAN_recvBit
+                0x000058b6                CAN_createFrame
+                0x00006286                CAN_sendFrame
+                0x000065ec                CAN_trySendFrame
+                0x00006688                CAN_receiveFrame
+                0x000068ca                CAN_decodeFrame
+ .text          0x000068cc       0x86 ./src/main.o
+                0x000068cc                testTask
+                0x000068d6                port1_isr
+                0x000068f0                port2_isr
+                0x0000690a                hwirq_48
+                0x0000690e                hwirq_43
+                0x00006912                main
+ .text          0x00006952        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                0x00006952                __mspabi_divllu
+ .text.udivmodsi4
+                0x00006954       0x80 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                0x00006954                udivmodsi4
+ .text.__divsi3
+                0x000069d4       0x74 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                0x000069d4                __mspabi_divli
+ .text.__modsi3
+                0x00006a48       0x56 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                0x00006a48                __mspabi_remli
+ .text.__udivsi3
+                0x00006a9e        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                0x00006a9e                __mspabi_divlu
+                0x00006a9e                __mspabi_divul
+ .text.__umodsi3
+                0x00006aac        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+                0x00006aac                __mspabi_remul
+ .text          0x00006aba       0x74 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(slli.o)
+                0x00006aba                __mspabi_slli_15
+                0x00006abc                __mspabi_slli_14
+                0x00006abe                __mspabi_slli_13
+                0x00006ac0                __mspabi_slli_12
+                0x00006ac2                __mspabi_slli_11
+                0x00006ac4                __mspabi_slli_10
+                0x00006ac6                __mspabi_slli_9
+                0x00006ac8                __mspabi_slli_8
+                0x00006aca                __mspabi_slli_7
+                0x00006acc                __mspabi_slli_6
+                0x00006ace                __mspabi_slli_5
+                0x00006ad0                __mspabi_slli_4
+                0x00006ad2                __mspabi_slli_3
+                0x00006ad4                __mspabi_slli_2
+                0x00006ad6                __mspabi_slli_1
+                0x00006ade                __mspabi_slli
+                0x00006ae4                __mspabi_slll_15
+                0x00006ae8                __mspabi_slll_14
+                0x00006aec                __mspabi_slll_13
+                0x00006af0                __mspabi_slll_12
+                0x00006af4                __mspabi_slll_11
+                0x00006af8                __mspabi_slll_10
+                0x00006afc                __mspabi_slll_9
+                0x00006b00                __mspabi_slll_8
+                0x00006b04                __mspabi_slll_7
+                0x00006b08                __mspabi_slll_6
+                0x00006b0c                __mspabi_slll_5
+                0x00006b10                __mspabi_slll_4
+                0x00006b14                __mspabi_slll_3
+                0x00006b18                __mspabi_slll_2
+                0x00006b1c                __mspabi_slll_1
+                0x00006b28                __mspabi_slll
+ .text          0x00006b2e       0x74 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srai.o)
+                0x00006b2e                __mspabi_srai_15
+                0x00006b30                __mspabi_srai_14
+                0x00006b32                __mspabi_srai_13
+                0x00006b34                __mspabi_srai_12
+                0x00006b36                __mspabi_srai_11
+                0x00006b38                __mspabi_srai_10
+                0x00006b3a                __mspabi_srai_9
+                0x00006b3c                __mspabi_srai_8
+                0x00006b3e                __mspabi_srai_7
+                0x00006b40                __mspabi_srai_6
+                0x00006b42                __mspabi_srai_5
+                0x00006b44                __mspabi_srai_4
+                0x00006b46                __mspabi_srai_3
+                0x00006b48                __mspabi_srai_2
+                0x00006b4a                __mspabi_srai_1
+                0x00006b52                __mspabi_srai
+                0x00006b58                __mspabi_sral_15
+                0x00006b5c                __mspabi_sral_14
+                0x00006b60                __mspabi_sral_13
+                0x00006b64                __mspabi_sral_12
+                0x00006b68                __mspabi_sral_11
+                0x00006b6c                __mspabi_sral_10
+                0x00006b70                __mspabi_sral_9
+                0x00006b74                __mspabi_sral_8
+                0x00006b78                __mspabi_sral_7
+                0x00006b7c                __mspabi_sral_6
+                0x00006b80                __mspabi_sral_5
+                0x00006b84                __mspabi_sral_4
+                0x00006b88                __mspabi_sral_3
+                0x00006b8c                __mspabi_sral_2
+                0x00006b90                __mspabi_sral_1
+                0x00006b9c                __mspabi_sral
+ .text          0x00006ba2       0xb4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srli.o)
+                0x00006ba2                __mspabi_srli_15
+                0x00006ba6                __mspabi_srli_14
+                0x00006baa                __mspabi_srli_13
+                0x00006bae                __mspabi_srli_12
+                0x00006bb2                __mspabi_srli_11
+                0x00006bb6                __mspabi_srli_10
+                0x00006bba                __mspabi_srli_9
+                0x00006bbe                __mspabi_srli_8
+                0x00006bc2                __mspabi_srli_7
+                0x00006bc6                __mspabi_srli_6
+                0x00006bca                __mspabi_srli_5
+                0x00006bce                __mspabi_srli_4
+                0x00006bd2                __mspabi_srli_3
+                0x00006bd6                __mspabi_srli_2
+                0x00006bda                __mspabi_srli_1
+                0x00006be6                __mspabi_srli
+                0x00006bec                __mspabi_srll_15
+                0x00006bf2                __mspabi_srll_14
+                0x00006bf8                __mspabi_srll_13
+                0x00006bfe                __mspabi_srll_12
+                0x00006c04                __mspabi_srll_11
+                0x00006c0a                __mspabi_srll_10
+                0x00006c10                __mspabi_srll_9
+                0x00006c16                __mspabi_srll_8
+                0x00006c1c                __mspabi_srll_7
+                0x00006c22                __mspabi_srll_6
+                0x00006c28                __mspabi_srll_5
+                0x00006c2e                __mspabi_srll_4
+                0x00006c34                __mspabi_srll_3
+                0x00006c3a                __mspabi_srll_2
+                0x00006c40                __mspabi_srll_1
+                0x00006c50                __mspabi_srll
+ .text          0x00006c56        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+ .text.__udivdi3
+                0x00006c56      0x3d6 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+                0x00006c56                __mspabi_divull
+ .text          0x0000702c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+ .text.__lshrdi3
+                0x0000702c       0x84 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+                0x0000702c                __lshrdi3
+ .text          0x000070b0        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+ .text.__ashldi3
+                0x000070b0       0x8c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+                0x000070b0                __ashldi3
+ .text          0x0000713c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+ .text.__clzdi2
+                0x0000713c       0x56 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+                0x0000713c                __clzdi2
+ .text          0x00007192        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+ .text          0x00007192      0x108 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(core.o)
+                0x00007192                syscall_setEvent
+                0x000071a6                syscall_mystery
+                0x000071ba                syscall_CAS
+                0x000071ce                syscall_waitEventUntil
+                0x000071e2                syscall_getResource
+                0x000071f6                syscall_releaseResource
+                0x0000720a                __hwirq_53
+                0x0000721c                __hwirq_43
+                0x0000722e                __hwirq_48
+                0x0000727a                os_dispatcher
+ .text          0x0000729a      0x8b8 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                0x0000729a                TaskIdle
+                0x0000729c                registerResources
+                0x0000729e                OSPanic
+                0x000072ba                insert_into_memberlist
+                0x0000739e                os_initTasks
+                0x00007438                os_run
+                0x00007482                remove_from_memberlist
+                0x0000752c                insert_into_timeout_queue
+                0x00007626                remove_from_timeout_queue
+                0x000076b8                waitEventUntil
+                0x000076be                waitEventFor
+                0x0000772a                waitEvent
+                0x00007732                setEvent
+                0x00007738                clearEvent
+                0x0000773e                checkEvent
+                0x0000774c                sleep
+                0x000077b6                sleepUntil
+                0x000077c0                busyDelayUntil
+                0x0000780a                busyDelay
+                0x00007872                getResource
+                0x00007878                releaseResource
+                0x0000787e                __syscall_mystery
+                0x000078b6                __syscall_CAS
+                0x000078d0                __syscall_waitEventUntil
+                0x000079e2                __syscall_setEvent
+                0x00007a20                __syscall_getResource
+                0x00007a9a                __syscall_releaseResource
+ .text          0x00007b52      0x34a F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+                0x00007b52                os_initSystemTimer
+                0x00007c0c                getCurrentTime
+                0x00007c56                schedule
+                0x00007db8                updateTimer
+                0x00007e92                os_timerISR
+                0x00007e98                hwirq_53
+ .text          0x00007e9c      0x176 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+                0x00007e9c                os_printReadyQueue
+                0x00007ef2                os_printSystemInformation
+ .text          0x00008012      0x730 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+                0x00008036                printfSetStreamwriter
+                0x00008048                printfSetGroupseparator
+                0x0000804e                printfSetVerbosity
+                0x00008054                printfGetVerbosity
+                0x0000805a                printfzString
+                0x000080a2                printf
+                0x00008734                printfx
+ .text          0x00008742      0x178 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+                0x00008742                sysclk_setClocks
+                0x000088b0                sysclk_getSMCLK
+ .text          0x000088ba       0xc8 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+                0x000088ba                putchar
+                0x000088ce                UART_write
+                0x000088f0                UART_clearScreen
+                0x000088f8                UART_setConfig
+ .text          0x00008982      0x17a F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+                0x00008982                PMM_setVCore
+ .text          0x00008afc     0x1038 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+                0x00008b72                TEST_sendBit
+                0x00008bcc                TEST_recvBit
+                0x00008c08                CAN_runTests
+ .text          0x00009b34        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+ .text.udivmodhi4
+                0x00009b34       0x3c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+                0x00009b34                udivmodhi4
+ .text.__divhi3
+                0x00009b70       0x46 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+                0x00009b70                __mspabi_divi
+ .text.__modhi3
+                0x00009bb6       0x30 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+                0x00009bb6                __mspabi_remi
+ .text.__udivhi3
+                0x00009be6        0x8 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+                0x00009be6                __mspabi_divu
+ .text.__umodhi3
+                0x00009bee        0x8 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+                0x00009bee                __mspabi_remu
+ .text          0x00009bf6        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+ .text.__mulhi2_f5
+                0x00009bf6       0x14 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009bf6                __mspabi_mpyi_f5hw
+                0x00009bf6                __mspabi_mpyi
+                0x00009bf6                __mulhi2_f5
+ .text.__mulsihi2
+                0x00009c0a       0x18 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009c0a                __mspabi_mpysl
+                0x00009c0a                __mspabi_mpysl_f5hw
+                0x00009c0a                __mulsihi2
+ .text.__umulsihi2
+                0x00009c22       0x18 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009c22                __mspabi_mpyul
+                0x00009c22                __umulsihi2
+                0x00009c22                _mspabi_mpyul_f5hw
+ .text.__mulsi2_f5
+                0x00009c3a       0x20 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009c3a                __mspabi_mpyl_f5hw
+                0x00009c3a                __mulsi2_f5
+                0x00009c3a                __mspabi_mpyl
+ .text.__muldisi2
+                0x00009c5a       0x28 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009c5a                __muldisi2
+                0x00009c5a                __mspabi_mpysll
+                0x00009c5a                __mspabi_mpysll_f5hw
+ .text.__umuldisi2
+                0x00009c82       0x28 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009c82                __umuldisi2
+                0x00009c82                __mspabi_mpyull
+                0x00009c82                __mspabi_mpyull_f5hw
+ .text.__muldi3
+                0x00009caa        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+                0x00009caa                __muldi3
+                0x00009caa                __mspabi_mpyll_f5hw
+ .text          0x00009cae        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+ .text.memcmp   0x00009cae       0x1e c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+                0x00009cae                memcmp
+ .text          0x00009ccc        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+ .text.memcpy   0x00009ccc       0x14 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+                0x00009ccc                memcpy
+ .text          0x00009ce0        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+ .text.memset   0x00009ce0       0x12 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+                0x00009ce0                memset
+ .text          0x00009cf2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+ .text._puts_r  0x00009cf2       0xb4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+                0x00009cf2                _puts_r
+ .text.puts     0x00009da6        0xc c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+                0x00009da6                puts
+ .text          0x00009db2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+ .text.strlen   0x00009db2       0x12 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+                0x00009db2                strlen
+ .text          0x00009dc4        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x00009dc4        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x00009dc8        0xa c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009dc8                _cleanup_r
+ .text.std.isra.0
+                0x00009dd2       0x56 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x00009e28        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .text.__sfmoreglue
+                0x00009e2c       0x44 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009e2c                __sfmoreglue
+ .text._cleanup
+                0x00009e70        0xa c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009e70                _cleanup
+ .text.__sinit  0x00009e7a       0x70 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009e7a                __sinit
+ .text.__sfp    0x00009eea       0xac c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009eea                __sfp
+ .text.__sfp_lock_acquire
+                0x00009f96        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009f96                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x00009f98        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009f98                __sfp_lock_release
+ .text.__sinit_lock_acquire
+                0x00009f9a        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009f9a                __sinit_lock_acquire
+ .text.__sinit_lock_release
+                0x00009f9c        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009f9c                __sinit_lock_release
+ .text.__fp_lock_all
+                0x00009f9e        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009f9e                __fp_lock_all
+ .text.__fp_unlock_all
+                0x00009fac        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+                0x00009fac                __fp_unlock_all
+ .text          0x00009fba        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x00009fba      0x2f4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+                0x00009fba                __sfvwrite_r
+ .text          0x0000a2ae        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+ .text._fwalk   0x0000a2ae       0x48 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+                0x0000a2ae                _fwalk
+ .text._fwalk_reent
+                0x0000a2f6       0x4c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+                0x0000a2f6                _fwalk_reent
+ .text          0x0000a342        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .text          0x0000a342        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+ .text.memchr   0x0000a342       0x18 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+                0x0000a342                memchr
+ .text          0x0000a35a        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+ .text.memmove  0x0000a35a       0x38 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+                0x0000a35a                memmove
+ .text          0x0000a392        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+ .text._free_r  0x0000a392       0xe6 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+                0x0000a392                _free_r
+ .text          0x0000a478        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x0000a478       0xf2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+                0x0000a478                _malloc_r
+ .text          0x0000a56a        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x0000a56a       0x52 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+                0x0000a56a                _realloc_r
+ .text          0x0000a5bc        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000a5bc       0x22 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+                0x0000a5bc                _sbrk_r
+ .text          0x0000a5de        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+ .text.__sread  0x0000a5de       0x38 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000a5de                __sread
+ .text.__seofread
+                0x0000a616        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000a616                __seofread
+ .text.__swrite
+                0x0000a61a       0x3c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000a61a                __swrite
+ .text.__sseek  0x0000a656       0x38 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000a656                __sseek
+ .text.__sclose
+                0x0000a68e        0xa c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+                0x0000a68e                __sclose
+ .text          0x0000a698        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+ .text._write_r
+                0x0000a698       0x26 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+                0x0000a698                _write_r
+ .text          0x0000a6be        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+ .text.__swsetup_r
+                0x0000a6be       0xf4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+                0x0000a6be                __swsetup_r
+ .text          0x0000a7b2        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+ .text._close_r
+                0x0000a7b2       0x22 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+                0x0000a7b2                _close_r
+ .text          0x0000a7d4        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+ .text._fclose_r
+                0x0000a7d4       0xba c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+                0x0000a7d4                _fclose_r
+ .text.fclose   0x0000a88e        0xc c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+                0x0000a88e                fclose
+ .text          0x0000a89a        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+ .text.__sflush_r
+                0x0000a89a      0x180 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+                0x0000a89a                __sflush_r
+ .text._fflush_r
+                0x0000aa1a       0x58 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+                0x0000aa1a                _fflush_r
+ .text.fflush   0x0000aa72       0x1e c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+                0x0000aa72                fflush
+ .text          0x0000aa90        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+ .text._lseek_r
+                0x0000aa90       0x2e c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+                0x0000aa90                _lseek_r
+ .text          0x0000aabe        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+ .text.__swhatbuf_r
+                0x0000aabe       0x68 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+                0x0000aabe                __swhatbuf_r
+ .text.__smakebuf_r
+                0x0000ab26       0x86 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+                0x0000ab26                __smakebuf_r
+ .text          0x0000abac        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x0000abac       0x14 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+                0x0000abac                _malloc_usable_size_r
+ .text          0x0000abc0        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+ .text._read_r  0x0000abc0       0x26 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+                0x0000abc0                _read_r
+ .text          0x0000abe6        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000abe6       0x1c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+                0x0000abe6                cleanup_glue
+ .text._reclaim_reent
+                0x0000ac02      0x104 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+                0x0000ac02                _reclaim_reent
+ .text          0x0000ad06        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+ .text._fstat_r
+                0x0000ad06       0x24 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+                0x0000ad06                _fstat_r
+ .text          0x0000ad2a        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+ .text._isatty_r
+                0x0000ad2a       0x22 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+                0x0000ad2a                _isatty_r
+ .text          0x0000ad4c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+ .text.__muldi3
+                0x0000ad4c      0x14a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+                0x0000ad4c                __mspabi_mpyll
+ .text          0x0000ae96        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_bss.o)
+ .text          0x0000ae96        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_movedata.o)
+ .text          0x0000ae96        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_main.o)
+ .text          0x0000ae96        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o)
+ .text          0x0000ae96        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+ .text.exit     0x0000ae96        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000ae96                _exit
+                0x0000ae96                exit
+ .text.isatty   0x0000ae98        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000ae98                _isatty
+                0x0000ae98                isatty
+ .text.getpid   0x0000ae9c        0x6 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000ae9c                getpid
+ .text.open     0x0000aea2        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000aea2                open
+ .text.close    0x0000aeb0        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000aeb0                close
+ .text.read     0x0000aebe        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000aebe                read
+ .text.fstat    0x0000aecc        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000aecc                fstat
+ .text.lseek    0x0000aeda        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000aeda                lseek
+ .text.kill     0x0000aee8        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+                0x0000aee8                kill
+ .text          0x0000aef6        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+ .text.write    0x0000aef6       0x72 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+                0x0000aef6                write
+ .text          0x0000af68        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ .text._sbrk    0x0000af68       0x30 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+                0x0000af68                sbrk
+                0x0000af68                _sbrk
+ .text          0x0000af98        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(cio.o)
+                0x0000af98                _libgloss_cio_hook
+                0x0000af98                C$$IO$$
+ .text          0x0000af9c        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+ .text.abort    0x0000af9c        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+                0x0000af9c                abort
+ .text          0x0000afaa        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+ .text.__errno  0x0000afaa        0x6 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+                0x0000afaa                __errno
+ .text          0x0000afb0        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+ .text._init_signal_r
+                0x0000afb0       0x36 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000afb0                _init_signal_r
+ .text._signal_r
+                0x0000afe6       0x3a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000afe6                _signal_r
+ .text._raise_r
+                0x0000b020       0x5c c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000b020                _raise_r
+ .text.__sigtramp_r
+                0x0000b07c       0x54 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000b07c                __sigtramp_r
+ .text.raise    0x0000b0d0        0xc c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000b0d0                raise
+ .text.signal   0x0000b0dc        0xe c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000b0dc                signal
+ .text._init_signal
+                0x0000b0ea        0xa c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000b0ea                _init_signal
+ .text.__sigtramp
+                0x0000b0f4        0xc c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+                0x0000b0f4                __sigtramp
+ .text          0x0000b100        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+ .text._kill_r  0x0000b100       0x24 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+                0x0000b100                _kill_r
+ .text._getpid_r
+                0x0000b124        0x6 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+                0x0000b124                _getpid_r
+ .text          0x0000b12a        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .text.__do_global_ctors_aux
+                0x0000b12c       0x18 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .text.call___do_global_ctors_aux
+                0x0000b144        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .text          0x0000b144        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+ *(.text.*personality*)
+ *(.gnu.warning)
+ *(.interp .hash .dynsym .dynstr .gnu.version*)
+                [!provide]                PROVIDE (__etext, .)
+                [!provide]                PROVIDE (_etext, .)
+                [!provide]                PROVIDE (etext, .)
+                0x0000b144                . = ALIGN (0x2)
+ *(.init)
+ .init          0x0000b144        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+                0x0000b144                __msp430_init
+ .init          0x0000b144        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .init          0x0000b148        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .init          0x0000b14c        0xa c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+                0x0000b156                __msp430_init_end
+ *(.fini)
+ .fini          0x0000b156        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+                0x0000b156                __msp430_fini
+ .fini          0x0000b15a        0x4 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .fini          0x0000b15e        0x2 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+                0x0000b160                __msp430_fini_end
+ *(.tm_clone_table)
+ .tm_clone_table
+                0x0000b160        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .tm_clone_table
+                0x0000b160        0x0 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+                0x0000b160                __TMC_END__
+                0x0000b160                . = ALIGN (0x2)
+                0x0000b160                os_taskCount = .
+                0x0000b160        0x1 BYTE 0x2 ((__os_tasksEnd - __os_tasksBegin) / (__os_tasksOther - __os_tasksBegin))
+
+.upper.text     0x00010000        0x0
+                0x00010000                . = ALIGN (0x2)
+ *(.upper.text.* .upper.text)
+
+.infoA
+
+.infoB
+
+.infoC
+
+.infoD
+
+.upper          0x00002a70        0x0
+ *(.upper.bss.* .upper.bss)
+ *(.upper.data.* .upper.data)
+                0x00000001                ASSERT ((SIZEOF (.upper) == 0x0), This MCU does not support placing read/write data into high memory)
+
+.MP430.attributes
+                0x00000000      0x605
+ *(.MSP430.attributes)
+ .MSP430.attributes
+                0x00000000       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crt0.o
+ .MSP430.attributes
+                0x00000017       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+ .MSP430.attributes
+                0x0000002e       0x17 ./src/can.o
+ .MSP430.attributes
+                0x00000045       0x17 ./src/main.o
+ .MSP430.attributes
+                0x0000005c       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+ .MSP430.attributes
+                0x00000073       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(slli.o)
+ .MSP430.attributes
+                0x0000008a       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srai.o)
+ .MSP430.attributes
+                0x000000a1       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(srli.o)
+ .MSP430.attributes
+                0x000000b8       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+ .MSP430.attributes
+                0x000000cf       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+ .MSP430.attributes
+                0x000000e6       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+ .MSP430.attributes
+                0x000000fd       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+ .MSP430.attributes
+                0x00000114       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+ .MSP430.attributes
+                0x0000012b       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(core.o)
+ .MSP430.attributes
+                0x00000142       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .MSP430.attributes
+                0x00000159       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .MSP430.attributes
+                0x00000170       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .MSP430.attributes
+                0x00000187       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .MSP430.attributes
+                0x0000019e       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .MSP430.attributes
+                0x000001b5       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .MSP430.attributes
+                0x000001cc       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .MSP430.attributes
+                0x000001e3       0x17 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+ .MSP430.attributes
+                0x000001fa       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+ .MSP430.attributes
+                0x00000211       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libmul_f5.a(lib2hw_mul_f5.o)
+ .MSP430.attributes
+                0x00000228       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+ .MSP430.attributes
+                0x0000023f       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+ .MSP430.attributes
+                0x00000256       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+ .MSP430.attributes
+                0x0000026d       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+ .MSP430.attributes
+                0x00000284       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+ .MSP430.attributes
+                0x0000029b       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .MSP430.attributes
+                0x000002b2       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+ .MSP430.attributes
+                0x000002c9       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+ .MSP430.attributes
+                0x000002e0       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .MSP430.attributes
+                0x000002f7       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+ .MSP430.attributes
+                0x0000030e       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+ .MSP430.attributes
+                0x00000325       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+ .MSP430.attributes
+                0x0000033c       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+ .MSP430.attributes
+                0x00000353       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+ .MSP430.attributes
+                0x0000036a       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+ .MSP430.attributes
+                0x00000381       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+ .MSP430.attributes
+                0x00000398       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+ .MSP430.attributes
+                0x000003af       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+ .MSP430.attributes
+                0x000003c6       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+ .MSP430.attributes
+                0x000003dd       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+ .MSP430.attributes
+                0x000003f4       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+ .MSP430.attributes
+                0x0000040b       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+ .MSP430.attributes
+                0x00000422       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+ .MSP430.attributes
+                0x00000439       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+ .MSP430.attributes
+                0x00000450       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+ .MSP430.attributes
+                0x00000467       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+ .MSP430.attributes
+                0x0000047e       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+ .MSP430.attributes
+                0x00000495       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+ .MSP430.attributes
+                0x000004ac       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+ .MSP430.attributes
+                0x000004c3       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_bss.o)
+ .MSP430.attributes
+                0x000004da       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_movedata.o)
+ .MSP430.attributes
+                0x000004f1       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_main.o)
+ .MSP430.attributes
+                0x00000508       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libcrt.a(crt_callexit.o)
+ .MSP430.attributes
+                0x0000051f       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(ciosyscalls.o)
+ .MSP430.attributes
+                0x00000536       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+ .MSP430.attributes
+                0x0000054d       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ .MSP430.attributes
+                0x00000564       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(cio.o)
+ .MSP430.attributes
+                0x0000057b       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+ .MSP430.attributes
+                0x00000592       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+ .MSP430.attributes
+                0x000005a9       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+ .MSP430.attributes
+                0x000005c0       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+ .MSP430.attributes
+                0x000005d7       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+ .MSP430.attributes
+                0x000005ee       0x17 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib/crtn.o
+ *(.gnu.attributes)
+ *(__TI_build_attributes)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0xca
+ *(.comment)
+ .comment       0x00000000       0x49 c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtbegin.o
+                                 0x4a (size before relaxing)
+ .comment       0x00000049       0x4a ./src/can.o
+ .comment       0x00000049       0x4a ./src/main.o
+ .comment       0x00000049       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divSI.o)
+ .comment       0x00000049       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_udivdi3.o)
+ .comment       0x00000049       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_lshrdi3.o)
+ .comment       0x00000049       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_ashldi3.o)
+ .comment       0x00000049       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clzdi2.o)
+ .comment       0x00000049       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_clz.o)
+ .comment       0x00000049       0x41 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                                 0x42 (size before relaxing)
+ .comment       0x0000008a       0x42 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .comment       0x0000008a       0x42 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .comment       0x0000008a       0x42 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .comment       0x0000008a       0x42 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .comment       0x0000008a       0x42 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .comment       0x0000008a       0x42 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .comment       0x0000008a       0x40 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+                                 0x41 (size before relaxing)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(lib2divHI.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcmp.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memcpy.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memset.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-puts.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-strlen.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-findfp.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fvwrite.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fwalk.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-impure.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memchr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-memmove.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-freer.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-mallocr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-reallocr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-sbrkr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-stdio.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-writer.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-wsetup.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-closer.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fclose.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fflush.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-lseekr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-makebuf.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-nano-msizer.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-readr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-reent.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-fstatr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-isattyr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1\libgcc.a(_muldi3.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(write.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libnosys.a(sbrk.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-abort.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-errno.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signal.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/../../../../msp430-elf/lib\libc.a(lib_a-signalr.o)
+ .comment       0x000000ca       0x4a c:/ti/msp430_gcc/bin/../lib/gcc/msp430-elf/6.2.1/crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x140
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 ./src/can.o
+ .debug_aranges
+                0x00000020       0x20 ./src/main.o
+ .debug_aranges
+                0x00000040       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_aranges
+                0x00000060       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .debug_aranges
+                0x00000080       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_aranges
+                0x000000a0       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .debug_aranges
+                0x000000c0       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .debug_aranges
+                0x000000e0       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .debug_aranges
+                0x00000100       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .debug_aranges
+                0x00000120       0x20 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xd1bf
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x4581 ./src/can.o
+ .debug_info    0x00004581     0x33eb ./src/main.o
+ .debug_info    0x0000796c      0xaa0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_info    0x0000840c      0x42e F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .debug_info    0x0000883a      0x304 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_info    0x00008b3e      0x584 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .debug_info    0x000090c2      0x54c F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .debug_info    0x0000960e      0x2cf F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .debug_info    0x000098dd      0x258 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .debug_info    0x00009b35     0x368a F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+
+.debug_abbrev   0x00000000     0x1355
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x3c3 ./src/can.o
+ .debug_abbrev  0x000003c3      0x1b2 ./src/main.o
+ .debug_abbrev  0x00000575      0x2b6 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_abbrev  0x0000082b      0x1a4 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .debug_abbrev  0x000009cf      0x180 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_abbrev  0x00000b4f      0x25c F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .debug_abbrev  0x00000dab      0x17b F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .debug_abbrev  0x00000f26       0xe7 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .debug_abbrev  0x0000100d       0xf5 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .debug_abbrev  0x00001102      0x253 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+
+.debug_line     0x00000000     0x32b5
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0xc97 ./src/can.o
+ .debug_line    0x00000c97      0x22f ./src/main.o
+ .debug_line    0x00000ec6      0x720 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_line    0x000015e6      0x3b0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .debug_line    0x00001996      0x291 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_line    0x00001c27      0x777 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .debug_line    0x0000239e      0x2e7 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .debug_line    0x00002685      0x2f0 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .debug_line    0x00002975      0x347 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .debug_line    0x00002cbc      0x5f9 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+
+.debug_frame    0x00000000      0x908
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x20c ./src/can.o
+ .debug_frame   0x0000020c       0x7c ./src/main.o
+ .debug_frame   0x00000288      0x2ec F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_frame   0x00000574       0xbc F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .debug_frame   0x00000630       0x64 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_frame   0x00000694       0xd8 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .debug_frame   0x0000076c       0x4c F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .debug_frame   0x000007b8       0x74 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .debug_frame   0x0000082c       0x38 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .debug_frame   0x00000864       0xa4 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+
+.debug_str      0x00000000     0x31ab
+ *(.debug_str)
+ .debug_str     0x00000000     0x22f4 ./src/can.o
+                               0x23be (size before relaxing)
+ .debug_str     0x000022f4      0x11d ./src/main.o
+                               0x2293 (size before relaxing)
+ .debug_str     0x00002411      0x359 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+                                0x543 (size before relaxing)
+ .debug_str     0x0000276a       0xb2 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+                                0x39d (size before relaxing)
+ .debug_str     0x0000281c       0x86 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+                                0x2bf (size before relaxing)
+ .debug_str     0x000028a2      0x26b F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+                                0x423 (size before relaxing)
+ .debug_str     0x00002b0d      0x1cd F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+                                0x3b9 (size before relaxing)
+ .debug_str     0x00002cda      0x165 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+                                0x353 (size before relaxing)
+ .debug_str     0x00002e3f       0x93 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+                                0x24f (size before relaxing)
+ .debug_str     0x00002ed2      0x2d9 F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+                               0x2397 (size before relaxing)
+
+.debug_loc      0x00000000     0x266a
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x1059 ./src/can.o
+ .debug_loc     0x00001059      0x505 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_loc     0x0000155e       0x88 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+ .debug_loc     0x000015e6       0x9c F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_loc     0x00001682      0xa38 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+ .debug_loc     0x000020ba      0x22d F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysclk.o)
+ .debug_loc     0x000022e7      0x143 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(uart_tx.o)
+ .debug_loc     0x0000242a      0x143 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(pmm.o)
+ .debug_loc     0x0000256d       0xfd F:/RTBS/RTBS_BaseProject - Copy/libs\libRTBS_CAN_Tests.a(can_tests.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x4b0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x458 ./src/can.o
+ .debug_ranges  0x00000458       0x18 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(kernel.o)
+ .debug_ranges  0x00000470       0x18 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(sysinfo.o)
+ .debug_ranges  0x00000488       0x28 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(printfx.o)
+
+.debug_macro
+ *(.debug_macro)
+
+/DISCARD/
+ *(.note.GNU-stack)
+                [!provide]                PROVIDE (ADC12CTL0, 0x700)
+                [!provide]                PROVIDE (ADC12CTL0_L, 0x700)
+                [!provide]                PROVIDE (ADC12CTL0_H, 0x701)
+                [!provide]                PROVIDE (ADC12CTL1, 0x702)
+                [!provide]                PROVIDE (ADC12CTL1_L, 0x702)
+                [!provide]                PROVIDE (ADC12CTL1_H, 0x703)
+                [!provide]                PROVIDE (ADC12CTL2, 0x704)
+                [!provide]                PROVIDE (ADC12CTL2_L, 0x704)
+                [!provide]                PROVIDE (ADC12CTL2_H, 0x705)
+                [!provide]                PROVIDE (ADC12IFG, 0x70a)
+                [!provide]                PROVIDE (ADC12IFG_L, 0x70a)
+                [!provide]                PROVIDE (ADC12IFG_H, 0x70b)
+                [!provide]                PROVIDE (ADC12IE, 0x70c)
+                [!provide]                PROVIDE (ADC12IE_L, 0x70c)
+                [!provide]                PROVIDE (ADC12IE_H, 0x70d)
+                [!provide]                PROVIDE (ADC12IV, 0x70e)
+                [!provide]                PROVIDE (ADC12IV_L, 0x70e)
+                [!provide]                PROVIDE (ADC12IV_H, 0x70f)
+                [!provide]                PROVIDE (ADC12MEM0, 0x720)
+                [!provide]                PROVIDE (ADC12MEM0_L, 0x720)
+                [!provide]                PROVIDE (ADC12MEM0_H, 0x721)
+                [!provide]                PROVIDE (ADC12MEM1, 0x722)
+                [!provide]                PROVIDE (ADC12MEM1_L, 0x722)
+                [!provide]                PROVIDE (ADC12MEM1_H, 0x723)
+                [!provide]                PROVIDE (ADC12MEM2, 0x724)
+                [!provide]                PROVIDE (ADC12MEM2_L, 0x724)
+                [!provide]                PROVIDE (ADC12MEM2_H, 0x725)
+                [!provide]                PROVIDE (ADC12MEM3, 0x726)
+                [!provide]                PROVIDE (ADC12MEM3_L, 0x726)
+                [!provide]                PROVIDE (ADC12MEM3_H, 0x727)
+                [!provide]                PROVIDE (ADC12MEM4, 0x728)
+                [!provide]                PROVIDE (ADC12MEM4_L, 0x728)
+                [!provide]                PROVIDE (ADC12MEM4_H, 0x729)
+                [!provide]                PROVIDE (ADC12MEM5, 0x72a)
+                [!provide]                PROVIDE (ADC12MEM5_L, 0x72a)
+                [!provide]                PROVIDE (ADC12MEM5_H, 0x72b)
+                [!provide]                PROVIDE (ADC12MEM6, 0x72c)
+                [!provide]                PROVIDE (ADC12MEM6_L, 0x72c)
+                [!provide]                PROVIDE (ADC12MEM6_H, 0x72d)
+                [!provide]                PROVIDE (ADC12MEM7, 0x72e)
+                [!provide]                PROVIDE (ADC12MEM7_L, 0x72e)
+                [!provide]                PROVIDE (ADC12MEM7_H, 0x72f)
+                [!provide]                PROVIDE (ADC12MEM8, 0x730)
+                [!provide]                PROVIDE (ADC12MEM8_L, 0x730)
+                [!provide]                PROVIDE (ADC12MEM8_H, 0x731)
+                [!provide]                PROVIDE (ADC12MEM9, 0x732)
+                [!provide]                PROVIDE (ADC12MEM9_L, 0x732)
+                [!provide]                PROVIDE (ADC12MEM9_H, 0x733)
+                [!provide]                PROVIDE (ADC12MEM10, 0x734)
+                [!provide]                PROVIDE (ADC12MEM10_L, 0x734)
+                [!provide]                PROVIDE (ADC12MEM10_H, 0x735)
+                [!provide]                PROVIDE (ADC12MEM11, 0x736)
+                [!provide]                PROVIDE (ADC12MEM11_L, 0x736)
+                [!provide]                PROVIDE (ADC12MEM11_H, 0x737)
+                [!provide]                PROVIDE (ADC12MEM12, 0x738)
+                [!provide]                PROVIDE (ADC12MEM12_L, 0x738)
+                [!provide]                PROVIDE (ADC12MEM12_H, 0x739)
+                [!provide]                PROVIDE (ADC12MEM13, 0x73a)
+                [!provide]                PROVIDE (ADC12MEM13_L, 0x73a)
+                [!provide]                PROVIDE (ADC12MEM13_H, 0x73b)
+                [!provide]                PROVIDE (ADC12MEM14, 0x73c)
+                [!provide]                PROVIDE (ADC12MEM14_L, 0x73c)
+                [!provide]                PROVIDE (ADC12MEM14_H, 0x73d)
+                [!provide]                PROVIDE (ADC12MEM15, 0x73e)
+                [!provide]                PROVIDE (ADC12MEM15_L, 0x73e)
+                [!provide]                PROVIDE (ADC12MEM15_H, 0x73f)
+                [!provide]                PROVIDE (ADC12MCTL0, 0x710)
+                [!provide]                PROVIDE (ADC12MCTL1, 0x711)
+                [!provide]                PROVIDE (ADC12MCTL2, 0x712)
+                [!provide]                PROVIDE (ADC12MCTL3, 0x713)
+                [!provide]                PROVIDE (ADC12MCTL4, 0x714)
+                [!provide]                PROVIDE (ADC12MCTL5, 0x715)
+                [!provide]                PROVIDE (ADC12MCTL6, 0x716)
+                [!provide]                PROVIDE (ADC12MCTL7, 0x717)
+                [!provide]                PROVIDE (ADC12MCTL8, 0x718)
+                [!provide]                PROVIDE (ADC12MCTL9, 0x719)
+                [!provide]                PROVIDE (ADC12MCTL10, 0x71a)
+                [!provide]                PROVIDE (ADC12MCTL11, 0x71b)
+                [!provide]                PROVIDE (ADC12MCTL12, 0x71c)
+                [!provide]                PROVIDE (ADC12MCTL13, 0x71d)
+                [!provide]                PROVIDE (ADC12MCTL14, 0x71e)
+                [!provide]                PROVIDE (ADC12MCTL15, 0x71f)
+                [!provide]                PROVIDE (CBCTL0, 0x8c0)
+                [!provide]                PROVIDE (CBCTL0_L, 0x8c0)
+                [!provide]                PROVIDE (CBCTL0_H, 0x8c1)
+                [!provide]                PROVIDE (CBCTL1, 0x8c2)
+                [!provide]                PROVIDE (CBCTL1_L, 0x8c2)
+                [!provide]                PROVIDE (CBCTL1_H, 0x8c3)
+                [!provide]                PROVIDE (CBCTL2, 0x8c4)
+                [!provide]                PROVIDE (CBCTL2_L, 0x8c4)
+                [!provide]                PROVIDE (CBCTL2_H, 0x8c5)
+                [!provide]                PROVIDE (CBCTL3, 0x8c6)
+                [!provide]                PROVIDE (CBCTL3_L, 0x8c6)
+                [!provide]                PROVIDE (CBCTL3_H, 0x8c7)
+                [!provide]                PROVIDE (CBINT, 0x8cc)
+                [!provide]                PROVIDE (CBINT_L, 0x8cc)
+                [!provide]                PROVIDE (CBINT_H, 0x8cd)
+                [!provide]                PROVIDE (CBIV, 0x8ce)
+                [!provide]                PROVIDE (CRCDI, 0x150)
+                [!provide]                PROVIDE (CRCDI_L, 0x150)
+                [!provide]                PROVIDE (CRCDI_H, 0x151)
+                [!provide]                PROVIDE (CRCDIRB, 0x152)
+                [!provide]                PROVIDE (CRCDIRB_L, 0x152)
+                [!provide]                PROVIDE (CRCDIRB_H, 0x153)
+                [!provide]                PROVIDE (CRCINIRES, 0x154)
+                [!provide]                PROVIDE (CRCINIRES_L, 0x154)
+                [!provide]                PROVIDE (CRCINIRES_H, 0x155)
+                [!provide]                PROVIDE (CRCRESR, 0x156)
+                [!provide]                PROVIDE (CRCRESR_L, 0x156)
+                [!provide]                PROVIDE (CRCRESR_H, 0x157)
+                [!provide]                PROVIDE (DMACTL0, 0x500)
+                [!provide]                PROVIDE (DMACTL0_L, 0x500)
+                [!provide]                PROVIDE (DMACTL0_H, 0x501)
+                [!provide]                PROVIDE (DMACTL1, 0x502)
+                [!provide]                PROVIDE (DMACTL1_L, 0x502)
+                [!provide]                PROVIDE (DMACTL1_H, 0x503)
+                [!provide]                PROVIDE (DMACTL2, 0x504)
+                [!provide]                PROVIDE (DMACTL2_L, 0x504)
+                [!provide]                PROVIDE (DMACTL2_H, 0x505)
+                [!provide]                PROVIDE (DMACTL3, 0x506)
+                [!provide]                PROVIDE (DMACTL3_L, 0x506)
+                [!provide]                PROVIDE (DMACTL3_H, 0x507)
+                [!provide]                PROVIDE (DMACTL4, 0x508)
+                [!provide]                PROVIDE (DMACTL4_L, 0x508)
+                [!provide]                PROVIDE (DMACTL4_H, 0x509)
+                [!provide]                PROVIDE (DMAIV, 0x50e)
+                [!provide]                PROVIDE (DMAIV_L, 0x50e)
+                [!provide]                PROVIDE (DMAIV_H, 0x50f)
+                [!provide]                PROVIDE (DMA0CTL, 0x510)
+                [!provide]                PROVIDE (DMA0CTL_L, 0x510)
+                [!provide]                PROVIDE (DMA0CTL_H, 0x511)
+                [!provide]                PROVIDE (DMA0SA, 0x512)
+                [!provide]                PROVIDE (DMA0SAL, 0x512)
+                [!provide]                PROVIDE (DMA0DA, 0x516)
+                [!provide]                PROVIDE (DMA0DAL, 0x516)
+                [!provide]                PROVIDE (DMA0SZ, 0x51a)
+                [!provide]                PROVIDE (DMA1CTL, 0x520)
+                [!provide]                PROVIDE (DMA1CTL_L, 0x520)
+                [!provide]                PROVIDE (DMA1CTL_H, 0x521)
+                [!provide]                PROVIDE (DMA1SA, 0x522)
+                [!provide]                PROVIDE (DMA1SAL, 0x522)
+                [!provide]                PROVIDE (DMA1DA, 0x526)
+                [!provide]                PROVIDE (DMA1DAL, 0x526)
+                [!provide]                PROVIDE (DMA1SZ, 0x52a)
+                [!provide]                PROVIDE (DMA2CTL, 0x530)
+                [!provide]                PROVIDE (DMA2CTL_L, 0x530)
+                [!provide]                PROVIDE (DMA2CTL_H, 0x531)
+                [!provide]                PROVIDE (DMA2SA, 0x532)
+                [!provide]                PROVIDE (DMA2SAL, 0x532)
+                [!provide]                PROVIDE (DMA2DA, 0x536)
+                [!provide]                PROVIDE (DMA2DAL, 0x536)
+                [!provide]                PROVIDE (DMA2SZ, 0x53a)
+                [!provide]                PROVIDE (FCTL1, 0x140)
+                [!provide]                PROVIDE (FCTL1_L, 0x140)
+                [!provide]                PROVIDE (FCTL1_H, 0x141)
+                [!provide]                PROVIDE (FCTL3, 0x144)
+                [!provide]                PROVIDE (FCTL3_L, 0x144)
+                [!provide]                PROVIDE (FCTL3_H, 0x145)
+                [!provide]                PROVIDE (FCTL4, 0x146)
+                [!provide]                PROVIDE (FCTL4_L, 0x146)
+                [!provide]                PROVIDE (FCTL4_H, 0x147)
+                [!provide]                PROVIDE (MPY, 0x4c0)
+                [!provide]                PROVIDE (MPY_L, 0x4c0)
+                [!provide]                PROVIDE (MPY_H, 0x4c1)
+                [!provide]                PROVIDE (MPYS, 0x4c2)
+                [!provide]                PROVIDE (MPYS_L, 0x4c2)
+                [!provide]                PROVIDE (MPYS_H, 0x4c3)
+                [!provide]                PROVIDE (MAC, 0x4c4)
+                [!provide]                PROVIDE (MAC_L, 0x4c4)
+                [!provide]                PROVIDE (MAC_H, 0x4c5)
+                [!provide]                PROVIDE (MACS, 0x4c6)
+                [!provide]                PROVIDE (MACS_L, 0x4c6)
+                [!provide]                PROVIDE (MACS_H, 0x4c7)
+                [!provide]                PROVIDE (OP2, 0x4c8)
+                [!provide]                PROVIDE (OP2_L, 0x4c8)
+                [!provide]                PROVIDE (OP2_H, 0x4c9)
+                [!provide]                PROVIDE (RESLO, 0x4ca)
+                [!provide]                PROVIDE (RESLO_L, 0x4ca)
+                [!provide]                PROVIDE (RESLO_H, 0x4cb)
+                [!provide]                PROVIDE (RESHI, 0x4cc)
+                [!provide]                PROVIDE (RESHI_L, 0x4cc)
+                [!provide]                PROVIDE (RESHI_H, 0x4cd)
+                [!provide]                PROVIDE (SUMEXT, 0x4ce)
+                [!provide]                PROVIDE (SUMEXT_L, 0x4ce)
+                [!provide]                PROVIDE (SUMEXT_H, 0x4cf)
+                [!provide]                PROVIDE (MPY32L, 0x4d0)
+                [!provide]                PROVIDE (MPY32L_L, 0x4d0)
+                [!provide]                PROVIDE (MPY32L_H, 0x4d1)
+                [!provide]                PROVIDE (MPY32H, 0x4d2)
+                [!provide]                PROVIDE (MPY32H_L, 0x4d2)
+                [!provide]                PROVIDE (MPY32H_H, 0x4d3)
+                [!provide]                PROVIDE (MPYS32L, 0x4d4)
+                [!provide]                PROVIDE (MPYS32L_L, 0x4d4)
+                [!provide]                PROVIDE (MPYS32L_H, 0x4d5)
+                [!provide]                PROVIDE (MPYS32H, 0x4d6)
+                [!provide]                PROVIDE (MPYS32H_L, 0x4d6)
+                [!provide]                PROVIDE (MPYS32H_H, 0x4d7)
+                [!provide]                PROVIDE (MAC32L, 0x4d8)
+                [!provide]                PROVIDE (MAC32L_L, 0x4d8)
+                [!provide]                PROVIDE (MAC32L_H, 0x4d9)
+                [!provide]                PROVIDE (MAC32H, 0x4da)
+                [!provide]                PROVIDE (MAC32H_L, 0x4da)
+                [!provide]                PROVIDE (MAC32H_H, 0x4db)
+                [!provide]                PROVIDE (MACS32L, 0x4dc)
+                [!provide]                PROVIDE (MACS32L_L, 0x4dc)
+                [!provide]                PROVIDE (MACS32L_H, 0x4dd)
+                [!provide]                PROVIDE (MACS32H, 0x4de)
+                [!provide]                PROVIDE (MACS32H_L, 0x4de)
+                [!provide]                PROVIDE (MACS32H_H, 0x4df)
+                [!provide]                PROVIDE (OP2L, 0x4e0)
+                [!provide]                PROVIDE (OP2L_L, 0x4e0)
+                [!provide]                PROVIDE (OP2L_H, 0x4e1)
+                [!provide]                PROVIDE (OP2H, 0x4e2)
+                [!provide]                PROVIDE (OP2H_L, 0x4e2)
+                [!provide]                PROVIDE (OP2H_H, 0x4e3)
+                [!provide]                PROVIDE (RES0, 0x4e4)
+                [!provide]                PROVIDE (RES0_L, 0x4e4)
+                [!provide]                PROVIDE (RES0_H, 0x4e5)
+                [!provide]                PROVIDE (RES1, 0x4e6)
+                [!provide]                PROVIDE (RES1_L, 0x4e6)
+                [!provide]                PROVIDE (RES1_H, 0x4e7)
+                [!provide]                PROVIDE (RES2, 0x4e8)
+                [!provide]                PROVIDE (RES2_L, 0x4e8)
+                [!provide]                PROVIDE (RES2_H, 0x4e9)
+                [!provide]                PROVIDE (RES3, 0x4ea)
+                [!provide]                PROVIDE (RES3_L, 0x4ea)
+                [!provide]                PROVIDE (RES3_H, 0x4eb)
+                [!provide]                PROVIDE (MPY32CTL0, 0x4ec)
+                [!provide]                PROVIDE (MPY32CTL0_L, 0x4ec)
+                [!provide]                PROVIDE (MPY32CTL0_H, 0x4ed)
+                [!provide]                PROVIDE (PAIN, 0x200)
+                [!provide]                PROVIDE (PAIN_L, 0x200)
+                [!provide]                PROVIDE (PAIN_H, 0x201)
+                [!provide]                PROVIDE (PAOUT, 0x202)
+                0x00000202                PROVIDE (PAOUT_L, 0x202)
+                0x00000203                PROVIDE (PAOUT_H, 0x203)
+                [!provide]                PROVIDE (PADIR, 0x204)
+                [!provide]                PROVIDE (PADIR_L, 0x204)
+                0x00000205                PROVIDE (PADIR_H, 0x205)
+                [!provide]                PROVIDE (PAREN, 0x206)
+                [!provide]                PROVIDE (PAREN_L, 0x206)
+                0x00000207                PROVIDE (PAREN_H, 0x207)
+                [!provide]                PROVIDE (PADS, 0x208)
+                [!provide]                PROVIDE (PADS_L, 0x208)
+                [!provide]                PROVIDE (PADS_H, 0x209)
+                [!provide]                PROVIDE (PASEL, 0x20a)
+                [!provide]                PROVIDE (PASEL_L, 0x20a)
+                0x0000020b                PROVIDE (PASEL_H, 0x20b)
+                [!provide]                PROVIDE (PAIES, 0x218)
+                [!provide]                PROVIDE (PAIES_L, 0x218)
+                0x00000219                PROVIDE (PAIES_H, 0x219)
+                [!provide]                PROVIDE (PAIE, 0x21a)
+                0x0000021a                PROVIDE (PAIE_L, 0x21a)
+                0x0000021b                PROVIDE (PAIE_H, 0x21b)
+                [!provide]                PROVIDE (PAIFG, 0x21c)
+                [!provide]                PROVIDE (PAIFG_L, 0x21c)
+                [!provide]                PROVIDE (PAIFG_H, 0x21d)
+                [!provide]                PROVIDE (P1IV, 0x20e)
+                [!provide]                PROVIDE (P2IV, 0x21e)
+                [!provide]                PROVIDE (PBIN, 0x220)
+                [!provide]                PROVIDE (PBIN_L, 0x220)
+                [!provide]                PROVIDE (PBIN_H, 0x221)
+                [!provide]                PROVIDE (PBOUT, 0x222)
+                [!provide]                PROVIDE (PBOUT_L, 0x222)
+                0x00000223                PROVIDE (PBOUT_H, 0x223)
+                [!provide]                PROVIDE (PBDIR, 0x224)
+                [!provide]                PROVIDE (PBDIR_L, 0x224)
+                0x00000225                PROVIDE (PBDIR_H, 0x225)
+                [!provide]                PROVIDE (PBREN, 0x226)
+                [!provide]                PROVIDE (PBREN_L, 0x226)
+                [!provide]                PROVIDE (PBREN_H, 0x227)
+                [!provide]                PROVIDE (PBDS, 0x228)
+                [!provide]                PROVIDE (PBDS_L, 0x228)
+                [!provide]                PROVIDE (PBDS_H, 0x229)
+                [!provide]                PROVIDE (PBSEL, 0x22a)
+                [!provide]                PROVIDE (PBSEL_L, 0x22a)
+                0x0000022b                PROVIDE (PBSEL_H, 0x22b)
+                [!provide]                PROVIDE (PCIN, 0x240)
+                [!provide]                PROVIDE (PCIN_L, 0x240)
+                [!provide]                PROVIDE (PCIN_H, 0x241)
+                [!provide]                PROVIDE (PCOUT, 0x242)
+                0x00000242                PROVIDE (PCOUT_L, 0x242)
+                0x00000243                PROVIDE (PCOUT_H, 0x243)
+                [!provide]                PROVIDE (PCDIR, 0x244)
+                0x00000244                PROVIDE (PCDIR_L, 0x244)
+                0x00000245                PROVIDE (PCDIR_H, 0x245)
+                [!provide]                PROVIDE (PCREN, 0x246)
+                [!provide]                PROVIDE (PCREN_L, 0x246)
+                [!provide]                PROVIDE (PCREN_H, 0x247)
+                [!provide]                PROVIDE (PCDS, 0x248)
+                [!provide]                PROVIDE (PCDS_L, 0x248)
+                [!provide]                PROVIDE (PCDS_H, 0x249)
+                [!provide]                PROVIDE (PCSEL, 0x24a)
+                0x0000024a                PROVIDE (PCSEL_L, 0x24a)
+                0x0000024b                PROVIDE (PCSEL_H, 0x24b)
+                [!provide]                PROVIDE (PDIN, 0x260)
+                [!provide]                PROVIDE (PDIN_L, 0x260)
+                [!provide]                PROVIDE (PDIN_H, 0x261)
+                [!provide]                PROVIDE (PDOUT, 0x262)
+                [!provide]                PROVIDE (PDOUT_L, 0x262)
+                [!provide]                PROVIDE (PDOUT_H, 0x263)
+                [!provide]                PROVIDE (PDDIR, 0x264)
+                [!provide]                PROVIDE (PDDIR_L, 0x264)
+                [!provide]                PROVIDE (PDDIR_H, 0x265)
+                [!provide]                PROVIDE (PDREN, 0x266)
+                [!provide]                PROVIDE (PDREN_L, 0x266)
+                [!provide]                PROVIDE (PDREN_H, 0x267)
+                [!provide]                PROVIDE (PDDS, 0x268)
+                [!provide]                PROVIDE (PDDS_L, 0x268)
+                [!provide]                PROVIDE (PDDS_H, 0x269)
+                [!provide]                PROVIDE (PDSEL, 0x26a)
+                [!provide]                PROVIDE (PDSEL_L, 0x26a)
+                [!provide]                PROVIDE (PDSEL_H, 0x26b)
+                [!provide]                PROVIDE (PJIN, 0x320)
+                [!provide]                PROVIDE (PJIN_L, 0x320)
+                [!provide]                PROVIDE (PJIN_H, 0x321)
+                [!provide]                PROVIDE (PJOUT, 0x322)
+                [!provide]                PROVIDE (PJOUT_L, 0x322)
+                [!provide]                PROVIDE (PJOUT_H, 0x323)
+                [!provide]                PROVIDE (PJDIR, 0x324)
+                [!provide]                PROVIDE (PJDIR_L, 0x324)
+                [!provide]                PROVIDE (PJDIR_H, 0x325)
+                [!provide]                PROVIDE (PJREN, 0x326)
+                [!provide]                PROVIDE (PJREN_L, 0x326)
+                [!provide]                PROVIDE (PJREN_H, 0x327)
+                [!provide]                PROVIDE (PJDS, 0x328)
+                [!provide]                PROVIDE (PJDS_L, 0x328)
+                [!provide]                PROVIDE (PJDS_H, 0x329)
+                [!provide]                PROVIDE (PMAPKEYID, 0x1c0)
+                [!provide]                PROVIDE (PMAPKEYID_L, 0x1c0)
+                [!provide]                PROVIDE (PMAPKEYID_H, 0x1c1)
+                [!provide]                PROVIDE (PMAPCTL, 0x1c2)
+                [!provide]                PROVIDE (PMAPCTL_L, 0x1c2)
+                [!provide]                PROVIDE (PMAPCTL_H, 0x1c3)
+                [!provide]                PROVIDE (P4MAP01, 0x1e0)
+                [!provide]                PROVIDE (P4MAP01_L, 0x1e0)
+                [!provide]                PROVIDE (P4MAP01_H, 0x1e1)
+                [!provide]                PROVIDE (P4MAP23, 0x1e2)
+                [!provide]                PROVIDE (P4MAP23_L, 0x1e2)
+                [!provide]                PROVIDE (P4MAP23_H, 0x1e3)
+                [!provide]                PROVIDE (P4MAP45, 0x1e4)
+                [!provide]                PROVIDE (P4MAP45_L, 0x1e4)
+                [!provide]                PROVIDE (P4MAP45_H, 0x1e5)
+                [!provide]                PROVIDE (P4MAP67, 0x1e6)
+                [!provide]                PROVIDE (P4MAP67_L, 0x1e6)
+                [!provide]                PROVIDE (P4MAP67_H, 0x1e7)
+                0x00000120                PROVIDE (PMMCTL0, 0x120)
+                0x00000120                PROVIDE (PMMCTL0_L, 0x120)
+                0x00000121                PROVIDE (PMMCTL0_H, 0x121)
+                [!provide]                PROVIDE (PMMCTL1, 0x122)
+                [!provide]                PROVIDE (PMMCTL1_L, 0x122)
+                [!provide]                PROVIDE (PMMCTL1_H, 0x123)
+                0x00000124                PROVIDE (SVSMHCTL, 0x124)
+                [!provide]                PROVIDE (SVSMHCTL_L, 0x124)
+                [!provide]                PROVIDE (SVSMHCTL_H, 0x125)
+                0x00000126                PROVIDE (SVSMLCTL, 0x126)
+                [!provide]                PROVIDE (SVSMLCTL_L, 0x126)
+                [!provide]                PROVIDE (SVSMLCTL_H, 0x127)
+                [!provide]                PROVIDE (SVSMIO, 0x128)
+                [!provide]                PROVIDE (SVSMIO_L, 0x128)
+                [!provide]                PROVIDE (SVSMIO_H, 0x129)
+                0x0000012c                PROVIDE (PMMIFG, 0x12c)
+                [!provide]                PROVIDE (PMMIFG_L, 0x12c)
+                [!provide]                PROVIDE (PMMIFG_H, 0x12d)
+                0x0000012e                PROVIDE (PMMRIE, 0x12e)
+                [!provide]                PROVIDE (PMMRIE_L, 0x12e)
+                [!provide]                PROVIDE (PMMRIE_H, 0x12f)
+                [!provide]                PROVIDE (PM5CTL0, 0x130)
+                [!provide]                PROVIDE (PM5CTL0_L, 0x130)
+                [!provide]                PROVIDE (PM5CTL0_H, 0x131)
+                [!provide]                PROVIDE (RCCTL0, 0x158)
+                [!provide]                PROVIDE (RCCTL0_L, 0x158)
+                [!provide]                PROVIDE (RCCTL0_H, 0x159)
+                [!provide]                PROVIDE (REFCTL0, 0x1b0)
+                [!provide]                PROVIDE (REFCTL0_L, 0x1b0)
+                [!provide]                PROVIDE (REFCTL0_H, 0x1b1)
+                [!provide]                PROVIDE (RTCCTL01, 0x4a0)
+                [!provide]                PROVIDE (RTCCTL01_L, 0x4a0)
+                [!provide]                PROVIDE (RTCCTL01_H, 0x4a1)
+                [!provide]                PROVIDE (RTCCTL23, 0x4a2)
+                [!provide]                PROVIDE (RTCCTL23_L, 0x4a2)
+                [!provide]                PROVIDE (RTCCTL23_H, 0x4a3)
+                [!provide]                PROVIDE (RTCPS0CTL, 0x4a8)
+                [!provide]                PROVIDE (RTCPS0CTL_L, 0x4a8)
+                [!provide]                PROVIDE (RTCPS0CTL_H, 0x4a9)
+                [!provide]                PROVIDE (RTCPS1CTL, 0x4aa)
+                [!provide]                PROVIDE (RTCPS1CTL_L, 0x4aa)
+                [!provide]                PROVIDE (RTCPS1CTL_H, 0x4ab)
+                [!provide]                PROVIDE (RTCPS, 0x4ac)
+                [!provide]                PROVIDE (RTCPS_L, 0x4ac)
+                [!provide]                PROVIDE (RTCPS_H, 0x4ad)
+                [!provide]                PROVIDE (RTCIV, 0x4ae)
+                [!provide]                PROVIDE (RTCTIM0, 0x4b0)
+                [!provide]                PROVIDE (RTCTIM0_L, 0x4b0)
+                [!provide]                PROVIDE (RTCTIM0_H, 0x4b1)
+                [!provide]                PROVIDE (RTCTIM1, 0x4b2)
+                [!provide]                PROVIDE (RTCTIM1_L, 0x4b2)
+                [!provide]                PROVIDE (RTCTIM1_H, 0x4b3)
+                [!provide]                PROVIDE (RTCDATE, 0x4b4)
+                [!provide]                PROVIDE (RTCDATE_L, 0x4b4)
+                [!provide]                PROVIDE (RTCDATE_H, 0x4b5)
+                [!provide]                PROVIDE (RTCYEAR, 0x4b6)
+                [!provide]                PROVIDE (RTCYEAR_L, 0x4b6)
+                [!provide]                PROVIDE (RTCYEAR_H, 0x4b7)
+                [!provide]                PROVIDE (RTCAMINHR, 0x4b8)
+                [!provide]                PROVIDE (RTCAMINHR_L, 0x4b8)
+                [!provide]                PROVIDE (RTCAMINHR_H, 0x4b9)
+                [!provide]                PROVIDE (RTCADOWDAY, 0x4ba)
+                [!provide]                PROVIDE (RTCADOWDAY_L, 0x4ba)
+                [!provide]                PROVIDE (RTCADOWDAY_H, 0x4bb)
+                [!provide]                PROVIDE (SFRIE1, 0x100)
+                [!provide]                PROVIDE (SFRIE1_L, 0x100)
+                [!provide]                PROVIDE (SFRIE1_H, 0x101)
+                0x00000102                PROVIDE (SFRIFG1, 0x102)
+                [!provide]                PROVIDE (SFRIFG1_L, 0x102)
+                [!provide]                PROVIDE (SFRIFG1_H, 0x103)
+                [!provide]                PROVIDE (SFRRPCR, 0x104)
+                [!provide]                PROVIDE (SFRRPCR_L, 0x104)
+                [!provide]                PROVIDE (SFRRPCR_H, 0x105)
+                [!provide]                PROVIDE (SYSCTL, 0x180)
+                [!provide]                PROVIDE (SYSCTL_L, 0x180)
+                [!provide]                PROVIDE (SYSCTL_H, 0x181)
+                [!provide]                PROVIDE (SYSBSLC, 0x182)
+                [!provide]                PROVIDE (SYSBSLC_L, 0x182)
+                [!provide]                PROVIDE (SYSBSLC_H, 0x183)
+                [!provide]                PROVIDE (SYSJMBC, 0x186)
+                [!provide]                PROVIDE (SYSJMBC_L, 0x186)
+                [!provide]                PROVIDE (SYSJMBC_H, 0x187)
+                [!provide]                PROVIDE (SYSJMBI0, 0x188)
+                [!provide]                PROVIDE (SYSJMBI0_L, 0x188)
+                [!provide]                PROVIDE (SYSJMBI0_H, 0x189)
+                [!provide]                PROVIDE (SYSJMBI1, 0x18a)
+                [!provide]                PROVIDE (SYSJMBI1_L, 0x18a)
+                [!provide]                PROVIDE (SYSJMBI1_H, 0x18b)
+                [!provide]                PROVIDE (SYSJMBO0, 0x18c)
+                [!provide]                PROVIDE (SYSJMBO0_L, 0x18c)
+                [!provide]                PROVIDE (SYSJMBO0_H, 0x18d)
+                [!provide]                PROVIDE (SYSJMBO1, 0x18e)
+                [!provide]                PROVIDE (SYSJMBO1_L, 0x18e)
+                [!provide]                PROVIDE (SYSJMBO1_H, 0x18f)
+                [!provide]                PROVIDE (SYSBERRIV, 0x198)
+                [!provide]                PROVIDE (SYSBERRIV_L, 0x198)
+                [!provide]                PROVIDE (SYSBERRIV_H, 0x199)
+                [!provide]                PROVIDE (SYSUNIV, 0x19a)
+                [!provide]                PROVIDE (SYSUNIV_L, 0x19a)
+                [!provide]                PROVIDE (SYSUNIV_H, 0x19b)
+                [!provide]                PROVIDE (SYSSNIV, 0x19c)
+                [!provide]                PROVIDE (SYSSNIV_L, 0x19c)
+                [!provide]                PROVIDE (SYSSNIV_H, 0x19d)
+                [!provide]                PROVIDE (SYSRSTIV, 0x19e)
+                [!provide]                PROVIDE (SYSRSTIV_L, 0x19e)
+                [!provide]                PROVIDE (SYSRSTIV_H, 0x19f)
+                0x00000340                PROVIDE (TA0CTL, 0x340)
+                0x00000342                PROVIDE (TA0CCTL0, 0x342)
+                0x00000344                PROVIDE (TA0CCTL1, 0x344)
+                [!provide]                PROVIDE (TA0CCTL2, 0x346)
+                [!provide]                PROVIDE (TA0CCTL3, 0x348)
+                [!provide]                PROVIDE (TA0CCTL4, 0x34a)
+                0x00000350                PROVIDE (TA0R, 0x350)
+                0x00000352                PROVIDE (TA0CCR0, 0x352)
+                0x00000354                PROVIDE (TA0CCR1, 0x354)
+                [!provide]                PROVIDE (TA0CCR2, 0x356)
+                [!provide]                PROVIDE (TA0CCR3, 0x358)
+                [!provide]                PROVIDE (TA0CCR4, 0x35a)
+                0x0000036e                PROVIDE (TA0IV, 0x36e)
+                0x00000360                PROVIDE (TA0EX0, 0x360)
+                [!provide]                PROVIDE (TA1CTL, 0x380)
+                [!provide]                PROVIDE (TA1CCTL0, 0x382)
+                [!provide]                PROVIDE (TA1CCTL1, 0x384)
+                [!provide]                PROVIDE (TA1CCTL2, 0x386)
+                [!provide]                PROVIDE (TA1R, 0x390)
+                [!provide]                PROVIDE (TA1CCR0, 0x392)
+                [!provide]                PROVIDE (TA1CCR1, 0x394)
+                [!provide]                PROVIDE (TA1CCR2, 0x396)
+                [!provide]                PROVIDE (TA1IV, 0x3ae)
+                [!provide]                PROVIDE (TA1EX0, 0x3a0)
+                [!provide]                PROVIDE (TA2CTL, 0x400)
+                [!provide]                PROVIDE (TA2CCTL0, 0x402)
+                [!provide]                PROVIDE (TA2CCTL1, 0x404)
+                [!provide]                PROVIDE (TA2CCTL2, 0x406)
+                [!provide]                PROVIDE (TA2R, 0x410)
+                [!provide]                PROVIDE (TA2CCR0, 0x412)
+                [!provide]                PROVIDE (TA2CCR1, 0x414)
+                [!provide]                PROVIDE (TA2CCR2, 0x416)
+                [!provide]                PROVIDE (TA2IV, 0x42e)
+                [!provide]                PROVIDE (TA2EX0, 0x420)
+                [!provide]                PROVIDE (TB0CTL, 0x3c0)
+                [!provide]                PROVIDE (TB0CCTL0, 0x3c2)
+                [!provide]                PROVIDE (TB0CCTL1, 0x3c4)
+                [!provide]                PROVIDE (TB0CCTL2, 0x3c6)
+                [!provide]                PROVIDE (TB0CCTL3, 0x3c8)
+                [!provide]                PROVIDE (TB0CCTL4, 0x3ca)
+                [!provide]                PROVIDE (TB0CCTL5, 0x3cc)
+                [!provide]                PROVIDE (TB0CCTL6, 0x3ce)
+                [!provide]                PROVIDE (TB0R, 0x3d0)
+                [!provide]                PROVIDE (TB0CCR0, 0x3d2)
+                [!provide]                PROVIDE (TB0CCR1, 0x3d4)
+                [!provide]                PROVIDE (TB0CCR2, 0x3d6)
+                [!provide]                PROVIDE (TB0CCR3, 0x3d8)
+                [!provide]                PROVIDE (TB0CCR4, 0x3da)
+                [!provide]                PROVIDE (TB0CCR5, 0x3dc)
+                [!provide]                PROVIDE (TB0CCR6, 0x3de)
+                [!provide]                PROVIDE (TB0EX0, 0x3e0)
+                [!provide]                PROVIDE (TB0IV, 0x3ee)
+                [!provide]                PROVIDE (USBKEYID, 0x900)
+                [!provide]                PROVIDE (USBKEYID_L, 0x900)
+                [!provide]                PROVIDE (USBKEYID_H, 0x901)
+                [!provide]                PROVIDE (USBCNF, 0x902)
+                [!provide]                PROVIDE (USBCNF_L, 0x902)
+                [!provide]                PROVIDE (USBCNF_H, 0x903)
+                [!provide]                PROVIDE (USBPHYCTL, 0x904)
+                [!provide]                PROVIDE (USBPHYCTL_L, 0x904)
+                [!provide]                PROVIDE (USBPHYCTL_H, 0x905)
+                [!provide]                PROVIDE (USBPWRCTL, 0x908)
+                [!provide]                PROVIDE (USBPWRCTL_L, 0x908)
+                [!provide]                PROVIDE (USBPWRCTL_H, 0x909)
+                [!provide]                PROVIDE (USBPLLCTL, 0x910)
+                [!provide]                PROVIDE (USBPLLCTL_L, 0x910)
+                [!provide]                PROVIDE (USBPLLCTL_H, 0x911)
+                [!provide]                PROVIDE (USBPLLDIVB, 0x912)
+                [!provide]                PROVIDE (USBPLLDIVB_L, 0x912)
+                [!provide]                PROVIDE (USBPLLDIVB_H, 0x913)
+                [!provide]                PROVIDE (USBPLLIR, 0x914)
+                [!provide]                PROVIDE (USBPLLIR_L, 0x914)
+                [!provide]                PROVIDE (USBPLLIR_H, 0x915)
+                [!provide]                PROVIDE (USBIEPCNF_0, 0x920)
+                [!provide]                PROVIDE (USBIEPCNT_0, 0x921)
+                [!provide]                PROVIDE (USBOEPCNF_0, 0x922)
+                [!provide]                PROVIDE (USBOEPCNT_0, 0x923)
+                [!provide]                PROVIDE (USBIEPIE, 0x92e)
+                [!provide]                PROVIDE (USBOEPIE, 0x92f)
+                [!provide]                PROVIDE (USBIEPIFG, 0x930)
+                [!provide]                PROVIDE (USBOEPIFG, 0x931)
+                [!provide]                PROVIDE (USBVECINT, 0x932)
+                [!provide]                PROVIDE (USBVECINT_L, 0x932)
+                [!provide]                PROVIDE (USBVECINT_H, 0x933)
+                [!provide]                PROVIDE (USBMAINT, 0x936)
+                [!provide]                PROVIDE (USBMAINT_L, 0x936)
+                [!provide]                PROVIDE (USBMAINT_H, 0x937)
+                [!provide]                PROVIDE (USBTSREG, 0x938)
+                [!provide]                PROVIDE (USBTSREG_L, 0x938)
+                [!provide]                PROVIDE (USBTSREG_H, 0x939)
+                [!provide]                PROVIDE (USBFN, 0x93a)
+                [!provide]                PROVIDE (USBFN_L, 0x93a)
+                [!provide]                PROVIDE (USBFN_H, 0x93b)
+                [!provide]                PROVIDE (USBCTL, 0x93c)
+                [!provide]                PROVIDE (USBIE, 0x93d)
+                [!provide]                PROVIDE (USBIFG, 0x93e)
+                [!provide]                PROVIDE (USBFUNADR, 0x93f)
+                [!provide]                PROVIDE (USBIEPSIZXY_7, 0x23ff)
+                [!provide]                PROVIDE (USBIEPBCTY_7, 0x23fe)
+                [!provide]                PROVIDE (USBIEPBBAY_7, 0x23fd)
+                [!provide]                PROVIDE (USBIEPBCTX_7, 0x23fa)
+                [!provide]                PROVIDE (USBIEPBBAX_7, 0x23f9)
+                [!provide]                PROVIDE (USBIEPCNF_7, 0x23f8)
+                [!provide]                PROVIDE (USBIEPSIZXY_6, 0x23f7)
+                [!provide]                PROVIDE (USBIEPBCTY_6, 0x23f6)
+                [!provide]                PROVIDE (USBIEPBBAY_6, 0x23f5)
+                [!provide]                PROVIDE (USBIEPBCTX_6, 0x23f2)
+                [!provide]                PROVIDE (USBIEPBBAX_6, 0x23f1)
+                [!provide]                PROVIDE (USBIEPCNF_6, 0x23f0)
+                [!provide]                PROVIDE (USBIEPSIZXY_5, 0x23ef)
+                [!provide]                PROVIDE (USBIEPBCTY_5, 0x23ee)
+                [!provide]                PROVIDE (USBIEPBBAY_5, 0x23ed)
+                [!provide]                PROVIDE (USBIEPBCTX_5, 0x23ea)
+                [!provide]                PROVIDE (USBIEPBBAX_5, 0x23e9)
+                [!provide]                PROVIDE (USBIEPCNF_5, 0x23e8)
+                [!provide]                PROVIDE (USBIEPSIZXY_4, 0x23e7)
+                [!provide]                PROVIDE (USBIEPBCTY_4, 0x23e6)
+                [!provide]                PROVIDE (USBIEPBBAY_4, 0x23e5)
+                [!provide]                PROVIDE (USBIEPBCTX_4, 0x23e2)
+                [!provide]                PROVIDE (USBIEPBBAX_4, 0x23e1)
+                [!provide]                PROVIDE (USBIEPCNF_4, 0x23e0)
+                [!provide]                PROVIDE (USBIEPSIZXY_3, 0x23df)
+                [!provide]                PROVIDE (USBIEPBCTY_3, 0x23de)
+                [!provide]                PROVIDE (USBIEPBBAY_3, 0x23dd)
+                [!provide]                PROVIDE (USBIEPBCTX_3, 0x23da)
+                [!provide]                PROVIDE (USBIEPBBAX_3, 0x23d9)
+                [!provide]                PROVIDE (USBIEPCNF_3, 0x23d8)
+                [!provide]                PROVIDE (USBIEPSIZXY_2, 0x23d7)
+                [!provide]                PROVIDE (USBIEPBCTY_2, 0x23d6)
+                [!provide]                PROVIDE (USBIEPBBAY_2, 0x23d5)
+                [!provide]                PROVIDE (USBIEPBCTX_2, 0x23d2)
+                [!provide]                PROVIDE (USBIEPBBAX_2, 0x23d1)
+                [!provide]                PROVIDE (USBIEPCNF_2, 0x23d0)
+                [!provide]                PROVIDE (USBIEPSIZXY_1, 0x23cf)
+                [!provide]                PROVIDE (USBIEPBCTY_1, 0x23ce)
+                [!provide]                PROVIDE (USBIEPBBAY_1, 0x23cd)
+                [!provide]                PROVIDE (USBIEPBCTX_1, 0x23ca)
+                [!provide]                PROVIDE (USBIEPBBAX_1, 0x23c9)
+                [!provide]                PROVIDE (USBIEPCNF_1, 0x23c8)
+                [!provide]                PROVIDE (USBOEPSIZXY_7, 0x23bf)
+                [!provide]                PROVIDE (USBOEPBCTY_7, 0x23be)
+                [!provide]                PROVIDE (USBOEPBBAY_7, 0x23bd)
+                [!provide]                PROVIDE (USBOEPBCTX_7, 0x23ba)
+                [!provide]                PROVIDE (USBOEPBBAX_7, 0x23b9)
+                [!provide]                PROVIDE (USBOEPCNF_7, 0x23b8)
+                [!provide]                PROVIDE (USBOEPSIZXY_6, 0x23b7)
+                [!provide]                PROVIDE (USBOEPBCTY_6, 0x23b6)
+                [!provide]                PROVIDE (USBOEPBBAY_6, 0x23b5)
+                [!provide]                PROVIDE (USBOEPBCTX_6, 0x23b2)
+                [!provide]                PROVIDE (USBOEPBBAX_6, 0x23b1)
+                [!provide]                PROVIDE (USBOEPCNF_6, 0x23b0)
+                [!provide]                PROVIDE (USBOEPSIZXY_5, 0x23af)
+                [!provide]                PROVIDE (USBOEPBCTY_5, 0x23ae)
+                [!provide]                PROVIDE (USBOEPBBAY_5, 0x23ad)
+                [!provide]                PROVIDE (USBOEPBCTX_5, 0x23aa)
+                [!provide]                PROVIDE (USBOEPBBAX_5, 0x23a9)
+                [!provide]                PROVIDE (USBOEPCNF_5, 0x23a8)
+                [!provide]                PROVIDE (USBOEPSIZXY_4, 0x23a7)
+                [!provide]                PROVIDE (USBOEPBCTY_4, 0x23a6)
+                [!provide]                PROVIDE (USBOEPBBAY_4, 0x23a5)
+                [!provide]                PROVIDE (USBOEPBCTX_4, 0x23a2)
+                [!provide]                PROVIDE (USBOEPBBAX_4, 0x23a1)
+                [!provide]                PROVIDE (USBOEPCNF_4, 0x23a0)
+                [!provide]                PROVIDE (USBOEPSIZXY_3, 0x239f)
+                [!provide]                PROVIDE (USBOEPBCTY_3, 0x239e)
+                [!provide]                PROVIDE (USBOEPBBAY_3, 0x239d)
+                [!provide]                PROVIDE (USBOEPBCTX_3, 0x239a)
+                [!provide]                PROVIDE (USBOEPBBAX_3, 0x2399)
+                [!provide]                PROVIDE (USBOEPCNF_3, 0x2398)
+                [!provide]                PROVIDE (USBOEPSIZXY_2, 0x2397)
+                [!provide]                PROVIDE (USBOEPBCTY_2, 0x2396)
+                [!provide]                PROVIDE (USBOEPBBAY_2, 0x2395)
+                [!provide]                PROVIDE (USBOEPBCTX_2, 0x2392)
+                [!provide]                PROVIDE (USBOEPBBAX_2, 0x2391)
+                [!provide]                PROVIDE (USBOEPCNF_2, 0x2390)
+                [!provide]                PROVIDE (USBOEPSIZXY_1, 0x238f)
+                [!provide]                PROVIDE (USBOEPBCTY_1, 0x238e)
+                [!provide]                PROVIDE (USBOEPBBAY_1, 0x238d)
+                [!provide]                PROVIDE (USBOEPBCTX_1, 0x238a)
+                [!provide]                PROVIDE (USBOEPBBAX_1, 0x2389)
+                [!provide]                PROVIDE (USBOEPCNF_1, 0x2388)
+                [!provide]                PROVIDE (USBSUBLK, 0x2380)
+                [!provide]                PROVIDE (USBIEP0BUF, 0x2378)
+                [!provide]                PROVIDE (USBOEP0BUF, 0x2370)
+                [!provide]                PROVIDE (USBTOPBUFF, 0x236f)
+                [!provide]                PROVIDE (USBSTABUFF, 0x1c00)
+                [!provide]                PROVIDE (UCSCTL0, 0x160)
+                [!provide]                PROVIDE (UCSCTL0_L, 0x160)
+                0x00000161                PROVIDE (UCSCTL0_H, 0x161)
+                0x00000162                PROVIDE (UCSCTL1, 0x162)
+                [!provide]                PROVIDE (UCSCTL1_L, 0x162)
+                [!provide]                PROVIDE (UCSCTL1_H, 0x163)
+                0x00000164                PROVIDE (UCSCTL2, 0x164)
+                [!provide]                PROVIDE (UCSCTL2_L, 0x164)
+                [!provide]                PROVIDE (UCSCTL2_H, 0x165)
+                0x00000166                PROVIDE (UCSCTL3, 0x166)
+                [!provide]                PROVIDE (UCSCTL3_L, 0x166)
+                [!provide]                PROVIDE (UCSCTL3_H, 0x167)
+                0x00000168                PROVIDE (UCSCTL4, 0x168)
+                [!provide]                PROVIDE (UCSCTL4_L, 0x168)
+                [!provide]                PROVIDE (UCSCTL4_H, 0x169)
+                0x0000016a                PROVIDE (UCSCTL5, 0x16a)
+                [!provide]                PROVIDE (UCSCTL5_L, 0x16a)
+                [!provide]                PROVIDE (UCSCTL5_H, 0x16b)
+                [!provide]                PROVIDE (UCSCTL6, 0x16c)
+                [!provide]                PROVIDE (UCSCTL6_L, 0x16c)
+                [!provide]                PROVIDE (UCSCTL6_H, 0x16d)
+                [!provide]                PROVIDE (UCSCTL7, 0x16e)
+                0x0000016e                PROVIDE (UCSCTL7_L, 0x16e)
+                [!provide]                PROVIDE (UCSCTL7_H, 0x16f)
+                [!provide]                PROVIDE (UCSCTL8, 0x170)
+                [!provide]                PROVIDE (UCSCTL8_L, 0x170)
+                [!provide]                PROVIDE (UCSCTL8_H, 0x171)
+                [!provide]                PROVIDE (UCA0CTLW0, 0x5c0)
+                [!provide]                PROVIDE (UCA0CTLW0_L, 0x5c0)
+                [!provide]                PROVIDE (UCA0CTLW0_H, 0x5c1)
+                [!provide]                PROVIDE (UCA0BRW, 0x5c6)
+                [!provide]                PROVIDE (UCA0BRW_L, 0x5c6)
+                [!provide]                PROVIDE (UCA0BRW_H, 0x5c7)
+                [!provide]                PROVIDE (UCA0MCTL, 0x5c8)
+                [!provide]                PROVIDE (UCA0STAT, 0x5ca)
+                [!provide]                PROVIDE (UCA0RXBUF, 0x5cc)
+                [!provide]                PROVIDE (UCA0TXBUF, 0x5ce)
+                [!provide]                PROVIDE (UCA0ABCTL, 0x5d0)
+                [!provide]                PROVIDE (UCA0IRCTL, 0x5d2)
+                [!provide]                PROVIDE (UCA0IRCTL_L, 0x5d2)
+                [!provide]                PROVIDE (UCA0IRCTL_H, 0x5d3)
+                [!provide]                PROVIDE (UCA0ICTL, 0x5dc)
+                [!provide]                PROVIDE (UCA0ICTL_L, 0x5dc)
+                [!provide]                PROVIDE (UCA0ICTL_H, 0x5dd)
+                [!provide]                PROVIDE (UCA0IV, 0x5de)
+                [!provide]                PROVIDE (UCB0CTLW0, 0x5e0)
+                [!provide]                PROVIDE (UCB0CTLW0_L, 0x5e0)
+                [!provide]                PROVIDE (UCB0CTLW0_H, 0x5e1)
+                [!provide]                PROVIDE (UCB0BRW, 0x5e6)
+                [!provide]                PROVIDE (UCB0BRW_L, 0x5e6)
+                [!provide]                PROVIDE (UCB0BRW_H, 0x5e7)
+                [!provide]                PROVIDE (UCB0STAT, 0x5ea)
+                [!provide]                PROVIDE (UCB0RXBUF, 0x5ec)
+                [!provide]                PROVIDE (UCB0TXBUF, 0x5ee)
+                [!provide]                PROVIDE (UCB0I2COA, 0x5f0)
+                [!provide]                PROVIDE (UCB0I2COA_L, 0x5f0)
+                [!provide]                PROVIDE (UCB0I2COA_H, 0x5f1)
+                [!provide]                PROVIDE (UCB0I2CSA, 0x5f2)
+                [!provide]                PROVIDE (UCB0I2CSA_L, 0x5f2)
+                [!provide]                PROVIDE (UCB0I2CSA_H, 0x5f3)
+                [!provide]                PROVIDE (UCB0ICTL, 0x5fc)
+                [!provide]                PROVIDE (UCB0ICTL_L, 0x5fc)
+                [!provide]                PROVIDE (UCB0ICTL_H, 0x5fd)
+                [!provide]                PROVIDE (UCB0IV, 0x5fe)
+                [!provide]                PROVIDE (UCA1CTLW0, 0x600)
+                0x00000600                PROVIDE (UCA1CTLW0_L, 0x600)
+                0x00000601                PROVIDE (UCA1CTLW0_H, 0x601)
+                [!provide]                PROVIDE (UCA1BRW, 0x606)
+                0x00000606                PROVIDE (UCA1BRW_L, 0x606)
+                0x00000607                PROVIDE (UCA1BRW_H, 0x607)
+                0x00000608                PROVIDE (UCA1MCTL, 0x608)
+                0x0000060a                PROVIDE (UCA1STAT, 0x60a)
+                [!provide]                PROVIDE (UCA1RXBUF, 0x60c)
+                0x0000060e                PROVIDE (UCA1TXBUF, 0x60e)
+                [!provide]                PROVIDE (UCA1ABCTL, 0x610)
+                [!provide]                PROVIDE (UCA1IRCTL, 0x612)
+                [!provide]                PROVIDE (UCA1IRCTL_L, 0x612)
+                [!provide]                PROVIDE (UCA1IRCTL_H, 0x613)
+                [!provide]                PROVIDE (UCA1ICTL, 0x61c)
+                [!provide]                PROVIDE (UCA1ICTL_L, 0x61c)
+                0x0000061d                PROVIDE (UCA1ICTL_H, 0x61d)
+                [!provide]                PROVIDE (UCA1IV, 0x61e)
+                [!provide]                PROVIDE (UCB1CTLW0, 0x620)
+                [!provide]                PROVIDE (UCB1CTLW0_L, 0x620)
+                [!provide]                PROVIDE (UCB1CTLW0_H, 0x621)
+                [!provide]                PROVIDE (UCB1BRW, 0x626)
+                [!provide]                PROVIDE (UCB1BRW_L, 0x626)
+                [!provide]                PROVIDE (UCB1BRW_H, 0x627)
+                [!provide]                PROVIDE (UCB1STAT, 0x62a)
+                [!provide]                PROVIDE (UCB1RXBUF, 0x62c)
+                [!provide]                PROVIDE (UCB1TXBUF, 0x62e)
+                [!provide]                PROVIDE (UCB1I2COA, 0x630)
+                [!provide]                PROVIDE (UCB1I2COA_L, 0x630)
+                [!provide]                PROVIDE (UCB1I2COA_H, 0x631)
+                [!provide]                PROVIDE (UCB1I2CSA, 0x632)
+                [!provide]                PROVIDE (UCB1I2CSA_L, 0x632)
+                [!provide]                PROVIDE (UCB1I2CSA_H, 0x633)
+                [!provide]                PROVIDE (UCB1ICTL, 0x63c)
+                [!provide]                PROVIDE (UCB1ICTL_L, 0x63c)
+                [!provide]                PROVIDE (UCB1ICTL_H, 0x63d)
+                [!provide]                PROVIDE (UCB1IV, 0x63e)
+                0x0000015c                PROVIDE (WDTCTL, 0x15c)
+                [!provide]                PROVIDE (WDTCTL_L, 0x15c)
+                [!provide]                PROVIDE (WDTCTL_H, 0x15d)
+OUTPUT(RTBS_BaseProject.out elf32-msp430)
+
+.os_irq_43      0x0000b162        0x2
+ .os_irq_43     0x0000b162        0x2 ./src/main.o
+                0x0000b162                __irqHandler_43
+
+.os_irq_48      0x0000b164        0x2
+ .os_irq_48     0x0000b164        0x2 ./src/main.o
+                0x0000b164                __irqHandler_48
+
+.os_irq_53      0x0000b166        0x2
+ .os_irq_53     0x0000b166        0x2 F:/RTBS/RTBS_BaseProject - Copy/libs/RTOS\libBase_RTOS_lib.a(timer.o)
+                0x0000b166                __irqHandler_53

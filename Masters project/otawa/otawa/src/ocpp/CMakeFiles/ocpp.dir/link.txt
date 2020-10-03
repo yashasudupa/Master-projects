@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -Wall  -shared -Wl,-soname,libocpp.so -o libocpp.so CMakeFiles/ocpp.dir/Unmangler.cpp.o /home/yashas/otawa/linux-x86_64/otawa-core/lib/libelm.so -Wl,-rpath,/home/yashas/otawa/linux-x86_64/otawa-core/lib: 

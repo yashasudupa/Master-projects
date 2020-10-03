@@ -1,0 +1,246 @@
+
+.tmp/timer.msp430f5529.o:     file format elf32-msp430
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 timer.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .lower.text.os_initSystemTimer	00000000 .lower.text.os_initSystemTimer
+00000000 l    d  .lower.text.accumulate_timeline	00000000 .lower.text.accumulate_timeline
+00000000 l    d  .lower.text.update_timer	00000000 .lower.text.update_timer
+00000000 l    d  .lower.text.os_timerISR	00000000 .lower.text.os_timerISR
+00000000 l    d  .lower.text.getCurrentTime	00000000 .lower.text.getCurrentTime
+00000000 l    d  .os_irq_52	00000000 .os_irq_52
+00000000 l    d  .lower.bss	00000000 .lower.bss
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_line_end	00000000 .debug_line_end
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line.lower.text.os_initSystemTimer	00000000 .debug_line.lower.text.os_initSystemTimer
+00000000 l    d  .debug_line.lower.text.accumulate_timeline	00000000 .debug_line.lower.text.accumulate_timeline
+00000000 l    d  .debug_line.lower.text.update_timer	00000000 .debug_line.lower.text.update_timer
+00000000 l    d  .debug_line.lower.text.os_timerISR	00000000 .debug_line.lower.text.os_timerISR
+00000000 l    d  .debug_line.lower.text.getCurrentTime	00000000 .debug_line.lower.text.getCurrentTime
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000 g     F .lower.text.os_initSystemTimer	0000003c os_initSystemTimer
+00000000         *UND*	00000000 TA0CCR1
+00000000         *UND*	00000000 TA0CCR0
+00000000         *UND*	00000000 TA0CCTL1
+00000000         *UND*	00000000 TA0CTL
+00000000         *UND*	00000000 TA0EX0
+00000000         *UND*	00000000 TA0R
+00000000  w      .lower.bss	00000000 os_timeline
+00000000 g     F .lower.text.accumulate_timeline	00000086 accumulate_timeline
+00000000         *UND*	00000000 TA0IV
+00000000 g     F .lower.text.update_timer	0000000a update_timer
+00000000         *UND*	00000000 os_schedule
+00000000 g     F .lower.text.os_timerISR	00000006 os_timerISR
+00000000 g     F .lower.text.getCurrentTime	00000066 getCurrentTime
+00000000 g     O .os_irq_52	00000002 __irqHandler_52
+
+
+
+Disassembly of section .lower.text.os_initSystemTimer:
+
+00000000 <os_initSystemTimer>:
+   0:	b2 d0 00 f0 	bis	#61440,	&0x0000	;#0xf000
+   4:	00 00 
+
+00000006 <.Loc.19.1>:
+   6:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+   a:	b2 43 00 00 	mov	#-1,	&0x0000	;r3 As==11
+
+0000000e <.Loc.20.1>:
+   e:	b2 d0 10 00 	bis	#16,	&0x0000	;#0x0010
+  12:	00 00 
+
+00000014 <.Loc.21.1>:
+  14:	b2 d0 d6 02 	bis	#726,	&0x0000	;#0x02d6
+  18:	00 00 
+
+0000001a <.Loc.22.1>:
+  1a:	a2 d3 00 00 	bis	#2,	&0x0000	;r3 As==10
+
+0000001e <.Loc.23.1>:
+  1e:	82 43 00 00 	mov	#0,	&0x0000	;r3 As==00
+
+00000022 <.Loc.24.1>:
+  22:	82 43 00 00 	mov	#0,	&0x0000	;r3 As==00
+  26:	82 43 00 00 	mov	#0,	&0x0000	;r3 As==00
+  2a:	82 43 00 00 	mov	#0,	&0x0000	;r3 As==00
+  2e:	82 43 00 00 	mov	#0,	&0x0000	;r3 As==00
+
+00000032 <.Loc.25.1>:
+  32:	03 43       	nop			
+  34:	32 d2       	eint			
+  36:	03 43       	nop			
+
+00000038 <.Loc.28.1>:
+  38:	5c 43       	mov.b	#1,	r12	;r3 As==01
+  3a:	30 41       	ret			
+
+Disassembly of section .lower.text.accumulate_timeline:
+
+00000000 <accumulate_timeline>:
+   0:	1a 15       	pushm	#2,	r10	;16-bit words
+
+00000002 <.LCFI0>:
+   2:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+
+00000006 <.Loc.34.1>:
+   6:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+   a:	3d 40 f0 ff 	mov	#65520,	r13	;#0xfff0
+   e:	0d 9c       	cmp	r12,	r13	;
+  10:	00 2c       	jc	$+2      	;abs 0x12
+
+00000012 <.L11>:
+  12:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+  16:	3c 90 0e 00 	cmp	#14,	r12	;#0x000e
+  1a:	00 20       	jnz	$+2      	;abs 0x1c
+
+0000001c <.L3>:
+  1c:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+  20:	2c 53       	incd	r12		;
+  22:	82 4c 00 00 	mov	r12,	&0x0000	;
+
+00000026 <.Loc.44.1>:
+  26:	1f 42 00 00 	mov	&0x0000,r15	;0x0000
+  2a:	1f 53       	inc	r15		;
+  2c:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+  30:	1b 42 00 00 	mov	&0x0000,r11	;0x0000
+  34:	1a 42 00 00 	mov	&0x0000,r10	;0x0000
+  38:	19 42 00 00 	mov	&0x0000,r9	;0x0000
+  3c:	0f 5c       	add	r12,	r15	;
+  3e:	5d 43       	mov.b	#1,	r13	;r3 As==01
+  40:	0f 9c       	cmp	r12,	r15	;
+  42:	00 28       	jnc	$+2      	;abs 0x44
+  44:	4d 43       	clr.b	r13		;
+
+00000046 <.L5>:
+  46:	4c 43       	clr.b	r12		;
+  48:	0d 5b       	add	r11,	r13	;
+  4a:	5e 43       	mov.b	#1,	r14	;r3 As==01
+  4c:	0d 9b       	cmp	r11,	r13	;
+  4e:	00 28       	jnc	$+2      	;abs 0x50
+  50:	0e 4c       	mov	r12,	r14	;
+
+00000052 <.L7>:
+  52:	0c de       	bis	r14,	r12	;
+  54:	4e 43       	clr.b	r14		;
+  56:	0c 5a       	add	r10,	r12	;
+  58:	5b 43       	mov.b	#1,	r11	;r3 As==01
+  5a:	0c 9a       	cmp	r10,	r12	;
+  5c:	00 28       	jnc	$+2      	;abs 0x5e
+  5e:	0b 4e       	mov	r14,	r11	;
+
+00000060 <.L9>:
+  60:	0e db       	bis	r11,	r14	;
+  62:	82 4f 00 00 	mov	r15,	&0x0000	;
+  66:	82 4d 00 00 	mov	r13,	&0x0000	;
+  6a:	82 4c 00 00 	mov	r12,	&0x0000	;
+  6e:	0e 59       	add	r9,	r14	;
+  70:	82 4e 00 00 	mov	r14,	&0x0000	;
+
+00000074 <.L10>:
+  74:	1c 42 00 00 	mov	&0x0000,r12	;0x0000
+  78:	3c 90 0e 00 	cmp	#14,	r12	;#0x000e
+  7c:	00 20       	jnz	$+2      	;abs 0x7e
+
+0000007e <.Loc.46.1>:
+  7e:	b2 43 00 00 	mov	#-1,	&0x0000	;r3 As==11
+
+00000082 <.Loc.47.1>:
+  82:	19 17       	popm	#2,	r10	;16-bit words
+  84:	30 41       	ret			
+
+Disassembly of section .lower.text.update_timer:
+
+00000000 <update_timer>:
+   0:	b0 12 00 00 	call	#0		;
+
+00000004 <.LVL0>:
+   4:	b0 12 00 00 	call	#0		;
+
+00000008 <.LVL1>:
+   8:	30 41       	ret			
+
+Disassembly of section .lower.text.os_timerISR:
+
+00000000 <os_timerISR>:
+   0:	b0 12 00 00 	call	#0		;
+
+00000004 <.LVL2>:
+   4:	30 41       	ret			
+
+Disassembly of section .lower.text.getCurrentTime:
+
+00000000 <getCurrentTime>:
+   0:	3a 15       	pushm	#4,	r10	;16-bit words
+
+00000002 <.LCFI1>:
+   2:	0c 93       	cmp	#0,	r12	;r3 As==00
+   4:	00 24       	jz	$+2      	;abs 0x6
+
+00000006 <.LBB2>:
+   6:	08 42       	mov	r2,	r8	;
+
+00000008 <.LBE2>:
+   8:	32 c2       	dint			
+   a:	03 43       	nop			
+
+0000000c <.Loc.68.1>:
+   c:	1d 42 00 00 	mov	&0x0000,r13	;0x0000
+  10:	1a 42 00 00 	mov	&0x0000,r10	;0x0000
+  14:	19 42 00 00 	mov	&0x0000,r9	;0x0000
+  18:	17 42 00 00 	mov	&0x0000,r7	;0x0000
+  1c:	1b 42 00 00 	mov	&0x0000,r11	;0x0000
+  20:	0b 5d       	add	r13,	r11	;
+  22:	5e 43       	mov.b	#1,	r14	;r3 As==01
+  24:	0b 9d       	cmp	r13,	r11	;
+  26:	00 28       	jnc	$+2      	;abs 0x28
+  28:	4e 43       	clr.b	r14		;
+
+0000002a <.L19>:
+  2a:	4d 43       	clr.b	r13		;
+  2c:	0e 5a       	add	r10,	r14	;
+  2e:	5f 43       	mov.b	#1,	r15	;r3 As==01
+  30:	0e 9a       	cmp	r10,	r14	;
+  32:	00 28       	jnc	$+2      	;abs 0x34
+  34:	0f 4d       	mov	r13,	r15	;
+
+00000036 <.L21>:
+  36:	0d df       	bis	r15,	r13	;
+  38:	4f 43       	clr.b	r15		;
+  3a:	0d 59       	add	r9,	r13	;
+  3c:	5a 43       	mov.b	#1,	r10	;r3 As==01
+  3e:	0d 99       	cmp	r9,	r13	;
+  40:	00 28       	jnc	$+2      	;abs 0x42
+  42:	0a 4f       	mov	r15,	r10	;
+
+00000044 <.L23>:
+  44:	0f da       	bis	r10,	r15	;
+  46:	8c 4b 00 00 	mov	r11,	0(r12)	;
+  4a:	8c 4e 02 00 	mov	r14,	2(r12)	;
+  4e:	8c 4d 04 00 	mov	r13,	4(r12)	;
+  52:	0f 57       	add	r7,	r15	;
+  54:	8c 4f 06 00 	mov	r15,	6(r12)	;
+
+00000058 <.Loc.69.1>:
+  58:	08 93       	cmp	#0,	r8	;r3 As==00
+  5a:	00 24       	jz	$+2      	;abs 0x5c
+
+0000005c <.Loc.71.1>:
+  5c:	03 43       	nop			
+  5e:	32 d2       	eint			
+  60:	03 43       	nop			
+
+00000062 <.L16>:
+  62:	37 17       	popm	#4,	r10	;16-bit words
+  64:	30 41       	ret			

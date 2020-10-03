@@ -1,0 +1,140 @@
+// MSP430 state implementation for Fast ISS
+
+// activate only marked registers for debugging
+let gliss_debug_only = 1
+
+// register file
+reg GPR[16, u16]
+
+reg r4[1, u16] alias = GPR[4]
+reg r5[1, u16] alias = GPR[5]
+reg r6[1, u16] alias = GPR[6]
+reg r7[1, u16] alias = GPR[7]
+reg r8[1, u16] alias = GPR[8]
+reg r9[1, u16] alias = GPR[9]
+reg r10[1, u16] alias = GPR[10]
+reg r11[1, u16] alias = GPR[11]
+reg r12[1, u16] alias = GPR[12]
+reg r13[1, u16] alias = GPR[13]
+reg r14[1, u16] alias = GPR[14]
+reg r15[1, u16] alias = GPR[15]
+
+reg CG2[1, u16] alias = GPR[3]
+
+reg SR[1, u16] alias = GPR[2]
+reg CG1[1, u16] alias = GPR[2]
+
+reg SP[1, u16] alias = GPR[1]
+
+reg PC[1, u16] alias = GPR[0] pc = 1
+
+reg NPC[1, u16]
+
+/*
+macro GetSPSR() = SPSR
+macro SetSPSR(x) = SPSR = x
+*/
+
+// access to SR flags
+reg CFLAG[1, u1] alias = SR<0..0> 	//carry flag
+reg ZFLAG[1, u1] alias = SR<1..1>	// zero flag
+reg NFLAG[1, u1] alias = SR<2..2>	// Negative flag
+reg GIE[1, u1] alias = SR<3..3>     //General Interrupt Enable
+reg CPUOFF[1, u1] alias = SR<4..4>   //CPU Off
+reg OSCOFF[1, u1] alias = SR<5..5>  //Oscillator Off
+reg SCG0[1, u1] alias = SR<6..6>  //System Clock Generator 0
+reg SCG1[1, u1] alias = SR<7..7>  //System Clock Generator 1
+reg VFLAG[1, u1] alias = SR<8..8>  //Overflow bit
+reg RSCG1[1, u7] alias = SR<15..9>  //Reserved for CG1
+
+// Constant generators defintion
+
+reg CGCHOICE[1, u1]
+
+macro Constant_Generator(CGCHOICE) = \
+	if (CGCHOICE == 0) then "CG1" else "CG2" 
+
+macro CGAS(tmp) = \
+	switch (tmp) { \
+		case 00: if (Constant_Generator(CGCHOICE) == "CG1") then "" else 0x0000 endif \
+		case 01: if (Constant_Generator(CGCHOICE) == "CG1") then 0x0000 else 0x0001 endif \
+		case 10: if (Constant_Generator(CGCHOICE) == "CG1") then 0x0004 else 0x0002 endif \
+		case 11: if (Constant_Generator(CGCHOICE) == "CG1") then 0x0008 else 0xFFFF endif \
+	}
+/*
+// Memory  Not yet clear
+mem M 	[16, u8]  // 8-bits word memory
+mem M16 [16, u16] alias = M[0]	// 16-bits word memory alias
+mem M32 [32, u32] alias = M[0]	// 32-bits word memory alias
+mem M64 [64, u64] alias = M[0]	// 64-bits word memory alias
+*/
+
+//RAM
+
+mem M[128000, u16]
+
+macro SetWord(BASE_ADDR,data) = M32[BASE_ADDR] = data
+macro GetWord(BASE_ADDR) = M32[BASE_ADDR]
+macro SetHalfWord(BASE_ADDR,data) = M16[BASE_ADDR] = data
+macro GetHalfWord(BASE_ADDR) = M16[BASE_ADDR]
+
+
+// temporaries
+var Temp[1,u32]
+reg SBIT[1,u1]
+reg MSBIT[1,u1]
+reg LBIT[1,u1]
+reg HBIT[1,u1]
+reg B15SET[1,u1]
+
+// register access
+macro reg_index(r) = (r)
+
+mode REG_INDEX(r: card(4)) = r
+	syntax = if r > 3 then format("r%d", r) else
+				switch(r) {
+				case 0: "pc"
+				case 1: "sp"
+				case 2: "sr"
+				case 3: "cg1"
+				default: ""
+				}
+			endif
+	image  = format("%4b", r)
+	number = r
+
+macro Get_MSP_GPR(r) = GPR[r]
+macro Set_MSP_GPR(r, v) = if r == 0 then NPC = v; else GPR[r] = v; endif
+
+
+// R for debugging
+reg R_D[12, u16]
+	alias = GPR[0]
+	debug = 1
+	label = "Registers"
+	fmt = "R%d"
+	get = { "GLISS_GET_I"(Get_MSP_GPR("GLISS_IDX"));  }
+	set = { Set_MSP_GPR("GLISS_IDX", "GLISS_I");  }
+
+
+//yet to investigate
+
+// initialisation
+op init ()
+	action = {
+		PC = 0x0000;
+		SP = 0x0000;
+		CG1 = 0x0000;
+		CG2 = 0x0000;
+		GPR[0]=0x0000;
+		GPR[1]=0x0000;
+		GPR[2]=0x0000;
+		GPR[3]=0x0000;
+		GPR[4]=0x0000;
+		GPR[5]=0x0000;
+		GPR[6]=0x0000;
+		GPR[7]=0x0000;
+		GPR[9]=0x0000;
+		GPR[10]=0x0000;
+		GPR[11]=0x0000;	
+	 }

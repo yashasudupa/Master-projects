@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/test_stabs.dir/test_stabs.c.o  -o test_stabs  -L/home/yashas/otawa/linux-x86_64/otawa-core-build/gel/src -rdynamic ../src/libgel.so -ldl -Wl,-rpath,/home/yashas/otawa/linux-x86_64/otawa-core-build/gel/src 

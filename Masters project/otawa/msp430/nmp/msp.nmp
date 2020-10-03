@@ -1,0 +1,40 @@
+///////////////////////////////////////////////////
+//
+// New MSP description in Sim-nML
+//
+// 
+//
+///////////////////////////////////////////////////
+
+
+let proc = "msp"
+
+include "simpleType.nmp"
+include "state.nmp"
+include "tempVar.nmp"
+include "modes.nmp"
+
+// ****** instruction set ******
+
+op instruction(x : MSP_instr)
+	image = x.image
+	syntax = x.syntax
+	action = {
+		//NIA = NIA + 4;
+		x.action;
+	}
+          
+op MSP_instr = dataProcessing 
+
+
+op dataProcessing = MOVA_1 | MOVA_2 | MOVA_3 | MOVA_4 | MOVA_5 | MOVA_6 | MOVA_8 | CMPA_1
+				| ADDA_1 | SUBA_1 | MOVA_7 | CMPA_2 | ADDA_2 | SUBA_2 | ADDC | SUBC 
+				| DADD | BIT | BIC | BIS | XOR | AND 
+
+
+// ****** includes ******
+
+include "condition.nmp"
+include "dataProcessingMacro.nmp"
+include "dataProcessing.nmp"
+

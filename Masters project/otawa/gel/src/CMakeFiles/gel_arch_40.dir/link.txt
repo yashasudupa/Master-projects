@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC   -shared  -o libgel_arch_40.so CMakeFiles/gel_arch_40.dir/plugarch40.c.o libgel.so -ldl -Wl,-rpath,/home/yashas/otawa/linux-x86_64/otawa-core-build/gel/src: 

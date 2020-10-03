@@ -1,0 +1,5 @@
+/home/yashas/otawa/linux-x86_64/otawa-core/lib/otawa/proc/otawa/lpc2138.so
+/home/yashas/otawa/linux-x86_64/otawa-core/lib/otawa/proc/otawa/lpc2138.eld
+/home/yashas/otawa/linux-x86_64/otawa-core/share/Otawa/scripts/lpc2138.osx
+/home/yashas/otawa/linux-x86_64/otawa-core/share/Otawa/scripts/lpc2138/memory.xml
+/home/yashas/otawa/linux-x86_64/otawa-core/share/Otawa/scripts/lpc2138/pipeline.xml

@@ -1,0 +1,26 @@
+var structotawa_1_1sem_1_1inst =
+[
+    [ "inst", "structotawa_1_1sem_1_1inst.html#ae2196bb34af4931ac28dcfbb8ad4a05c", null ],
+    [ "inst", "structotawa_1_1sem_1_1inst.html#aac4c4e4b32eae5f4610ba1f9106aed06", null ],
+    [ "inst", "structotawa_1_1sem_1_1inst.html#acb44d3f279538b0572e48d99ba5d3a28", null ],
+    [ "inst", "structotawa_1_1sem_1_1inst.html#a4b282f4ff20ddb6b18a59f7ecbb74fa5", null ],
+    [ "inst", "structotawa_1_1sem_1_1inst.html#a1372eda8e6c595654677d612a3a261db", null ],
+    [ "a", "structotawa_1_1sem_1_1inst.html#a6a168c327224f630fa6441d917fb2f71", null ],
+    [ "addr", "structotawa_1_1sem_1_1inst.html#adaff378888d6abb88ffe833fd94f9096", null ],
+    [ "b", "structotawa_1_1sem_1_1inst.html#ad01e24ccbe856802cef744f2bc15aeab", null ],
+    [ "cond", "structotawa_1_1sem_1_1inst.html#a732437e8fd342890a53948b7c4c50c98", null ],
+    [ "cst", "structotawa_1_1sem_1_1inst.html#a16ee3d843a274315c2af5a098ad9259a", null ],
+    [ "d", "structotawa_1_1sem_1_1inst.html#ae0fc5d2f038666c5c8593a53369f8cc0", null ],
+    [ "jump", "structotawa_1_1sem_1_1inst.html#a29c6ad11e276f2f8761792b09af34779", null ],
+    [ "print", "structotawa_1_1sem_1_1inst.html#a3a06fca30000f7c2ed9d1913d41abeb5", null ],
+    [ "reg", "structotawa_1_1sem_1_1inst.html#a809a6b0366c17567d63f08f09ca21ca7", null ],
+    [ "sr", "structotawa_1_1sem_1_1inst.html#a48b405ec0fbb4db75cfaa1e68a4cda12", null ],
+    [ "type", "structotawa_1_1sem_1_1inst.html#a393c4029586c060eb1fddeda93678c71", null ],
+    [ "_d", "structotawa_1_1sem_1_1inst.html#a04e71b653a54785fd8178b78c5ecbea2", null ],
+    [ "a", "structotawa_1_1sem_1_1inst.html#a387ba316d268f933aa2b9697ac350b6e", null ],
+    [ "args", "structotawa_1_1sem_1_1inst.html#a0c175215bd8aeec3bdbbcebf14556040", null ],
+    [ "b", "structotawa_1_1sem_1_1inst.html#a5607018c4ed6e31d2d4d2529c697a998", null ],
+    [ "cst", "structotawa_1_1sem_1_1inst.html#a6f3876cdfd845d046521502f0457578b", null ],
+    [ "op", "structotawa_1_1sem_1_1inst.html#a4fb89e9ba99c43164bb3289fcc7d11d2", null ],
+    [ "regs", "structotawa_1_1sem_1_1inst.html#a6f96f376a817f2177e1e7d6d7f30debc", null ]
+];

@@ -1,0 +1,232 @@
+mode setS(set: u1) = set
+	syntax=format("%s", if set then 's' else '' endif)
+	image = format("%1b", set)  
+	action = {
+		SBIT = set;
+	}
+	value = set
+
+/*mode as(cond: card(2)) = a
+	syntax = switch(a) {
+			case 0: "00"
+			case 1: "01"
+			case 2: "10"
+			case 3: "11"
+			default: ""
+			}
+
+
+
+mode addressing_mode(cond: card(3)) = a
+	syntax = switch(a) {
+			case 0: "direct"
+			case 1: "indexed"
+			case 2: "symbolic"
+			case 3: "absolute"
+			case 4: "indirect"
+			case 5: "immediate"
+			default: ""
+			}
+
+
+
+op parameter_mode(i: REG_INDEX, cond: card(3),d: card(16),a: card(16), n: card(16)) 
+	action = {
+		 switch(cond){
+			case 0: DIRECT(i)
+			case 1: INDEXED(i,d)
+			case 2: SYMBOLIC(i)
+			case 3: ABSOLUTE(a)
+			case 4: INDIRECT(i)
+			case 5: INDIRECT_AUTO(i, type)
+			case 6: IMM(n)
+			default: ""
+			}
+		}
+*/
+
+macro DIRECT(i) = i
+	//image = format("%16b", i)
+
+macro INDEXED(i, d) = i + d     
+	//syntax = format("%d(r%d)",d,i)
+	//image = format("%16b", i + d)
+
+macro SYMBOLIC(d) = d			
+	//syntax = format("%d", d)
+	//image = format("%4b", d)
+
+macro ABSOLUTE(a) = a
+	//syntax = format("&%d", a)
+	//image = format("%20b", a)
+
+macro INDIRECT(i) = i
+	//syntax = format("@r%d", i) 
+	//image = format("%16b", i)
+
+macro INDIRECT_AUTO(i, type) = \
+	switch (type) { \
+		case 0: i = i + 1  \
+		case 1: i = i + 2 \
+		case 2: i = i + 4 \
+	 } 
+
+macro IMM(n) = n
+	//syntax = format("#%d", n)
+	//image  = format("%16b", n)
+
+op MOVA_1(Rsrc : REG_INDEX, Rdst : REG_INDEX)
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b0000%4b",INDIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		MOV(DIRECT(Rdst),INDIRECT(Rsrc));
+	}
+
+op MOVA_2(Rsrc : REG_INDEX, type : u2, Rdst : REG_INDEX)
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b0001%4b",INDIRECT_AUTO(Rsrc,type).image,DIRECT(Rdst).image)
+	action = {
+		MOV(DIRECT(Rdst),INDIRECT_AUTO(Rsrc,type));
+	}
+
+op MOVA_3(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), a: u20 )
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b0010%4b%16b",ABSOLUTE(a<19..16>).image,DIRECT(Rdst).image,a<15..0>)
+	action = {
+		MOV(DIRECT(Rdst),ABSOLUTE(a));
+	}
+
+op MOVA_4(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), d: u16 )
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b0011%4b%16b",INDEXED(Rsrc,d).image,DIRECT(Rdst).image,d)
+	action = {
+		MOV(DIRECT(Rdst),INDEXED(Rsrc,d));
+	}
+
+op MOVA_5(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), a: u20 )
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b0110%4b%16b",DIRECT(Rsrc).image,ABSOLUTE(a<19..16>).image,a<15..0>)
+	action = {
+		MOV(ABSOLUTE(a),DIRECT(Rsrc));
+	}
+
+op MOVA_6(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), d: u16 )
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b0111%4b%16b",DIRECT(Rsrc).image,INDEXED(Rdst,d).image,d<15..0>)
+	action = {
+		MOV(INDEXED(Rdst,d),DIRECT(Rsrc));
+	}
+
+op MOVA_8(Rsrc : REG_INDEX, Rdst : REG_INDEX)
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1100%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		MOV(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op CMPA_1(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), n: u16 )
+	syntax = format("CMPA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1001%4b%16b",IMM(n<19..16>).image,DIRECT(Rdst).image,n<15..0>)
+	action = {
+		CMP(DIRECT(Rdst),IMM(n));
+	}
+
+op ADDA_1(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), n: u16 )
+	syntax = format("ADDA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1010%4b%16b",IMM(n<19..16>).image,DIRECT(Rdst).image,n<15..0>)
+	action = {
+		ADD(DIRECT(Rdst),IMM(n));
+	}
+
+op SUBA_1(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), n: u16 )
+	syntax = format("SUBA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1011%4b%16b",IMM(n<19..16>).image,DIRECT(Rdst).image,n<15..0>)
+	action = {
+		SUB(DIRECT(Rdst),IMM(n));
+	}
+
+op MOVA_7(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2), n: u16 )
+	syntax = format("MOVA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1000%4b%16b",IMM(n<19..16>).image,DIRECT(Rdst).image,n<15..0>)
+	action = {
+		MOV(DIRECT(Rdst),IMM(n));
+	}
+
+op CMPA_2(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("CMPA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1101%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		CMP(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op ADDA_2(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("ADDA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1110%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		ADD(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op SUBA_2(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("SUBA %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0000%4b1111%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		SUB(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op ADDC(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("ADDC %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0110%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		ADDC(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op SUBC(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("SUBC %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%0111%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		SUBC(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op DADD(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("DADD %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%1010%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		DADD(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op BIT(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("BIT %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%1011%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		BIT(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op BIC(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("BIC %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%1100%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		BIC(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op BIS(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("BIC %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%1101%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		BIS(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op XOR(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("XOR %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%1110%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		XOR(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+op AND(Rsrc : REG_INDEX, src_cond : card(3), Rdst : REG_INDEX, dst_cond : card(3), CG_choice : CGCHOICE, AS : card(2))
+	syntax = format("AND %s,%s", Rsrc.syntax, Rdst.syntax)
+	image = format("%1111%4b0000%4b",DIRECT(Rsrc).image,DIRECT(Rdst).image)
+	action = {
+		AND(DIRECT(Rdst),DIRECT(Rsrc));
+	}
+
+

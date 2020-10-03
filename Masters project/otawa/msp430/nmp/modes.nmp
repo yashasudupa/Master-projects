@@ -1,0 +1,147 @@
+macro first_bit_on(v16) = \
+	if v16<0..0> == 1 then 15 else \
+	if v16<1..1> == 1 then 14 else \
+	if v16<2..2> == 1 then 13 else \
+	if v16<3..3> == 1 then 12 else \
+	if v16<4..4> == 1 then 11 else \
+	if v16<5..5> == 1 then 10 else \
+	if v16<6..6> == 1 then 9 else \
+	if v16<7..7> == 1 then 8 else \
+	if v16<8..8> == 1 then 7 else \
+	if v16<9..9> == 1 then 6 else \
+	if v16<10..10> == 1 then 5 else \
+	if v16<11..11> == 1 then 4 else \
+	if v16<12..12> == 1 then 3 else \
+	if v16<13..13> == 1 then 2 else \
+	if v16<14..14> == 1 then 1 else \
+	if v16<15..15> == 1 then 0 else \
+	-1 endif endif endif endif endif endif endif endif endif endif endif endif endif endif endif endif \
+
+macro syntax_reg(on_off, num_reg) = \
+	if on_off == 1 then \
+		switch (num_reg) { \
+		case 0: "pc"  \
+		case 1: "sp" \
+		case 2: "sr" \
+		case 3: "cg1" \
+		default: format("r%d", num_reg) \
+		} \
+	else \
+		"" \
+	endif \
+
+macro syntax_reg_format(idx, v16) = \
+	format("%s%s", if v16<idx..idx> && (v16 & ((1 << idx) - 1)) then ", " else "" endif, syntax_reg(v16<idx..idx>, idx)) \
+
+mode REG_LIST(r: u16) = r
+	image  = format( "%16b", r)
+	start = first_bit_on(r)
+	syntax = if start == -1 then "" else
+		format("%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+			syntax_reg_format(0, r),
+			syntax_reg_format(1, r),
+			syntax_reg_format(2, r),
+			syntax_reg_format(3, r),
+			syntax_reg_format(4, r),
+			syntax_reg_format(5, r),
+			syntax_reg_format(6, r),
+			syntax_reg_format(7, r),
+			syntax_reg_format(8, r),
+			syntax_reg_format(9, r),
+			syntax_reg_format(10, r),
+			syntax_reg_format(11, r),
+			syntax_reg_format(12, r),
+			syntax_reg_format(13, r),
+			syntax_reg_format(14, r),
+			syntax_reg_format(15, r)
+		) endif
+
+mode DIRECT(i: u16) = i
+	image = format("%16b", i)
+
+mode INDEXED(i: u4, d: u16) = i + d     
+	syntax = format("%d(r%d)",d,i)
+	image = format("%16b", i + d)
+
+mode SYMBOLIC(d: u16) = d			
+	syntax = format("%d", d)
+	image = format("%4b", d)
+
+mode ABSOLUTE(a: u20) = a
+	syntax = format("&%d", a)
+	image = format("%20b", a)
+
+mode INDIRECT(i: u4) = i
+	syntax = format("@r%d", i) 
+	image = format("%16b", i)
+
+mode INDIRECT_AUTO(i: u4, type: u2) = i \
+//	switch (type) { \
+//		case 0: i = i + 1  \
+//		case 1: i = i + 2 \
+//		case 2: i = i + 4, \
+//	 } 
+//	syntax = format("@r%d+", i) 
+//	image = format("%16b", M[i])
+
+mode IMM(n: u16) = n
+	syntax = format("#%d", n)
+	image  = format("%16b", n)
+
+
+/*
+mode INDEXED(r: DIRECT(i),d: u16) = r + d     // M[r + d]
+	syntax = format("%d(r%d)",d,i)
+	image = format("%4b", r + d)
+
+mode SYMBOLIC(r: DIRECT(i)) = r + PC				// M[r + PC]
+	syntax = format("%d", i)
+	image = format("%4b", i)
+
+mode ABSOLUTE(a: u20) = M[a]
+	syntax = format("&%d", a)
+	image = format("%16b", a)
+
+mode INDIRECT(r: DIRECT(i)) = M[i]
+	syntax = format("@%d", i) 
+	image = format("%4b", M[i])
+
+mode INDIRECT_AUTO(r: DIRECT(i)) = M[i] + 1
+	syntax = format("@%d+", i) 
+	image = format("%4b", M[i] + 1)
+
+mode IMM(n: u16) = n
+	syntax = format("#%d", n)
+	image  = format("%16b", n)
+*/
+
+
+/* Optional
+mode ShiftOperand(_Rm: REG_INDEX, _t: card(2), _n: card(5)) =
+		switch(_t) {
+		case SRType_LSL:	LSL_(R[_Rm], _n)
+		case SRType_LSR:	LSR_(R[_Rm], _n)
+		case SRType_ASR:	ASR_(R[_Rm], _n)
+		case SRType_ROR:
+			if _n != 0
+			then			ROR_(R[_Rm], _n)
+			else			RRX_(R[_Rm], 0)
+			endif
+		}
+
+	syntax =
+		switch(_t) {
+		case SRType_LSL:	format("%s, lsl #%d", _Rm.syntax, _n)
+		case SRType_LSR:	format("%s, lsr #%d", _Rm.syntax, _n)
+		case SRType_ASR:	format("%s, asr #%d", _Rm.syntax, _n)
+		case SRType_ROR:
+			if _n != 0
+			then			format("%s, ror #%d", _Rm.syntax, _n)
+			else			format("%s, rrx", _Rm.syntax)
+			endif
+		}
+
+	Rm = _Rm.number
+	t =_t
+	n = _n
+*/

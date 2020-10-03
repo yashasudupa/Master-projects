@@ -1,0 +1,58 @@
+
+.tmp/startup.msp430f5529.o:     file format elf32-msp430
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 startup.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .text.startup.main	00000000 .text.startup.main
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_line_end	00000000 .debug_line_end
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line.text.startup.main	00000000 .debug_line.text.startup.main
+00000000 l    d  .MSP430.attributes	00000000 .MSP430.attributes
+00000000 g     F .text.startup.main	00000028 main
+00000000         *UND*	00000000 clk_defaultInitClock
+00000000         *UND*	00000000 uart_setConfig
+00000000         *UND*	00000000 os_initTasks
+00000000         *UND*	00000000 registerResources
+00000000         *UND*	00000000 os_initSystemTimer
+00000000         *UND*	00000000 os_dispatcher
+
+
+
+Disassembly of section .text.startup.main:
+
+00000000 <main>:
+   0:	21 83       	decd	r1		;
+
+00000002 <.LCFI0>:
+   2:	b0 12 00 00 	call	#0		;
+
+00000006 <.LVL0>:
+   6:	81 43 00 00 	mov	#0,	0(r1)	;r3 As==00
+   a:	4f 43       	clr.b	r15		;
+   c:	0e 4f       	mov	r15,	r14	;
+   e:	3c 40 80 25 	mov	#9600,	r12	;#0x2580
+  12:	4d 43       	clr.b	r13		;
+  14:	b0 12 00 00 	call	#0		;
+
+00000018 <.LBB4>:
+  18:	b0 12 00 00 	call	#0		;
+
+0000001c <.LVL2>:
+  1c:	b0 12 00 00 	call	#0		;
+
+00000020 <.LVL3>:
+  20:	b0 12 00 00 	call	#0		;
+
+00000024 <.LVL4>:
+  24:	b0 12 00 00 	call	#0		;

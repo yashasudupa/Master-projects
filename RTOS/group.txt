@@ -1,0 +1,9 @@
+Group23
+
+Matriculation#	Name
+1647641		Keerthi Datta Konanur Ramanna
+1647695		Yashas Nagaraj Udupa
+
+Grades
+Ex1 - 4.65/10
+Ex2 - 6.00/10 (no ex2 tag on git -1)

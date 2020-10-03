@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall   CMakeFiles/elm-plugin.dir/elm-plugin.cpp.o  -o elm-plugin -rdynamic ../src/libelm.so -lxml2 -lxslt -lpthread -ldl -Wl,-rpath,/home/yashas/otawa/linux-x86_64/otawa-core-build/elm/src: 
