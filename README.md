@@ -7,3 +7,4 @@
 5. Real-time Bus systems - CAN transceiver, driver and message encoding/decoding
 5. Real-Time operating systems -  Resource Management, Scheduler/ Dispatcher,
                                   Time Management and Event Management.
+6. Embedded Internet
