@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+<root type="user">
+<map/>
+<node name="org">
+<map/>
+<node name="jabref">
+<map>
+<entry key="autoCompleteFields" value="author;editor;title;journal;publisher;keywords;crossref;related;entryset"/>
+<entry key="collectTelemetry" value="false"/>
+<entry key="askedCollectTelemetry" value="true"/>
+<entry key="windowMaximised" value="false"/>
+<entry key="autoAssignGroup" value="true"/>
+<entry key="groupEditGroupMembershipMode" value="false"/>
+<entry key="useOwner" value="true"/>
+<entry key="overwriteOwner" value="true"/>
+<entry key="useTimeStamp" value="true"/>
+<entry key="overwriteTimeStamp" value="true"/>
+<entry key="updateTimestamp" value="true"/>
+<entry key="dialogWarningForDuplicateKey" value="true"/>
+<entry key="dialogWarningForEmptyKey" value="true"/>
+<entry key="enforceLegalBibtexKey" value="true"/>
+<entry key="memoryStickMode" value="false"/>
+<entry key="confirmDelete" value="true"/>
+<entry key="allowTableEditing" value="false"/>
+<entry key="ctrlClick" value="false"/>
+<entry key="useImportInspectionDialog" value="true"/>
+<entry key="useImportInspectionDialogForSingle" value="true"/>
+<entry key="warnAboutDuplicatesInInspection" value="true"/>
+<entry key="timeStampFormat" value="yyyy-MM-dd"/>
+<entry key="timeStampField" value="timestamp"/>
+<entry key="defaultEncoding" value="UTF-8"/>
+<entry key="markImportedEntries" value="true"/>
+<entry key="unmarkAllEntriesBeforeImporting" value="true"/>
+<entry key="backup" value="false"/>
+<entry key="openLastEdited" value="false"/>
+<entry key="saveInStandardOrder" value="false"/>
+<entry key="saveInOriginalOrder" value="false"/>
+<entry key="saveInTitleOrder" value="false"/>
+<entry key="exportInStandardOrder" value="false"/>
+<entry key="exportInOriginalOrder" value="false"/>
+<entry key="exportInTitleOrder" value="false"/>
+<entry key="autoDoubleBraces" value="true"/>
+<entry key="resolveStringsAllFields" value="false"/>
+<entry key="doNotResolveStringsFor" value="url"/>
+<entry key="autoSave" value="true"/>
+<entry key="promptBeforeUsingAutosave" value="true"/>
+<entry key="autoSaveInterval" value="5"/>
+<entry key="valueDelimiters" value="1"/>
+<entry key="includeEmptyFields" value="false"/>
+<entry key="writeFieldCamelCase" value="false"/>
+<entry key="writeFieldAddSpaces" value="true"/>
+<entry key="putBracesAroundCapitals" value="title;publisher;type"/>
+<entry key="autoOpenForm" value="true"/>
+<entry key="defaultShowSource" value="false"/>
+<entry key="disableOnMultipleSelection" value="false"/>
+<entry key="shortestToComplete" value="2"/>
+<entry key="autoComplete" value="true"/>
+<entry key="showSource" value="true"/>
+<entry key="autoCompFF" value="false"/>
+<entry key="autoCompLF" value="false"/>
+<entry key="autoCompFirstNameMode" value="ONLY_FULL"/>
+<entry key="groupShowIcons" value="true"/>
+<entry key="groupShowDynamic" value="true"/>
+<entry key="groupExpandTree" value="true"/>
+<entry key="groupsDefaultField" value="keywords"/>
+<entry key="groupAutoShow" value="true"/>
+<entry key="groupAutoHide" value="true"/>
+<entry key="groupKeywordSeparator" value=", "/>
+<entry key="tableColorCodesOn" value="true"/>
+<entry key="fontFamily" value="Arial"/>
+<entry key="fontStyle" value="0"/>
+<entry key="fontSize" value="12"/>
+<entry key="overrideDefaultFonts" value="false"/>
+<entry key="tableText" value="0:0:0"/>
+<entry key="markedEntryBackground0" value="255:255:180"/>
+<entry key="tableBackground" value="255:255:255"/>
+<entry key="markedEntryBackground1" value="255:220:180"/>
+<entry key="tableReqFieldBackground" value="230:235:255"/>
+<entry key="markedEntryBackground2" value="255:180:160"/>
+<entry key="tableOptFieldBackground" value="230:255:230"/>
+<entry key="markedEntryBackground3" value="255:120:120"/>
+<entry key="incompleteEntryBackground" value="250:175:175"/>
+<entry key="markedEntryBackground4" value="255:75:75"/>
+<entry key="gridColor" value="210:210:210"/>
+<entry key="markedEntryBackground5" value="220:255:220"/>
+<entry key="fieldEditorTextColor" value="0:0:0"/>
+<entry key="validFieldBackgroundColor" value="255:255:255"/>
+<entry key="activeFieldEditorBackgroundColor" value="220:220:255"/>
+<entry key="invalidFieldBackgroundColor" value="255:0:0"/>
+<entry key="useRegExpSearch" value="false"/>
+<entry key="pdfDirectory" value=""/>
+<entry key="psDirectory" value=""/>
+<entry key="fileDirectory" value=""/>
+<entry key="bibLocationAsFileDir" value="true"/>
+<entry key="bibLocAsPrimaryDir" value="true"/>
+<entry key="autolinkExactKeyOnly" value="true"/>
+<entry key="runAutomaticFileSearch" value="false"/>
+<entry key="allowFileAutoOpenBrowse" value="true"/>
+<entry key="emailSubject" value="References"/>
+<entry key="openFoldersOfAttachedFiles" value="false"/>
+<entry key="namesAsIs" value="false"/>
+<entry key="namesFf" value="false"/>
+<entry key="namesNatbib" value="false"/>
+<entry key="namesLastOnly" value="false"/>
+<entry key="abbrAuthorNames" value="false"/>
+<entry key="autoResizeMode" value="4"/>
+<entry key="priDescending" value="false"/>
+<entry key="secDescending" value="false"/>
+<entry key="terDescending" value="false"/>
+<entry key="priSort" value="bibtexkey"/>
+<entry key="secSort" value=""/>
+<entry key="terSort" value=""/>
+<entry key="floatMarkedEntries" value="true"/>
+<entry key="fileColumn" value="true"/>
+<entry key="pdfColumn" value="false"/>
+<entry key="urlColumn" value="true"/>
+<entry key="preferUrlDoi" value="true"/>
+<entry key="arxivColumn" value="false"/>
+<entry key="showOneLetterHeadingForIconColumns" value="false"/>
+<entry key="defaultLabelPattern" value="[auth][year]"/>
+<entry key="warnBeforeOverwritingKey" value="false"/>
+<entry key="avoidOverwritingKey" value="false"/>
+<entry key="KeyPatternRegex" value=""/>
+<entry key="KeyPatternReplacement" value=""/>
+<entry key="generateKeysAfterInspection" value="true"/>
+<entry key="generateKeysBeforeSaving" value="true"/>
+<entry key="keyGenFirstLetterA" value="true"/>
+<entry key="keyGenAlwaysAddLetter" value="true"/>
+<entry key="pdfPreview" value="false"/>
+<entry key="importAlwaysUsePDFImportStyle" value="false"/>
+<entry key="importDefaultPDFimportStyle" value="2"/>
+<entry key="importFileNamePattern" value="[bibtexkey]"/>
+<entry key="useXmpPrivacyFilter" value="false"/>
+<entry key="useDefaultLookAndFeel" value="true"/>
+<entry key="useNativeFileDialogOnMac" value="false"/>
+<entry key="filechooserDisableRename" value="true"/>
+<entry key="useIEEEAbrv" value="true"/>
+<entry key="useRemoteServer" value="false"/>
+<entry key="biblatexMode" value="false"/>
+<entry key="useConvertToEquation" value="false"/>
+<entry key="useCaseKeeperOnSearch" value="true"/>
+<entry key="useUnitFormatterOnSearch" value="true"/>
+<entry key="searchPanelVisible" value="true"/>
+<entry key="searchReq" value="true"/>
+<entry key="searchOpt" value="true"/>
+<entry key="searchGen" value="true"/>
+<entry key="searchAll" value="false"/>
+<entry key="incrementS" value="false"/>
+<entry key="selectS" value="false"/>
+<entry key="floatSearch" value="true"/>
+<entry key="caseSensitiveSearch" value="false"/>
+<entry key="regExpSearch" value="true"/>
+<entry key="highLightWords" value="true"/>
+<entry key="showSearchInDialog" value="false"/>
+<entry key="searchAllBases" value="false"/>
+<entry key="CleanUpSuperscripts" value="true"/>
+<entry key="CleanUpDOI" value="true"/>
+<entry key="CleanUpMonth" value="true"/>
+<entry key="CleanUpPageNumbers" value="true"/>
+<entry key="CleanUpMakePathsRelative" value="true"/>
+<entry key="CleanUpRenamePDF" value="true"/>
+<entry key="CleanUpRenamePDFonlyRelativePaths" value="false"/>
+<entry key="CleanUpUpgradeExternalLinks" value="false"/>
+<entry key="CleanUpHTML" value="true"/>
+<entry key="CleanUpCase" value="true"/>
+<entry key="CleanUpLaTeX" value="true"/>
+<entry key="CleanUpUnits" value="true"/>
+<entry key="CleanUpUnicode" value="true"/>
+<entry key="findUnlinkedFilesDialogSize" value="504;748"/>
+<entry key="useProxyAuthentication" value="false"/>
+<entry key="newline" value="&#10;"/>
+<entry key="reformatFileOnSaveAndExport" value="true"/>
+<entry key="defaultBibtexKeyPattern" value="[auth][year]"/>
+<entry key="exportInSpecifiedOrder" value="true"/>
+<entry key="exportPriDescending" value="false"/>
+<entry key="exportSecDescending" value="false"/>
+<entry key="exportTerDescending" value="false"/>
+<entry key="exportPriSort" value="bibtexkey"/>
+<entry key="exportSecSort" value="author"/>
+<entry key="exportTerSort" value="title"/>
+<entry key="grayOutNonHits" value="true"/>
+<entry key="columnNames" value="entrytype;author/editor/organization;title;year;journal/booktitle;bibtexkey;refbase"/>
+<entry key="columnWidths" value="75;300;470;60;130;100;75"/>
+<entry key="customTabName_0" value="General"/>
+<entry key="customTabFields_0" value="crossref;keywords;file;doi;url;urldate;groups;owner;timestamp;refbase;project;openaccess"/>
+</map>
+<node name="bibtexkeypatterns">
+<map/>
+</node>
+<node name="customizedBiblatexTypes">
+<map/>
+</node>
+<node name="customizedBibtexTypes">
+<map/>
+</node>
+<node name="labelPattern">
+<map/>
+</node>
+</node>
+</node>
+</root>
+</preferences>

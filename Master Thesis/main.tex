@@ -1,0 +1,428 @@
+	
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[
+	twoside, 
+	openany, 
+	11pt,
+	bibliography=totoc,
+]{scrreprt}
+
+\usepackage{rerunfilecheck}
+
+\input{bib/kai_defines.tex}
+
+%\usepackage[
+%	chapter,
+%	cache=false,
+%]{minted}
+%\setminted{
+%	autogobble=true,
+%	linenos,
+%	tabsize=4,
+%	fontsize=\small,
+%}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[LGRgreek]{mathastext}
+\usepackage[
+	usenames,
+	dvipsnames,
+	svgnames,
+	table,
+]{xcolor}
+\usepackage[
+	prefix=sol-,
+]{xcolor-solarized}
+
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{listings}
+\lstset{language=C,
+	basicstyle=\small,
+	keywordstyle=\color{black}\bfseries\underbar,
+	identifierstyle=,
+	commentstyle=\color{white},
+	stringstyle=\ttfamily,
+	showstringspaces=false}
+
+\graphicspath{ {./images/} }
+
+
+%\usepackage[
+%	chapter,
+%	cache=false,
+%]{minted}
+%\setminted{
+%	autogobble=true,
+%	linenos,
+%	tabsize=4,
+%	fontsize=\small,
+%}
+
+\floatstyle{plaintop}\restylefloat{listing}	%	set the listing-caption above
+
+\usepackage{scrhack}	%	fixes add float to lists - must be loaded after minted
+
+\usepackage[ngerman,english]{babel}
+\usepackage{csquotes}
+\usepackage[	%	http://tex.stackexchange.com/questions/5091
+	backend=bibtex,
+	backref=true,
+	sorting=none,	%	sorting of citations: none = in order
+	style=ieee,
+	dashed=false,
+]{biblatex}
+
+% https://tex.stackexchange.com/questions/451192
+\usepackage{silence}
+\WarningFilter{biblatex}{File 'english-ieee.lbx'}
+\WarningFilter{biblatex}{File 'german-ieee.lbx'}
+\WarningFilter{biblatex}{File 'ngerman-ieee.lbx'}
+
+\usepackage{xfrac}
+% C code
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\usepackage[
+	version-1-compatibility,
+	alsoload=binary,
+	binary-units,
+	per=slash,
+]{siunitx}
+
+\sisetup{
+	inter-unit-product = $\cdot$,
+	list-final-separator = { \translate{and} },
+	list-pair-separator = { \translate{and} },
+	range-phrase = { \translate{to (numerical range)} },
+	scientific-notation = engineering,	%	exponent is always a power of 3
+	exponent-to-prefix,
+	exponent-product = \cdot,
+	round-precision = 2,
+	round-mode = places,
+	detect-weight=true,
+	detect-family=true,
+}
+
+%	textcomp provides the textmu version that microtype can handle with siunitx
+%		see http://tex.stackexchange.com/questions/74670
+\usepackage{textcomp}
+\usepackage{microtype}
+
+
+%Plots
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+
+%Redefine the underscore command
+\let\underscore\_
+\newcommand{\myunderscore}{\renewcommand{\_}{\underscore\hspace{0pt}}}
+
+%font alignment
+\renewcommand{\baselinestretch}{1.00} 
+
+\usepackage[
+	unicode=true,			%	non-Latin characters in Acrobat�s bookmarks
+	hypertexnames=true,		%	fixes ``destination with the same identifier'' warning
+	bookmarks=true,			%	show bookmarks bar?
+	bookmarksnumbered=true,
+	bookmarksopen=false,
+%	breaklinks=true,		%	set true to word wrap long lines in listof* properly
+	pdfborder={0 0 0},
+%	pagebackref=true,		%	true|false	%	included in biblatex
+	colorlinks=true,		%	true: colored links; false: boxes around the link
+%	ocgcolorlinks=true,		%	Optional Content Groups - colored links, when viewed, but printed without colors: http://tex.stackexchange.com/questions/230752
+	linkcolor=sol-blue,		%	color of internal links (change box color with linkbordercolor)
+	citecolor=sol-green,	%	color of links to bibliography
+	filecolor=sol-magenta,	%	color of file links
+	urlcolor=sol-cyan,		%	color of external links
+%	pdfauthor={Yashas Udupa},	%	author
+]{hyperref}
+\hypersetup{
+%	pdftoolbar=true,		% show Acrobat�s toolbar?
+%	pdfmenubar=true,		% show Acrobat�s menu?
+	pdffitwindow=true,		% window fit to page when opened
+	pdfstartview={FitH},	% fits the width of the page to the window
+%	pdfsubject={Subject},	% subject of the document
+%	pdfcreator={Creator},	% creator of the document
+%	pdfproducer={Producer},	% producer of the document
+%	pdfkeywords={keyword1, key2, key3}, % list of keywords
+	pdfnewwindow=true,		% links in new PDF window
+}
+
+%List of acronyms
+%\usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries} %Load glossaries package
+%	glossaries must be loaded after hyperref
+\usepackage{mfirstuc}
+\usepackage{mfirstuc-english}
+\usepackage{makeidx}
+\usepackage[
+	toc,			%	include in table of contents
+	nonumberlist,	%	suppress the location list
+	%nogroupskip,	%	suppress alphabetic grouping of entries
+	nomain,
+%	nopostdot,		%	suppress terminating dot
+	acronym,		%	add acronyms
+	notree,			%	no tree formats
+	shortcuts,		%	shortcut commands (ac, acs, acl, acp, ...)
+	savewrites,		%	reduce number of \write streams
+]{glossaries}
+%\usepackage[xindy,
+ %           toc,
+  %          section,
+   %         acronym]{glossaries}
+\ifusesymbols
+\newglossary[slg]{symbolslist}{syi}{syg}{Symbols}
+\fi
+
+%	non-breakable space between long and short form
+\renewcommand*{\glsacspace}[1]{~}
+
+%	use the description on first use,
+\newacronymstyle{descfirst-long-sp-short}{%
+	\GlsUseAcrEntryDispStyle{long-short}%
+}{%
+	\GlsUseAcrStyleDefs{long-short}%
+	\renewcommand*{\genacrfullformat}[2]{%
+		\glsentrydesc{##1}##2\glsacspace{##1}%
+		(\protect\firstacronymfont{\glsentryshort{##1}})%
+	}%
+	\renewcommand*{\Genacrfullformat}[2]{%
+		\Glsentrydesc{##1}##2\glsacspace{##1}%
+		(\protect\firstacronymfont{\glsentryshort{##1}})%
+	}%
+	\renewcommand*{\genplacrfullformat}[2]{%
+		\glsentrydescplural{##1}##2\glsacspace{##1}%
+		(\protect\firstacronymfont{\glsentryshortpl{##1}})%
+	}%
+	\renewcommand*{\Genplacrfullformat}[2]{%
+		\Glsentrydescplural{##1}##2\glsacspace{##1}%
+		(\protect\firstacronymfont{\glsentryshortpl{##1}})%
+	}%
+}
+
+\setacronymstyle{%
+	descfirst-long-sp-short%custom format: see directly above
+%	long-short%	on first use display the long form with the short form in parentheses
+%	short-long%	on first use display the short form with the long form in parentheses
+%	long-short-desc%	like long-short but you need to specify the description
+%	short-long-desc%	like short-long but  you  need  to  specify  the  description
+%	footnote%	on first use display the short form with a footnote on the page
+%	dua%	always expand
+}
+
+%	cleveref must be loaded after hyperref
+\usepackage[
+	capitalize,
+	nameinlink,
+	noabbrev,
+]{cleveref}
+
+%	header style
+%\usepackage[
+%	automark,
+%	headsepline,
+%]{scrlayer-scrpage}
+%\clearpairofpagestyles
+%\cfoot[\pagemark]{\pagemark}
+%\lehead{\headmark}
+%\rohead{\headmark}
+%\pagestyle{scrheadings}
+
+%	paragraph settings
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\linespread{1.1}
+
+\renewcommand{\floatpagefraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+
+\usepackage[all]{nowidow}
+
+%\usepackage[acronym,nomain,nonumberlist]{glossaries}
+
+%	don't print single occurences:	http://tex.stackexchange.com/questions/98494
+\ifnosingle
+\glsenableentrycount	%	enable \cgls, \cglspl, \cGls, \cGlspl
+\let\gls\cgls
+\let\glspl\cglspl
+\let\Gls\cGls
+\let\Glspl\cGlspl
+\fi
+
+%	load as very last package!
+\usepackage[shortcuts]{extdash}
+
+% prepare the acronyms and symbols list
+\input{bib/abbr_symbols}
+
+\newacronym{Vswh}{Vswh}{Switch Node Voltage}
+\newacronym{BCET}{BCET}{Best-Case Execution Time}
+%\newacronym{WCET}{WCET}{Worst-Case Execution Time}
+%\newacronym{RPN}{RPN}{Reverse Polish Notation}
+%Here we define a set of example acronyms
+
+\makenoidxglossaries 
+%\makeindex
+
+%Random
+\usepackage{dblfloatfix}
+\usepackage{afterpage}
+%\newcommand\blankpage{
+    %\null
+    %\thispagestyle{plain}
+    %\addtocounter{page}{-1}
+    %\newpage}
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+   %}
+%Definition of caption
+\DeclareCaptionFormat{citation}{
+   \ifx\captioncitation\relax\relax\else
+    \captioncitation\par
+   \fi
+   #1#2#3\par}
+\newcommand*\setcaptioncitation[1]{\def\captioncitation{\textit{Source:}~#1}}
+\let\captioncitation\relax
+\captionsetup{format=citation,justification=centering}
+
+%for enumeration
+\usepackage{enumitem}
+\usepackage{verbatim}
+%\usepackage{mathptmx}
+\usepackage[sc]{mathpazo}
+%\usepackage{helvet}
+%\usepackage{comment}
+\usepackage{placeins}
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+% includes "appendices" in the table of contentts
+\usepackage[toc,page]{appendix}
+
+% load package with ``framed'' and ``numbered'' option.
+%\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{listings}
+\usepackage{siunitx} 
+
+\usepackage{pdfpages}
+\usepackage{textcomp}
+
+%\usepackage{titlesec}	
+\usepackage{amsmath}
+
+\linespread{1.2}
+
+%To remove chapter headings
+%\titleformat{\chapter}[display]
+ % {\Huge\bfseries}
+  %{}
+  %{0pt}
+  %{\thechapter.\ }
+
+%\titleformat{name=\chapter,numberless}[display]
+%  {\Huge\bfseries}
+%  {}
+%  {0pt}
+%  {}
+
+%\setglossarystyle{long}
+
+%	bib-resources must be specified in main file for TeXlipse to recognize them
+\addbibresource{bib/library.bib}
+\addbibresource{bib/website-literature/2006.bib}
+\addbibresource{bib/website-literature/2007.bib}
+\addbibresource{bib/website-literature/2008.bib}
+\addbibresource{bib/website-literature/2009.bib}
+\addbibresource{bib/website-literature/2010.bib}
+\addbibresource{bib/website-literature/2011.bib}
+\addbibresource{bib/website-literature/2012.bib}
+\addbibresource{bib/website-literature/2013.bib}
+\addbibresource{bib/website-literature/2014.bib}
+\addbibresource{bib/website-literature/2015.bib}
+\addbibresource{bib/website-literature/2016.bib}
+\addbibresource{bib/website-literature/2017.bib}
+\addbibresource{bib/website-literature/2018.bib}
+\addbibresource{bib/website-literature/2019.bib}
+
+\begin{document}
+
+\input{Firstpage}
+\pagenumbering{Roman}
+
+\cleardoubleplainpage
+\include{affidavit}
+\cleardoubleplainpage
+
+\include{abstract}
+\cleardoubleplainpage
+\include{Acknowledgements}
+
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\cleardoubleplainpage
+\cleardoubleplainpage
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\pagenumbering{arabic}
+%\setcounter{page}{1}
+%\afterpage{\null\newpage}
+\include{ch_1_introduction}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\include{ch_2_Fundamentals}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\include{ch_3_Design_and_concept}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+%\cleardoubleplainpage
+%\cleardoubleplainpage
+\include{ch_4_approach_and_methodology}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+%\cleardoubleplainpage
+\include{ch_5_implementation}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+%\cleardoubleplainpage
+%cleardoubleplainpage
+\include{ch_6_Evaluation_and_analysis}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+%\cleardoubleplainpage
+\include{ch_7_Summary}
+%\include{Outlook.tex}
+%	Bibliography, Acronyms, Symbols ...
+\afterpage{\null\newpage}
+\afterpage{\null\newpage}
+\printbibliography
+%\glsaddall
+%\cleardoubleplainpage
+\afterpage{\null\newpage}
+\printnoidxglossaries
+%\printglossary
+\end{document}

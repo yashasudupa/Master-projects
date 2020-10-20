@@ -1,0 +1,10 @@
+[submodule "website-literature"]
+	path = website-literature
+	url = ssh://git@bitbucket.vih.infineon.com:7999/kai/website-literature.git
+	branch = master
+[submodule "bibtex-check"]
+	path = bibtex-check
+	url = ssh://git@bitbucket.vih.infineon.com:7999/kai/bibtex-check.git
+[submodule "documents"]
+	path = documents
+	url = ssh://git@bitbucket.vih.infineon.com:7999/kai/bib_documents.git

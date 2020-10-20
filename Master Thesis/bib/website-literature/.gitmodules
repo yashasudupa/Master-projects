@@ -1,0 +1,7 @@
+[submodule "bib2xhtml"]
+	path = bib2xhtml
+	url = ssh://git@bitbucket.vih.infineon.com:7999/kai/bib2xhtml.git
+	branch = master
+[submodule "bibtex-check"]
+	path = bibtex-check
+	url = ssh://git@bitbucket.vih.infineon.com:7999/kai/bibtex-check.git

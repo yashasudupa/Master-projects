@@ -1,0 +1,566 @@
+%	you can provide your own version of \glsmark
+%	if not, it will be declared here
+\ifdef{\glsmark}{}{%
+%	\newcommand*{\glsmark}[1]{#1}% no modification
+%	\newcommand*{\glsmark}[1]{\underline{#1}}%
+	\newcommand*{\glsmark}[1]{\uppercase{#1}}%
+}
+
+%	abbreviations here:
+%		the description will be used on the first expansion and on the acronym list
+%		the long text will be used when only one instance is used (i.e. plain english text)
+\newacronym{2DEG}		{2DEG}		{two-dimensional electron gas}
+
+\newacronym[
+	description={\glsmark{a}lternating \glsmark{c}urrent},
+]{AC}			{AC}		{alternating current}
+\newacronym[
+	description={\glsmark{A}ctive \glsmark{C}ycle \glsmark{U}niversal \glsmark{T}est \glsmark{E}quipment},
+]{ACUTE}		{ACUTE}		{Active Cycle Universal Test Equipment}
+\newacronym{AD}			{A/D}		{Analog-to-Digital}
+%\newacronym{ADC}		{ADC}		{Analog-to-Digital Conversion}	%	conflict, please copy or create your own
+%\newacronym{ADC}		{ADC}		{Analog-to-Digital Converter}	%	conflict, please copy or create your own
+%\newacronym[
+%	description={\glsmark{A}utomotive \glsmark{E}lectronics \glsmark{C}ouncil},
+%]{AEC}		{AEC}		{Automotive Electronics Council} % replaced by glossary entry
+\newacronym{AlGaN}		{AlGaN}		{Aluminium Gallium Nitride}
+\newacronym[
+	description={\glsmark{a}rithmetic \glsmark{l}ogic \glsmark{u}nit}
+]{ALU}		{ALU}		{arithmetic logic unit}
+\newacronym[
+	description={\glsmark{a}nisotropic \glsmark{m}agneto \glsmark{r}esistance}
+]{AMR}		{AMR}		{anisotropic magneto resistance}
+\newacronym[
+	description={\glsmark{A}pplication \glsmark{P}rogramming \glsmark{I}nterface},
+]{API}		{API}		{application programming interface}
+\newacronym[
+	description={\glsmark{A}dvanced \glsmark{R}epetitive \glsmark{C}lamping \glsmark{T}est \glsmark{I}ntegrated \glsmark{S}ystem},
+]{ARCTIS}		{ARCTIS}	{Advanced Repetitive Clamping Test Integrated System}
+%\newacronym{ARM}		{ARM}		{Advanced {\glsentryshort{RISC}} Machines}	%	conflict, please copy or create your own
+\newacronym{ASIC}		{ASIC}		{Application-specific Integrated Circuit}
+\newacronym{ATE}		{ATE}		{Automated Test Equipment}
+\newacronym{ATML}		{ATML}		{Automatic Test Markup Language}
+\newacronym{AToM}		{AToM}		{Automatic Testing of MoPS}
+\newacronym{AUX}		{AUX}		{Auxiliary}
+
+\newacronym{BGA}		{BGA}		{Ball Grid Array}
+\newacronym{BIST}		{BIST}		{Built-In Self-Test}
+\newacronym[
+	description={\glsmark{b}ipolar \glsmark{j}unction \glsmark{t}ransistor}
+]{BJT}		{BJT}		{bipolar junction transistor}
+\newacronym{BMP}		{BMP}		{bitmap}
+
+\newacronym{CAN}		{CAN}		{Controller Area Network}
+\newacronym{CCAN}		{CCAN}		{Comprehensive C Archive Network}
+\newacronym[
+	description={\glsmark{c}umulative \glsmark{d}ensity \glsmark{f}unction}
+]{CDF}		{CDF}		{cumulative density function}
+\newacronym{CDIR}		{CDIR}		{Classless Inter-Domain Routing}
+\newacronym{CiA}		{CiA}		{{\acrshort{CAN}}-in-Automation}
+\newacronym{CoE}		{CoE}		{CANopen over EtherCAT}
+\newacronym{CGPM}		{CGPM}		{Conférence Générale des Poids et Mesures (General Conference on Weights and Measures)}
+\newacronym{CM}			{CM}		{Common Mode}
+\newacronym[
+	description={\glsmark{c}omplementary \glsmark{m}etal–\glsmark{o}xide–\glsmark{s}emiconductor},
+]{CMOS}		{CMOS}		{complementary metal–oxide–semiconductor}
+\newacronym{CMRR}		{CMRR}		{Common Mode Rejection Ratio}
+\newacronym{CMTI}		{CMTI}		{Common Mode Transient Immunity}
+\newacronym{CORBA}		{CORBA}		{Common Object Request Broker Architecture}
+\newacronym{COTS}		{COTS}		{Commercial off-the-shelf}
+\newacronym{CPHA}		{CPHA}		{Clock Phase}
+\newacronym{CPOL}		{CPOL}		{Clock Polarity}
+\newacronym{CPU}		{CPU}		{Central Processing Unit}
+\newacronym{CQR}		{CQR}		{Communication Quality Rating}
+\newacronym{CRC}		{CRC}		{Cyclic Redundancy Check}
+\newacronym{CS}			{CS}		{Carrier Sense}
+\newacronym{CSS}		{CSS}		{Cascading Style Sheet}
+\newacronym{CSMA}		{CSMA}		{Carrier Sense Multiple Access}
+\newacronym{CSMA/CA}	{CSMA/CA}	{Carrier Sense Multiple Access / Collision Avoidance}
+\newacronym{CSMA/CD}	{CSMA/CD}	{Carrier Sense Multiple Access / Collision Detection}
+\newacronym{CSMA/CR}	{CSMA/CR}	{Carrier Sense Multiple Access / Collision Resolution}
+\newacronym[
+	description={\glsmark{c}urrent \glsmark{t}ransformer}
+]{CT}			{CT}		{current transformer}
+\newacronym{CTE}		{CTE}		{Coefficient of Thermal Expansion}
+\newacronym{CUAS}		{CUAS}		{Carinthia University of Applied Sciences}
+
+\newacronym[
+	longplural={Devices Under Test},
+	shortplural={DUTs},
+	description={\glsmark{d}evice \glsmark{u}nder \glsmark{t}est},
+]			{DUT}		{DUT}		{device under test}
+\newacronym{DA}			{D/A}		{Digital-to-Analog}
+%\newacronym{DAC}		{DAC}		{Digital-to-Analog Conversion}	%	conflict, please copy or create your own
+%\newacronym{DAC}		{DAC}		{Digital-to-Analog Converter}	%	conflict, please copy or create your own
+\newacronym{DAP}		{DAP}		{Device Access Port}
+\newacronym{DAQ}		{DAQ}		{Data AcQuisition}
+\newacronym{DAVE}		{DAVE}		{Digital Application Virtual Engineer}
+\newacronym{DC}			{DC}		{Direct Current}
+\newacronym{DHCP}		{DHCP}		{Dynamic Host Configuration Protocol}
+\newacronym{DGD}		{DGD}		{Diagnostic Gate Driver}
+\newacronym{DIO}		{DIO}		{Digital Input Output}
+\newacronym{DIP}		{DIP}		{Dual In-line Package}
+\newacronym{DL}			{DL}		{Data Logger}
+\newacronym{DLL}		{DLL}		{Dynamic Link Library}
+\newacronym{DLMS}		{DLMS}		{Device Level Maverick Screening}
+\newacronym{DMA}		{DMA}		{Direct Memory Access}
+\newacronym{DMOS}		{DMOS}		{Double diffused {\acrshort{MOS}} transistor}
+\newacronym{DOE}		{DOE}		{Design of Experiments}
+\newacronym{DoE}		{DoE}		{Design of Experiment}
+\newacronym{DoS}		{DoS}		{Denial-of-Service}
+\newacronym{DRAM}		{DRAM}		{Dynamic {\glsentryshort{RAM}}}
+\newacronym{DSD}		{DSD}		{Delta-Sigma Demodulator}
+\newacronym{DSP}		{DSP}		{Digital Signal Processor}
+\newacronym{DTD}		{DTD}		{Document Type Declaration}
+\newacronym{DTLS}		{DTLS}		{Datagram Transport Layer Security}
+
+\newacronym{EAGLE}		{EAGLE}		{Easily Applicable Graphical Layout Editor}
+\newacronym{EAM}		{EAM}		{Institut für Elektrische Antriebstechnik und Maschinen an der TU Graz}
+\newacronym{ECU}		{ECU}		{Embedded Control Unit}
+\newacronym{EBU}		{EBU}		{External Bus Unit}
+\newacronym{EDF}		{EDF}		{Earliest Deadline First}
+\newacronym[
+	description={\glsmark{e}lectronic \glsmark{d}ata \glsmark{s}heet},
+]{EDS}		{EDS}		{electronic data sheet}
+
+\newacronym[
+	description={\glsmark{}lectromagnetic \glsmark{c}compatibility},
+]{EMC}		{EMC}		{electromagnetic compatibility}
+\newacronym{EMI}		{EMI}		{Electromagnetic Interference}
+\newacronym{EoE}		{EoE}		{Ethernet over EtherCAT}
+\newacronym{EOL}		{EOL}		{End of Life}
+\newacronym{EEPROM}		{EEPROM}	{Electrically Erasable Programmable Read-Only Memory }
+\newacronym{ERU}		{ERU}		{Event Request Unit}
+\newacronym[
+	description={\glsmark{e}lastic \glsmark{s}lot \glsmark{b}oundary}
+]{ESB}		{ESB}		{elastic slot boundary}
+\newacronym{ESD}		{ESD}		{Electro-Static Discharge}
+\newacronym[
+	description={\glsmark{e}quivalent \glsmark{s}eries \glsmark{i}nductance}
+]{ESL}		{ESL}		{equivalent series inductance}
+\newacronym{ET}			{ET}		{Event Triggered}
+\newacronym{EtherCAT}	{EtherCAT}	{Ethernet for Control Automation Technology}
+
+\newacronym{FCE}		{FCE}		{Flexible CRC Engine}
+\newacronym{FCFS}		{FCFS}		{First Come First Serve}
+\newacronym{FDD}		{FDD}		{Fault Detection and Diagnosis}
+\newacronym{FDI}		{FDI}		{Fault Detection and Isolation}
+\newacronym{FET}		{FET}		{Field Effect Transistor}
+\newacronym{FEM}		{FEM}		{Finite Element Method}
+\newacronym{FIFO}		{FIFO}		{First In First Out}
+\newacronym[
+	description={\glsmark{f}ield \glsmark{p}rogrammable \glsmark{g}ate \glsmark{a}rray},
+]{FPGA}		{FPGA}		{field programmable gate array}
+\newacronym{FMMU}		{FMMU}		{Fieldbus Memory Management Unit}
+\newacronym{FMS}		{FMS}		{Fieldbus Message Specification}
+\newacronym{FoE}		{FoE}		{File access over EtherCAT}
+\newacronym{FTT}		{FTT}		{Flexible Time Triggered}
+\newacronym[
+	description={\glsmark{f}inite-\glsmark{s}tate \glsmark{m}achine},
+]{FSM}		{FSM}		{finite-state machine}
+\newacronym{FTP}		{FTP}		{File Transfer Protocol}
+\newacronym{GaN}		{GaN}		{Gallium Nitride}
+\newacronym[
+	description={\glsmark{g}iant \glsmark{m}agneto \glsmark{r}esistance}
+]{GMR}		{GMR}		{giant magneto resistance}
+\newacronym{GPIB}		{GPIB}		{General Purpose Interface Bus}
+\newacronym{GPIO}		{GPIO}		{General Purpose Input Output}
+\newacronym[
+	description={\glsmark{g}raphical \glsmark{u}ser \glsmark{i}nterface},
+]{GUI}		{GUI}		{graphical user interface}
+\newacronym{HEMT}		{HEMT}	{High Electron Mobility Transistor}
+\newacronym{HDL}		{HDL}		{Hardware Description Language}
+\newacronym{HID}		{HID}		{Human Interface Device}
+\newacronym[
+	description={\glsmark{h}ardware-\glsmark{i}n-the-\glsmark{l}oop},
+]{HIL}		{HIL}		{hardware-in-the-loop}
+\newacronym{HRO}		{HRO}		{High Resolution Oscilloscope}
+\newacronym{HTFB}		{HTFB}		{High Temperature Forward Bias}
+\newacronym{HTGB}		{HTGB}		{High Temperature Gate Bias}
+\newacronym{HTML}		{HTML}		{Hyper Text Markup Language}
+\newacronym{HTRB}		{HTRB}		{High Temperature Reverse Bias}
+\newacronym[
+	description={\glsmark{h}igh \glsmark{t}emperature \glsmark{o}perating \glsmark{l}ife},
+]{HTOL}		{HTOL}		{High Temperature Operating Life}
+\newacronym{HTSL}		{HTSL}		{High Temperature Storage Live Test}
+\newacronym{HV}			{HV}		{High Voltage}
+\newacronym{HW}			{HW}		{hardware}
+
+\newacronym{IC}			{IC}		{Integrated Circuit}
+\newacronym{ID}			{ID}		{Identification}
+\newacronym[
+	description={\glsmark{i}ntegrated \glsmark{d}evelopment \glsmark{e}nvironment}
+]{IDE}		{IDE}		{integrated development environment}
+\newacronym{Idrv}		{Idrv}		{Driver current}
+\newacronym{IEC}		{IEC}		{International Electrotechnical Commission}
+\newacronym{IFAT}		{IFAT}		{Infineon Technologies Austria AG}
+\newacronym{IFS}		{IFS}		{Interface File System}
+\newacronym{IGBT}		{IGBT}		{Insulated Gate Bipolar Transistor}
+\newacronym{IIC}		{IIC}		{Inter-Integrated Circuit}
+\newacronym{Iin}		{Iin}		{Converter input current}
+\newacronym{I2C}		{I\textsuperscript{2}C}	{Inter-Integrated Circuit}
+\newacronym{Imon}			{Imon}		{IC current monitor}
+\newacronym{IO}			{IO}		{Input \& Output}
+\newacronym{IoT}		{IoT}		{Internet of Things}
+\newacronym{Iout}		{Iout}		{Converter output current}
+%	conflict, please copy or create your own
+%\newacronym{IP}			{IP}		{Intellectual Property}
+%\newacronym{IP}			{IP}		{Internet Protocol}
+\newacronym[
+	description={\glsmark{I}nternet \glsmark{p}rotocol},
+]{IPv4}		{IP}		{Internet protocol}
+\newacronym{ISO}		{ISO}		{International Organization for Standardization}
+\newacronym{ISR}		{ISR}		{Interrupt Service Routine}
+\newacronym{ITS-90}		{ITS-90}	{International Temperature Scale of 1990}
+
+%\newacronym{JEDEC}		{JEDEC}		{Joint Electron Device Engineering Council}	% moved to glossary
+\newacronym[
+	description={\glsmark{J}ava\glsmark{S}cript \glsmark{o}bject \glsmark{n}otation},
+]{JSON}					{JSON}		{JavaScript object notation}
+\newacronym{JTAG}		{JTAG}		{Joint Test Action Group}
+
+\newacronym[
+	description={\glsmark{K}ompetenzzentrum \glsmark{A}utomobil- und \glsmark{I}ndustrie-Elektronik},
+]{KAI}		{KAI}		{Kompetenzzentrum Automobil- und Industrie-Elektronik}
+\newacronym{KATE}		{KA$^2$TE}	{{\acrshort{KAI}} {\acrshort{ACUTE}} \& {\acrshort{ARCTIS}} Test Environment}
+
+\newacronym{LabVIEW}	{LabVIEW}	{Laboratory Virtual Instrument Engineering Workbench}
+\newacronym[
+	description={\glsmark{l}ocal \glsmark{a}rea \glsmark{n}etwork},
+]{LAN}		{LAN}		{local area network}
+\newacronym[
+	description={\glsmark{l}ow \glsmark{d}ropout \glsmark{l}linear \glsmark{r}egulator},
+]{LDO}		{LDO}		{low dropout linear regulator}
+\newacronym{LED}		{LED}		{Light Emitting Diode}
+\newacronym[
+	description={\glsmark{l}inear \glsmark{f}eet \glsmark{p}er \glsmark{m}inute},
+]{LFM}		{LFM}		{linear feet per minute}
+\newacronym{LQR}		{LQR}		{Linear Quadratic Regulator}
+\newacronym{LSB}		{LSB}		{Least Significant Bit}
+\newacronym{LTOL}		{LTOL}		{Low Temperature Operating Life}
+\newacronym{LUFA}		{LUFA}		{Lightweight USB Framework for AVRs}
+\newacronym{LUT}		{LUT}			{LookUp-Table}
+\newacronym{LV}			{LV}		{Low Voltage}
+\newacronym{LXI}		{LXI}		{{\glsentryshort{LAN}} eXtensions for Instrumentation}
+
+\newacronym{MA}			{MA}		{Multiply-Accumulate}
+\newacronym{MAC}		{MAC}		{Medium Access Control}
+\newacronym{MAX}		{MAX}		{Measurement \& Automation eXplorer}
+\newacronym{MCU}		{MCU}		{Micro Controller Unit}
+\newacronym{MEDL}		{MEDL}		{\glsmark{Me}ssage \glsmark{D}escriptor \glsmark{L}ist}
+\newacronym{MISO}		{MISO}		{Master Input - Slave Output}
+\newacronym[
+	description={\glsmark{m}ulti\glsmark{l}ayer \glsmark{c}eramic \glsmark{c}apacitors},
+]{MLCC}		{MLCC}		{multilayer ceramic capacitors}
+\newacronym{MO}			{MO}		{Message Object}
+\newacronym[
+	description={\glsmark{m}odular \glsmark{p}ower \glsmark{s}tress},
+]{MoPS}		{MoPS}		{modular power stress}
+\newacronym{MOS}		{MOS}		{Metal Oxide Semiconductor}
+\newacronym{MOSFET}		{MOSFET}	{Metal-Oxide Semiconductor Field Effect Transistor}
+\newacronym{MMU}		{MMU}		{Memory Management Unit}
+\newacronym{MOSI}		{MOSI}		{Master Output - Slave Input}
+\newacronym[
+	description={\glsmark{m}agneto \glsmark{r}esistance}
+]{MR}			{MR}		{magneto resistance}
+\newacronym[
+	description={\glsmark{m}odular \glsmark{t}est \glsmark{s}ystem},
+]{MTS}			{MTS}		{modular test system}
+\newacronym{MSB}		{MSB}		{Most Significant Bit}
+\newacronym{MTTF}		{MTTF}		{Mean Time To Failure}
+\newacronym{MUX}		{MUX}		{Multiplexer}
+\newacronym{MVC}		{MVC}		{Model–View–Controller}
+\newacronym{MV}			{MV}		{Mid Voltage}
+%\newacronym{NDA}		{NDA}		{Non Destructive Arbitration}	%	conflict, please copy or create your own
+\newacronym{NI}			{NI}		{National Instruments}
+\newacronym{NIC}		{NIC}		{Network Interface Card}
+\newacronym{NRZI}		{NRZI}		{Non-Return-to-Zero-Inverted}
+\newacronym{NTC}		{NTC}		{Negative Temperature Coefficient}
+
+\newacronym{OC}			{OC}		{Over-Current}
+\newacronym{OL}			{OL}		{Open-Load}
+\newacronym[
+	description={\glsmark{o}perational \glsmark{a}mplifier},
+]{OpAmp}		{OpAmp}		{operational amplifier}
+\newacronym{OS}			{OS}		{\glsmark{o}perating \glsmark{s}ystem}
+\newacronym{OSI}		{OSI}		{Open Systems Interconnect}
+\newacronym{OT}			{OT}		{Over-Temperature}
+
+\newacronym{PAT}		{PAT}		{Part Average Testing}
+\newacronym{PC}			{PC}		{Personal Computer}
+\newacronym[
+	description={\glsmark{p}rinted \glsmark{c}ircuit \glsmark{b}oard},
+]{PCB}		{PCB}		{printed circuit board}
+\newacronym{PCI}		{PCI}		{Peripheral Component Interconnect}
+%\newacronym{PDF}		{PDF}		{\glsmark{P}ortable \glsmark{D}ocument \glsmark{F}ormat}	%	conflict, please copy or create your own
+%\newacronym{PDF}		{PDF}		{\glsmark{P}robability \glsmark{D}ensity \glsmark{F}unction}	%	conflict, please copy or create your own
+\newacronym{PDO}		{PDO}		{Process Data Object}
+\newacronym{PDU}		{PDU}		{Protocol Data Unit}
+\newacronym{PEM}		{PEM}		{Photo Emission Microscopy}
+\newacronym{PFC}		{PFC}		{Power Factor Correction}
+\newacronym{PHY}		{PHY}		{Physical Layer}
+\newacronym{PI}		{PI}		{Proportional-Integral}
+%	conflict, please copy or create your own
+%\newacronym{PID}		{PID}		{Proportional-Integral-Derivative}
+%\newacronym{PID}		{PID}		{Product ID}
+\newacronym{PLC}		{PLC}		{Programmable Logic Controller}
+\newacronym{PNG}		{PNG}		{Portable Network Graphics}
+\newacronym{PoL}		{PoL}		{Point-of-Load}
+\newacronym{PROFIBUS}	{PROFIBUS}	{PROcess FIeld BUS}
+\newacronym{PDP}		{PROFIBUS DP}	{{\glsentrytext{PROFIBUS}} Decentralised Peripherals}
+\newacronym{PPA}		{PROFIBUS PA}	{{\glsentrytext{PROFIBUS}} Process Automation}
+\newacronym{PRTD}		{PRTD}		{Platinum Resistance Temperature Detector}
+\newacronym{PSU}		{PSU}		{Power Supply Unit}
+\newacronym{PTC}		{PTC}		{Positive Temperature Coefficient}
+\newacronym{PTP}		{PTP}		{Precision Time Protocol}
+\newacronym{PXE}		{PXE}		{Preboot eXecution Environment}
+\newacronym[
+	description={\glsmark{P}CI e\glsmark{X}tensions for \glsmark{I}nstrumentation},
+]{PXI}		{PXI}		{{\glsentryshort{PCI}} eXtensions for Instrumentation}
+\newacronym{PWM}		{PWM}		{Pulse Width Modulation}
+
+\newacronym{QFN}		{QFN}		{Quad Flat No Leads}
+\newacronym{QFP}		{QFP}		{Quad Flat Package}
+\newacronym{QoS}		{QoS}		{Quality of Service}
+
+\newacronym{RAM}		{RAM}		{Random-Access Memory}
+\newacronym{RATIS}		{RATIS}		{Repetitive Avalanche Test Integrated System}
+\newacronym{RESB}		{rESB}		{restricted {\glsentryshort{ESB}}}
+\newacronym{RIO}		{RIO}		{Reconfigurable {\acrshort{IO}}}
+\newacronym{RISC}		{RISC}		{Reduced Instruction Set Computing}
+\newacronym{RF}			{RF}		{Radio Frequency}
+\newacronym{RM}			{RM}		{Rate Monotonic}
+\newacronym{RNG}		{RNG}		{Random Number Generator}
+\newacronym{ROM}		{ROM}		{Read-Only Memory}
+\newacronym{RPC}		{RPC}		{Remote Procedure Call}
+\newacronym{RPN}		{RPN}		{Reverse Polish Notation}
+\newacronym{RT}			{RT}		{Real Time}
+\newacronym{RTD}		{RTD}		{Resistance Temperature Detector}
+\newacronym{RTOS}		{RTOS}		{Real-Time Operating System}
+
+\newacronym[
+	description={\glsmark{S}oftware \glsmark{A}rchitecture for \glsmark{M}oPS\glsadd{MoPS}},
+]{SAM}		{SAM}		{software architecture for {\glsentryshort{MoPS}}}
+\newacronym{SAR}		{SAR} 		{Successive Approximation Register}
+\newacronym{SC}			{SC}		{Short Circuit}
+\newacronym{SCL}		{SCL}		{Serial Clock Line}
+\newacronym{SCLK}		{SCLK}		{Serial Clock}
+\newacronym{SCPI}		{SCPI}		{Standard Commands for Programmable Instruments}
+\newacronym{SDA}		{SDA}		{Serial Data Line}
+\newacronym{SDIO}		{SDIO}		{Serial Data Input/Output}
+\newacronym{SDK}		{SDK}		{Software Development Kit}
+\newacronym{SDO}		{SDO}		{Service Data Object}
+\newacronym{SDRAM}		{SDRAM}		{Synchronous Dynamic Random Access Memory}
+\newacronym{SEM}		{SEM}		{Scanning Electron Microscopy}
+\newacronym{Si}			{Si}		{Silicon}
+\newacronym{SiC}		{SiC}		{Silicon Carbide}
+\newacronym{SiP}		{SiP}		{System in Package}
+\newacronym[
+	longplural={Switched Mode Power Supplies},
+]			{SMPS}		{SMPS}		{Switched Mode Power Supply}
+\newacronym{SMD}		{SMD}		{Surface-Mount Device}
+\newacronym{SMT}		{SMT}		{Surface-Mount Technology}
+\newacronym{SMU}		{SMU}		{Source Meter Unit}
+\newacronym{SN}			{SN}		{Serial Number}
+\newacronym{SNR}		{SNR}		{Signal-to-Noise Ratio}
+\newacronym{SOA}		{SOA}		{Safe Operating Area}
+\newacronym{SoC}		{SoC}		{System on Chip}
+\newacronym{SoE}		{SoE}		{Servo drive over EtherCAT}
+\newacronym{SoF}		{SoF}		{Start of Frame}
+\newacronym{SPD}		{SPD}		{Single Pin {\acrshort{DAP}}}
+\newacronym{SPI}		{SPI}		{Serial Peripheral Interface}
+\newacronym{SPICE}		{SPICE}		{Simulation Program with Integrated Circuit Emphasis}
+\newacronym[
+	longplural={Smart Power Switches},
+	shortplural={SPSs},
+	description={\glsmark{s}mart \glsmark{p}ower \glsmark{s}witch}
+]
+{SPS}		{SPS}		{smart power switch}
+\newacronym{SS}			{SS}		{Slave Select}
+\newacronym{ST}			{ST}		{Smart Transducer}
+\newacronym{STI}		{STI}		{Smart Transducer Interface}
+%\newacronym{SVN}		{SVN}		{Subversion}	%	obsolete
+\newacronym{SWD}		{SWD}		{Serial Wire Debug}
+
+\newacronym{Tbrd}			{Tbrd}		{DUT board temperature}
+\newacronym{TC}			{TC}		{Temperature Cycling}
+\newacronym{Tcase}		{Tcase}		{DUT case temperature}
+\newacronym[
+	description={\glsmark{t}ransmission \glsmark{c}ontrol \glsmark{p}rotocol},
+]{TCP}		{TCP}		{transmission control protocol}
+\newacronym{TDMA}		{TDMA}		{Time Division Multiple Access}
+\newacronym{TEM}		{TEM}		{Transmission Electron Microscopy}
+\newacronym{TFTP}		{TFTP}		{Trivial File Transfer Protocol}
+\newacronym{TLS}		{TLS}		{Transport Layer Security}
+\newacronym{TMC}		{TMC}		{Test and Measurement Class}
+\newacronym{Tmon}		{Tmon}		{IC temperature monitor}
+\newacronym{TSEP}		{TSEP}		{Thermo-Sensitive Electrical Parameter}
+\newacronym{TSN}		{TSN}		{Time-Sensitive Networking}
+\newacronym{TP}			{TP}		{Test Plan}
+\newacronym[
+	description={\glsmark{t}est \glsmark{p}lan \glsmark{b}uilder},
+]{TPB}		{TP-Builder}{test plan builder}
+\newacronym[
+	description={\glsmark{t}ime-\glsmark{t}riggered},
+]{TT}			{TT}		{time-triggered}
+\newacronym{TTA}		{TTA}		{Time-Triggered Architecture}
+\newacronym{TTi}		{TTi}		{Thurlby Tandar Instruments}
+\newacronym{TTL}		{TTL}		{Transistor-Transistor Logic}
+\newacronym[
+	description={{\acrlong{TT}} \glsmark{p}rotocol},
+]{TTP}		{TTP}		{{\acrlong{TT}} protocol}
+\newacronym[
+	description={\glsmark{t}imed \glsmark{t}oken \glsmark{r}otation \glsmark{p}rotocol},
+]{TTRP}		{TTRP}		{timed token rotation protocol}
+
+\newacronym{UART}		{UART}		{Universal Asynchronous Receiver Transmitter}
+\newacronym{uMoPS}		{\textmu{}MoPS} {MicroMoPS}
+\newacronym{USART}		{USART}		{Universal Synchronous Asynchronous Receiver Transmitter}
+\newacronym{USB-IF}		{USB-IF}	{USB Implementers Forum}
+\newacronym{USBD}		{USBD}		{USB Device}
+\newacronym[
+	description={\glsmark{m}icro \glsmark{c}ontroller},
+]{uC}			{\textmu{}C}	{micro controller}
+%\newacronym{uMoPS}		{\textmu{}MoPS}	{Micro Modular Power Stress}	%	see glossary-entries
+\newacronym{UDP}		{UDP}		{User Datagram Protocol}
+\newacronym{UID}		{UID}		{Unique Identification}
+\newacronym[
+	description={\glsmark{u}nified \glsmark{m}odeling \glsmark{l}anguage},
+]{UML}		{UML}		{unified modeling language}
+\newacronym[
+	description={\textmu{}\glsmark{p}rocessor}
+]{uP}			{\textmu{}P}	{microprocessor}
+\newacronym[
+	description={\glsmark{u}niform \glsmark{r}esource \glsmark{l}ocator},
+]{URL}		{URL}		{uniform resource locator}
+\newacronym{USB}		{USB}		{Universal Serial Bus}
+\newacronym[
+	longplural={\glsmark{u}nits \glsmark{u}nder \glsmark{t}est},
+	shortplural={UUTs},
+]			{UUT}		{UUT}		{Unit Under Test}
+
+\newacronym{VADC}		{VADC}		{Versatile Analog to Digital Converter}
+\newacronym{VCO}		{VCO}		{Voltage Controlled Oscillator}
+\newacronym{VI}			{VI}		{Virtual Instrument}
+\newacronym{Vin}		{Vin}		{Converter input voltage}
+\newacronym{Vout}		{Vout}		{Converter output voltage}
+\newacronym{Vdrv}		{Vdrv}		{Driver voltage}
+\newacronym{VID}		{VID}		{Vendor ID}
+\newacronym{VISA}		{VISA}		{Virtual Instrument Software Architecture}
+\newacronym{VLAN}		{VLAN}		{Virtual-{\glsentryshort{LAN}}}
+\newacronym{VM}			{VM}		{Virtual Machine}
+\newacronym{VTC}		{VTC}		{Voltage Transfer Characteristic}
+
+\newacronym{WBG}		{WBG}		{Wide-Band-Gap}
+\newacronym{WCET}		{WCET}		{\glsmark{W}orst \glsmark{C}ase \glsmark{E}xecution \glsmark{T}ime}
+\newacronym{WLAN}		{WLAN}		{Wireless {\glsentrytext{LAN}}}
+
+\newacronym{XMC}		{XMC}		{cross-Market microController}
+\newacronym{XML}		{XML}		{eXtensible Markup Language}
+\newacronym{XVP}		{XVP}		{eXecutable Verification Plan}
+
+
+% glossary
+\newglossaryentry{AEC}{
+	name={AEC},
+	description={The Automotive Electronics Council (AEC) was originally established by Chrysler, Ford, and GM for the purpose of establishing common part-qualification and quality-system standards. From its inception, the AEC has consisted of two Committees: the Quality Systems Committee and the Component Technical Committee. The AEC Component Technical Committee is the standardization body for establishing standards for reliable, high quality electronic components. Components meeting these specifications are suitable for use in the harsh automotive environment without additional component-level qualification testing. See \url{http://www.aecouncil.com}}
+}
+\newglossaryentry{C-Driver}{
+	name={C-Driver},
+	description={2nd generation 2-channel low-ohmic \acrshort{SC} switch (2 revisions exist: V3.0 and V4.0)}
+}
+%	conflict, see above acronym
+%\newglossaryentry{DAVE}{
+%	name={DAVE},
+%	description={Digital Application Virtual Engineer -- An Eclipse-based integrated development environment for configuring, compiling and flashing software for \acrshort{XMC} micro-controllers. See \url{http://dave.infineon.com}}
+%}
+\newglossaryentry{Git}{
+	name={Git},
+	description={A version control system created by Linus Torvalds to maintain the Linux kernel development. See \url{http://git-scm.org}}
+}
+\newglossaryentry{SVN}{
+	name={SubVersion},
+	description={A centralized version control system. See \url{https://en.wikipedia.org/wiki/Apache_Subversion}},
+}
+\newglossaryentry{JEDEC}{
+	name={JEDEC},
+	description={(Joint Electron Device Engineering Council) is the global leader in developing open standards for the microelectronics industry. JEDEC brings manufacturers and suppliers together with the mission to create standards to meet the diverse technical and developmental needs of the industry. JEDEC’s collaborative efforts ensure product interoperability, benefiting the industry and ultimately consumers by decreasing time-to-market and reducing product development costs. JEDEC publications and standards are accepted throughout the world, and are free and open to all. See \url{https://www.jedec.org/}}
+}
+%	conflict, see above acronym
+%\newglossaryentry{LabVIEW}{
+%	name={LabVIEW},
+%	description={LabVIEW (Laboratory Virtual Instrument Engineering Workbench) is a development environment used for instrument control and data acquisition using a graphical programming language. See \url{http://ni.com/labview}}
+%}
+\newglossaryentry{lwIP}{
+%	name={\textsc{lwIP}},
+	name={lwIP},
+	description={A lightweight \glsentrytext{IPv4} stack for embedded systems\cite{Dunkels2001}. See \url{http://lwip.wikia.com/wiki/LwIP_Wiki}}
+}
+%	conflict, see above acronym
+%\newglossaryentry{NI}{
+%	name={National Instruments},
+%	short={NI},
+%	description={A United States company producing test and measurement equipment and developing the \glsentrytext{LabVIEW} software platform. See \url{http://ni.com}}
+%}
+\newglossaryentry{SC1}{
+	name={SC1},
+	description={\acrshort{SC} type 1: the \acrshort{DUT} is switched on after the \acrlong{SC} is applied}
+}
+\newglossaryentry{SC2}{
+	name={SC2},
+	description={\acrshort{SC} type 2: the \acrshort{SC} is applied after the \acrshort{DUT} is turned on}
+}
+%	conflict, see above acronym
+%\newglossaryentry{uMoPS}{
+%	name={\textmu{}MoPS},
+%	description={The uMoPS is a {\acrlong{uC}} based {\acrshort{MoPS}}-target running the {\acrshort{MoPS}}-CORE firmware}
+%}
+
+% symbols here
+\ifusesymbols
+\newglossaryentry{eV}{
+	name={eV},
+	description={electron Volt},
+	type=symbolslist,
+}
+\newglossaryentry{K}{
+	name={K},
+	description={Kelvin},
+	type=symbolslist,
+}
+\newglossaryentry{Ron}{
+	name={$R_{on}$},
+	description={on-state resistance},
+	type=symbolslist,
+}
+\newglossaryentry{Id}{
+	name={$I_D$},
+	description={Drain Current of a \acrshort{MOS} device},
+	type=symbolslist,
+}
+\newglossaryentry{Is}{
+	name={$I_S$},
+	description={Source Current of a \acrshort{MOS} device},
+	type=symbolslist,
+}
+\newglossaryentry{Vbs}{
+	name={$V_{BS}$},
+	description={Bulk-Source Voltage of a \acrshort{MOS} device},
+	type=symbolslist,
+}
+\newglossaryentry{Vgs}{
+	name={$V_{GS}$},
+	description={Gate-Source Voltage of a \acrshort{MOS} device},
+	type=symbolslist,
+}
+\newglossaryentry{Vds}{
+	name={$V_{DS}$},
+	description={Drain-Source Voltage of a \acrshort{MOS} device},
+	type=symbolslist,
+}
+\newglossaryentry{Vsb}{
+	name={$V_{SB}$},
+	description={Source-Bulk Voltage of a \acrshort{MOS} device},
+	type=symbolslist,
+}
+\fi

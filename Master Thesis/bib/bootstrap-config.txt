@@ -1,0 +1,6 @@
+# specify artifacts:
+#	organization in ivy format
+#	the colon ':' character
+#	package name incl. extension
+
+at/k-ai:JabRef.jar

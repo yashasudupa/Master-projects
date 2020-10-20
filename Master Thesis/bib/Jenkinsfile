@@ -1,0 +1,69 @@
+def mailRecp = "benjamin.steinwender@k-ai.at sascha.einspieler@k-ai.at"
+
+pipeline {
+	agent {
+		label 'python3 && linux'
+	}
+	options {
+		timeout(time: 1, unit: 'HOURS')
+		quietPeriod(5)
+	}
+	triggers {
+	    cron('@midnight')
+	}
+
+	stages {
+		stage('Testing-Windows') {
+			when {
+				environment name: 'OS', value: 'Windows_NT'
+			}
+			steps {
+				echo "Running tests ..."
+				sh "./run-tests.sh"
+			}
+		}
+
+		stage('Testing-Linux') {
+			when {
+				not {
+					environment name: 'OS', value: 'Windows_NT'
+				}
+			}
+			steps {
+				wrap([$class: 'Xvfb', assignedLabels: '', autoDisplayName: true, debug: true, installationName: 'default', parallelBuild: true, timeout: 5]) {
+					echo "Running tests ..."
+					sh "./wrapper-linux.sh"
+				}
+			}
+		}
+	}	//	stages
+
+	post {
+		always {
+			script {
+				println currentBuild.currentResult
+			}
+		}
+		fixed {	//	return from failure or unstable
+			emailext to: "${mailRecp}", body: """${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}:
+
+Check console output at $BUILD_URL to view the results.""", recipientProviders: [upstreamDevelopers(), brokenBuildSuspects(), brokenTestsSuspects(), requestor(), culprits(), developers()], subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!"
+		}
+		failure {
+			emailext to: "${mailRecp}", body: """${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}:
+
+Check console output at $BUILD_URL to view the results.""", recipientProviders: [upstreamDevelopers(), brokenBuildSuspects(), brokenTestsSuspects(), requestor(), culprits(), developers()], subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!"
+		}
+		unstable {
+			emailext to: "${mailRecp}", body: """${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}:
+
+Check console output at $BUILD_URL to view the results.""", recipientProviders: [upstreamDevelopers(), brokenBuildSuspects(), brokenTestsSuspects(), requestor(), culprits(), developers()], subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}!"
+		}
+		changed {
+			emailext to: "${mailRecp}", body: """${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.currentResult}:
+
+Check console output at $BUILD_URL to view the results.""", recipientProviders: [upstreamDevelopers(), brokenBuildSuspects(), brokenTestsSuspects(), requestor(), culprits(), developers()], subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - CHANGED:${currentBuild.currentResult}!"
+		}
+	}
+
+}
