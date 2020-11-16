@@ -388,7 +388,7 @@ typedef enum { NONE = 0, MSP = 1, DATA = 3 } area_t;
 io::Output& operator<<(io::Output& out, area_t area) {
 	switch(area) {
 	case NONE:	out << "none"; break;
-	case MSP:	out << "arm"; break;
+	case MSP:	out << "msp"; break;
 	case DATA:	out << "data"; break;
 	}
 	return out;
@@ -911,25 +911,25 @@ namespace msp {
 #	endif
 class SimState: public otawa::SimState {
 public:
-	SimState(Process *process, arm_platform_t *platform, arm_decoder_t *_decoder)
+	SimState(Process *process, msp_platform_t *platform, msp_decoder_t *_decoder)
 	:	otawa::SimState(process) {
-		sim = arm_new_sim(arm_new_state(platform), process->start()->address(), 0);
-		arm_mem_set_spy(arm_get_memory(platform, 0), spy, this);
+		sim = msp_new_sim(msp_new_state(platform), process->start()->address(), 0);
+		msp_mem_set_spy(msp_get_memory(platform, 0), spy, this);
 	}
 
 	virtual ~SimState(void) {
-		arm_delete_sim(sim);
+		msp_delete_sim(sim);
 	}
 
 	virtual Inst *execute(Inst *inst) {
 
 		// execute current instruction
 		dr = dw = 0; // enable spy
-		arm_step(sim);
+		msp_step(sim);
 		dr = dw = -1; // disable spy
 
 		// get next instruction
-		arm_state_t *state = sim->state;
+		msp_state_t *state = sim->state;
 		Inst *next = inst->nextInst();
 		if(next && (next->address().offset() == state->GPR[15]))
 			return next;
@@ -976,13 +976,13 @@ public:
 	}
 
 private:
-	arm_sim_t *sim;
+	msp_sim_t *sim;
 	int dr, dw; // -1: disable, 0:ready to serve, 1:first data, 2+: later data
-	arm_address_t lr, ur, lw, uw;
+	msp_address_t lr, ur, lw, uw;
 
-	static void spy(arm_memory_t *mem, arm_address_t addr, arm_size_t size, arm_access_t access, void *data) {
+	static void spy(msp_memory_t *mem, msp_address_t addr, msp_size_t size, msp_access_t access, void *data) {
 		SimState *ss = static_cast<SimState *>(data);
-		if(access == arm_access_read) {
+		if(access == msp_access_read) {
 			if(ss->dr == -1) { } // ignore other reads due to non-ISS operations
 			else if(ss->dr == 0) { // read instruction from memory
 				ss->lr = ss->ur = addr;
@@ -1028,28 +1028,28 @@ public:
 	RegisterDecoder(void) {
 
 		// clear the map
-		for(int i = 0; i < ARM_REG_COUNT; i++)
+		for(int i = 0; i < MSP_REG_COUNT; i++)
 			map[i] = 0;
 
 		// initialize it
-#		ifdef ARM7
-			map[ARM_REG_APSR] = &sr;
-			map[ARM_REG_FPSCR] = &fpscr;
+#		ifdef MSP
+			map[MSP_REG_APSR] = &sr;
+			map[MSP_REG_FPSCR] = &fpscr;
 			for(int i = 0; i < 32; i++) {
-				map[ARM_REG_S(i)] = sfpr[i];
-				map[ARM_REG_D(i)] = dfpr[i];
+				map[MSP_REG_S(i)] = sfpr[i];
+				map[MSP_REG_D(i)] = dfpr[i];
 			}
 #		else
-			map[ARM_REG_UCPSR] = &sr;
+			map[MSP_REG_UCPSR] = &sr;
 #		endif
 		for(int i = 0; i < 16; i++)
-			map[ARM_REG_GPR(i)] = gpr[i];
+			map[MSP_REG_GPR(i)] = gpr[i];
 	}
 
-	inline hard::Register *operator[](int i) const { ASSERT(i < ARM_REG_COUNT); return map[i]; }
+	inline hard::Register *operator[](int i) const { ASSERT(i < MSP_REG_COUNT); return map[i]; }
 
 private:
-	hard::Register *map[ARM_REG_COUNT];
+	hard::Register *map[MSP_REG_COUNT];
 };
 static RegisterDecoder register_decoder;
 
@@ -1083,10 +1083,10 @@ public:
 		{ setBanks(banks_table); }
 
 	// otawa::Platform overload
-	virtual bool accept(const Identification& id) { return id.abi() == "eabi" && id.architecture() == "arm"; }
+	virtual bool accept(const Identification& id) { return id.abi() == "eabi" && id.architecture() == "msp"; }
 	virtual const hard::Register *getSP(void) const { return gpr[13]; }
 };
-const Platform::Identification Platform::ID("arm-eabi-");
+const Platform::Identification Platform::ID("msp-");
 
 
 /****** Instruction declarations ******/
@@ -1134,7 +1134,7 @@ private:
 	void decodeRegs(void);
 	elm::genstruct::AllocatedTable<hard::Register *> in_regs;
 	elm::genstruct::AllocatedTable<hard::Register *> out_regs;
-	arm_address_t _addr;
+	msp_address_t _addr;
 	bool isRegsDone;
 };
 
@@ -1150,7 +1150,7 @@ public:
 	virtual otawa::Inst *target();
 
 protected:
-	arm_address_t decodeTargetAddress(void);
+	msp_address_t decodeTargetAddress(void);
 
 private:
 
@@ -1182,19 +1182,19 @@ private:
 
 /****** Process class ******/
 
-typedef enum { NONE = 0, ARM = 1, THUMB = 2, DATA = 3 } area_t;
+typedef enum { NONE = 0, MSP = 1, THUMB = 2, DATA = 3 } area_t;
 
 io::Output& operator<<(io::Output& out, area_t area) {
 	switch(area) {
 	case NONE:	out << "none"; break;
-	case ARM:	out << "arm"; break;
+	case MSP:	out << "msp"; break;
 	case THUMB:	out << "thumb"; break;
 	case DATA:	out << "data"; break;
 	}
 	return out;
 }
 
-class Process: public otawa::Process, public arm::Info {
+class Process: public otawa::Process, public msp::Info {
 	typedef elm::stree::Tree<Address::offset_t, area_t> area_tree_t;
 public:
 	static const t::uint32 IS_BL_0			= 0x08000000,
@@ -1221,16 +1221,13 @@ public:
 		ASSERTP(pf, "platform required");
 
 		// gliss2 ppc structs
-		_platform = arm_new_platform();
-		ASSERTP(_platform, "cannot create an arm_platform");
-		_decoder = arm_new_decoder(_platform);
-		ASSERTP(_decoder, "cannot create an arm_decoder");
-		_memory = arm_get_memory(_platform, ARM_MAIN_MEMORY);
-		ASSERTP(_memory, "cannot get main arm_memory");
-		arm_lock_platform(_platform);
-#		ifdef ARM_THUMB
-			arm_set_cond_state(_decoder, 0);
-#		endif
+		_platform = msp_new_platform();
+		ASSERTP(_platform, "cannot create an msp_platform");
+		_decoder = msp_new_decoder(_platform);
+		ASSERTP(_decoder, "cannot create an msp_decoder");
+		_memory = msp_get_memory(_platform, MSP_MAIN_MEMORY);
+		ASSERTP(_memory, "cannot get main msp_memory");
+		msp_lock_platform(_platform);
 
 		// build arguments
 		static char no_name[1] = { 0 };
@@ -1260,15 +1257,15 @@ public:
 	}
 
 	virtual ~Process() {
-		arm_delete_decoder(_decoder);
-		arm_unlock_platform(_platform);
+		msp_delete_decoder(_decoder);
+		msp_unlock_platform(_platform);
 		if(_file)
 			gel_close(_file);
 	}
 
 	// Process overloads
 	virtual int instSize(void) const {
-#		ifdef ARM_THUMB
+#		ifdef MSP
 			return 0;
 #		else
 			return 4;
@@ -1277,7 +1274,7 @@ public:
 	virtual hard::Platform *platform(void) { return oplatform; }
 	virtual otawa::Inst *start(void) { return _start; }
 
-#	ifdef ARM_SIM
+#	ifdef MSP_SIM
 		virtual SimState *newState(void) {
 			return new SimState(this, _platform, _decoder);
 		}
@@ -1317,7 +1314,7 @@ public:
 			gel_cursor_t cursor;
 			gel_block2cursor(iinfo.members[i], &cursor);
 			if(gel_cursor_avail(cursor) > 0)
-				arm_mem_write(_memory,
+				msp_mem_write(_memory,
 					gel_cursor_vaddr(cursor),
 					gel_cursor_addr(&cursor),
 					gel_cursor_avail(cursor));
@@ -1348,9 +1345,9 @@ public:
 		}
 
 		// Initialize symbols
-#		ifdef ARM_THUMB
+#		ifdef MSP_THUMB
 			stree::MarkerBuilder<Address::offset_t, area_t> area_builder;
-			area_builder.add(0UL, (infos.entry & 0x1) ? THUMB : ARM);
+			area_builder.add(0UL, (infos.entry & 0x1) ? THUMB : MSP);
 			area_builder.add(0xffffffffUL, NONE);
 #		endif
 		gel_sym_iter_t iter;
@@ -1364,11 +1361,11 @@ public:
 			gel_sym_infos(sym, &infos);
 
 			// handle the $a, $t or $d symbols
-#			ifdef ARM_THUMB
+#			ifdef MSP
 				if(infos.name[0] == '$') {
 					area_t area = NONE;
 					switch(infos.name[1]) {
-					case 'a': area = ARM; break;
+					case 'a': area = MSP; break;
 					case 'd': area = DATA; break;
 					case 't': area = THUMB; break;
 					}
@@ -1403,7 +1400,7 @@ public:
 			file->addSymbol(symbol);
 		}
 		//gel_enum_free(iter);
-#		ifdef ARM_THUMB
+#		ifdef MSP
 			area_builder.make(area_tree);
 #		endif
 
@@ -1418,16 +1415,16 @@ public:
 		elm::genstruct::AllocatedTable<hard::Register *> *out)
 	{
 		// Decode instruction
-		arm_inst_t *inst = decode_raw(oinst->address());
-		if(inst->ident == ARM_UNKNOWN) {
+		msp_inst_t *inst = decode_raw(oinst->address());
+		if(inst->ident == MSP_UNKNOWN) {
 			free_inst(inst);
 			return;
 		}
 
 		// get the registers
-		arm_used_regs_read_t rds;
-		arm_used_regs_write_t wrs;
-		arm_used_regs(inst, rds, wrs);
+		msp_used_regs_read_t rds;
+		msp_used_regs_write_t wrs;
+		msp_used_regs(inst, rds, wrs);
 
 		// convert registers to OTAWA
 		elm::genstruct::Vector<hard::Register *> reg_in;
@@ -1456,13 +1453,13 @@ public:
 	}
 
 	otawa::Inst *decode(Address addr) {
-		arm_inst_t *inst = decode_raw(addr);
+		msp_inst_t *inst = decode_raw(addr);
 		Inst::kind_t kind = 0;
 		otawa::Inst *result = 0;
-		kind = arm_kind(inst);
+		kind = msp_kind(inst);
 		int size;
 		if(inst->ident != 0)
-			size = arm_get_inst_size(inst) >> 3;
+			size = msp_get_inst_size(inst) >> 3;
 		else if(isThumb(addr))
 			size = 2;
 		else
@@ -1472,11 +1469,11 @@ public:
 		else
 			result = new Inst(*this, kind, addr, size);
 		ASSERT(result);
-		t::uint16 multi = arm_multi(inst);
+		t::uint16 multi = msp_multi(inst);
 		if(multi)
-			otawa::arm::NUM_REGS_LOAD_STORE(result) = elm::ones(multi);
+			otawa::msp::NUM_REGS_LOAD_STORE(result) = elm::ones(multi);
 		char buf[256];
-		arm_disasm(buf, inst);
+		msp_disasm(buf, inst);
 		t::uint8 b0, b1;
 		get(addr, b0);
 		get(addr + 1, b1);
@@ -1485,29 +1482,29 @@ public:
 	}
 
 
-	// GLISS2 ARM access
+	// GLISS2 MSP access
 	inline int opcode(Inst *inst) const {
-		arm_inst_t *i = decode_raw(inst->address());
+		msp_inst_t *i = decode_raw(inst->address());
 		int code = i->ident;
 		free_inst(i);
 		return code;
 	}
 
-	inline ::arm_inst_t *decode_raw(Address addr) const {
-#		ifdef ARM_THUMB
+	inline ::msp_inst_t *decode_raw(Address addr) const {
+#		ifdef MSP
 			if(isThumb(addr))
-				return arm_decode_THUMB(decoder(), ::arm_address_t(addr.offset()));
+				return msp_decode_THUMB(decoder(), ::msp_address_t(addr.offset()));
 			else
-				return arm_decode_ARM(decoder(), ::arm_address_t(addr.offset()));
+				return msp_decode_MSP(decoder(), ::msp_address_t(addr.offset()));
 #		else
-			return arm_decode(decoder(), ::arm_address_t(addr.offset()));
+			return msp_decode(decoder(), ::msp_address_t(addr.offset()));
 #		endif
 	}
 
-	inline void free_inst(arm_inst_t *inst) const { arm_free_inst(inst); }
+	inline void free_inst(msp_inst_t *inst) const { msp_free_inst(inst); }
 	virtual gel_file_t *file(void) const { return _file; }
-	virtual arm_memory_t *memory(void) const { return _memory; }
-	inline arm_decoder_t *decoder() const { return _decoder; }
+	virtual msp_memory_t *memory(void) const { return _memory; }
+	inline msp_decoder_t *decoder() const { return _decoder; }
 	inline void *platform(void) const { return _platform; }
 
 	virtual Option<Pair<cstring, int> > getSourceLine(Address addr) throw (UnsupportedFeatureException) {
@@ -1542,26 +1539,26 @@ public:
 	}
 
 	virtual void get(Address at, t::int8& val)
-		{ val = arm_mem_read8(_memory, at.offset()); }
+		{ val = msp_mem_read8(_memory, at.offset()); }
 	virtual void get(Address at, t::uint8& val)
-		{ val = arm_mem_read8(_memory, at.offset()); }
+		{ val = msp_mem_read8(_memory, at.offset()); }
 	virtual void get(Address at, t::int16& val)
-		{ val = arm_mem_read16(_memory, at.offset()); }
+		{ val = msp_mem_read16(_memory, at.offset()); }
 	virtual void get(Address at, t::uint16& val)
-		{ val = arm_mem_read16(_memory, at.offset()); }
+		{ val = msp_mem_read16(_memory, at.offset()); }
 	virtual void get(Address at, t::int32& val)
-		{ val = arm_mem_read32(_memory, at.offset()); }
+		{ val = msp_mem_read32(_memory, at.offset()); }
 	virtual void get(Address at, t::uint32& val)
-		{ val = arm_mem_read32(_memory, at.offset()); }
+		{ val = msp_mem_read32(_memory, at.offset()); }
 	virtual void get(Address at, t::int64& val)
-		{ val = arm_mem_read64(_memory, at.offset()); }
+		{ val = msp_mem_read64(_memory, at.offset()); }
 	virtual void get(Address at, t::uint64& val)
-		{ val = arm_mem_read64(_memory, at.offset()); }
+		{ val = msp_mem_read64(_memory, at.offset()); }
 	virtual void get(Address at, Address& val)
-		{ val = arm_mem_read32(_memory, at.offset()); }
+		{ val = msp_mem_read32(_memory, at.offset()); }
 	virtual void get(Address at, string& str) {
 		Address base = at;
-		while(!arm_mem_read8(_memory, at.offset()))
+		while(!msp_mem_read8(_memory, at.offset()))
 			at = at + 1;
 		int len = at - base;
 		char buf[len];
@@ -1569,36 +1566,36 @@ public:
 		str = String(buf, len);
 	}
 	virtual void get(Address at, char *buf, int size)
-		{ arm_mem_read(_memory, at.offset(), buf, size); }
+		{ msp_mem_read(_memory, at.offset(), buf, size); }
 
-	// otawa::arm::Info overload
+	// otawa::msp::Info overload
 	virtual void *decode(otawa::Inst *inst) { return decode_raw(inst->address()); }
-	virtual void free(void *decoded) { free_inst(static_cast<arm_inst_t *>(decoded)); }
+	virtual void free(void *decoded) { free_inst(static_cast<msp_inst_t *>(decoded)); }
 
 	virtual t::uint16 multiMask(otawa::Inst *inst) {
-		arm_inst_t *i = decode_raw(inst->address());
-		t::uint16 r = arm_multi(i);
+		msp_inst_t *i = decode_raw(inst->address());
+		t::uint16 r = msp_multi(i);
 		free_inst(i);
 		return r;
 	}
 
-	virtual void handleIO(Address addr, t::uint32 size, otawa::arm::IOManager& man) {
-#		ifndef ARM_MEM_IO
-			ASSERTP(false, "WITH_MEM_IO not configured in arm GLISS plugin!");
+	virtual void handleIO(Address addr, t::uint32 size, otawa::msp::IOManager& man) {
+#		ifndef MSP_MEM_IO
+			ASSERTP(false, "WITH_MEM_IO not configured in msp GLISS plugin!");
 #		else
 			//io_man = &man;
-			arm_set_range_callback(memory(), addr.offset(), addr.offset() + size, io_callback, &man);
+			msp_set_range_callback(memory(), addr.offset(), addr.offset() + size, io_callback, &man);
 #		endif
 	}
 
 private:
 
-#	ifdef ARM_MEM_IO
-	static void io_callback(arm_address_t addr, int size, void *data, int type_access, void *cdata) {
-		otawa::arm::IOManager *man = static_cast<otawa::arm::IOManager *>(cdata);
-		if(type_access == ARM_MEM_READ)
+#	ifdef MSP_MEM_IO
+	static void io_callback(msp_address_t addr, int size, void *data, int type_access, void *cdata) {
+		otawa::msp::IOManager *man = static_cast<otawa::msp::IOManager *>(cdata);
+		if(type_access == MSP_MEM_READ)
 			man->read(addr, size, static_cast<t::uint8 *>(data));
-		else if(type_access == ARM_MEM_WRITE)
+		else if(type_access == MSP_MEM_WRITE)
 			man->write(addr, size, static_cast<t::uint8 *>(data));
 		else
 			ASSERT(0);
@@ -1611,7 +1608,7 @@ private:
 	 * @return			True if the address in the thumb area, false else.
 	 */
 	bool isThumb(const Address& address) const {
-#		ifdef ARM_THUMB
+#		ifdef MSP
 			area_t kind = area_tree.get(address.offset());
 			return kind == THUMB;
 #		else
@@ -1629,20 +1626,20 @@ private:
 
 	otawa::Inst *_start;
 	hard::Platform *oplatform;
-	arm_platform_t *_platform;
-	arm_memory_t *_memory;
-	arm_decoder_t *_decoder;
+	msp_platform_t *_platform;
+	msp_memory_t *_memory;
+	msp_decoder_t *_decoder;
 	gel_line_map_t *map;
 	gel_file_t *_file;
 	int argc;
 	char **argv, **envp;
 	bool no_stack;
 	bool init;
-#	ifdef ARM_THUMB
+#	ifdef MSP
 		area_tree_t area_tree;
 #	endif
-#	ifdef ARM_MEM_IO
-		otawa::arm::IOManager *io_man;
+#	ifdef MSP_MEM_IO
+		otawa::msp::IOManager *io_man;
 #	endif
 };
 
@@ -1651,8 +1648,8 @@ private:
 
 void Inst::dump(io::Output& out) {
 	char out_buffer[200];
-	arm_inst_t *inst = proc.decode_raw(_addr);
-	arm_disasm(out_buffer, inst);
+	msp_inst_t *inst = proc.decode_raw(_addr);
+	msp_disasm(out_buffer, inst);
 	proc.free_inst(inst);
 	out << out_buffer;
 }
@@ -1660,16 +1657,16 @@ void Inst::dump(io::Output& out) {
 void Inst::decodeRegs(void) {
 
 	// Decode instruction
-	arm_inst_t *inst = proc.decode_raw(address());
-	if(inst->ident == ARM_UNKNOWN)
+	msp_inst_t *inst = proc.decode_raw(address());
+	if(inst->ident == MSP_UNKNOWN)
 		return;
 
 	// get register infos
-	arm_used_regs_read_t rds;
-	arm_used_regs_write_t wrs;
+	msp_used_regs_read_t rds;
+	msp_used_regs_write_t wrs;
 	elm::genstruct::Vector<hard::Register *> reg_in;
 	elm::genstruct::Vector<hard::Register *> reg_out;
-	arm_used_regs(inst, rds, wrs);
+	msp_used_regs(inst, rds, wrs);
 	for (int i = 0; rds[i] != -1; i++ ) {
 		hard::Register *r = register_decoder[rds[i]];
 		if(r)
@@ -1690,46 +1687,36 @@ void Inst::decodeRegs(void) {
 		out_regs.set(i, reg_out.get(i));
 
 	// Free instruction
-	arm_free_inst(inst);
+	msp_free_inst(inst);
 }
 
 
-arm_address_t BranchInst::decodeTargetAddress(void) {
+msp_address_t BranchInst::decodeTargetAddress(void) {
 
 	// get the target
-	arm_inst_t *inst= proc.decode_raw(address());
-	Address target_addr = arm_target(inst);
+	msp_inst_t *inst= proc.decode_raw(address());
+	Address target_addr = msp_target(inst);
 
-	// thumb-1 case
-#		ifdef ARM_THUMB
 
-		// blx/0; blx/1
-		if(_kind & Process::IS_BL_1) {
-			arm_inst_t *pinst = proc.decode_raw(address() - 2);
-			Inst::kind_t pkind = arm_kind(pinst);
-			if(pkind & Process::IS_BL_0)
-				target_addr = arm_target(pinst) + target_addr.offset();
-			proc.free_inst(pinst);
+
+	// ldr ip, [pc, #k]; bx ip
+	if(kind() & Process::IS_BX_IP) {
+
+		// look current and previous instruction words
+		t::uint32 cur_word, pre_word;
+		proc.get(address() - 4, pre_word);
+		proc.get(address(), cur_word);
+
+	// is it ldr ip, [pc, #k] with same condition ?
+	if(((pre_word & 0x0ffff000) == 0x059fc000)
+	&& ((pre_word & 0xf0000000) == (cur_word & 0xf0000000))) {
+		// load address from M[pc + 8 + k]
+		Address addr = address() + 4 + (pre_word & 0xfff);
+		t::uint32 target;
+		proc.get(addr, target);
+		target_addr = target & 0xfffffffe;
 		}
-
-		// ldr ip, [pc, #k]; bx ip
-		else if(kind() & Process::IS_BX_IP) {
-
-			// look current and previous instruction words
-			t::uint32 cur_word, pre_word;
-			proc.get(address() - 4, pre_word);
-			proc.get(address(), cur_word);
-
-			// is it ldr ip, [pc, #k] with same condition ?
-			if(((pre_word & 0x0ffff000) == 0x059fc000)
-			&& ((pre_word & 0xf0000000) == (cur_word & 0xf0000000))) {
-				// load address from M[pc + 8 + k]
-				Address addr = address() + 4 + (pre_word & 0xfff);
-				t::uint32 target;
-				proc.get(addr, target);
-				target_addr = target & 0xfffffffe;
-			}
-		}
+	}
 #		endif
 
 	// cleanup
@@ -1768,7 +1755,7 @@ otawa::Inst *BranchInst::target() {
 		isTargetDone = true;
 
 		// try to decode the address
-		arm_address_t a = decodeTargetAddress();
+		msp_address_t a = decodeTargetAddress();
 		if (a)
 			_target = process().findInstAt(a);
 
@@ -1798,11 +1785,11 @@ otawa::Inst *Segment::decode(address_t address) {
 void Inst::semInsts (sem::Block &block) {
 
 	// get the block
-	arm_inst_t *inst = proc.decode_raw(address());
-	if(inst->ident == ARM_UNKNOWN)
+	msp_inst_t *inst = proc.decode_raw(address());
+	if(inst->ident == MSP_UNKNOWN)
 		return;
-	arm_sem(inst, block);
-	arm_free_inst(inst);
+	msp_sem(inst, block);
+	msp_free_inst(inst);
 
 	// fix spurious instructions possibly generated with conditional instructions
 	for(int i = 0; i < block.length(); i++)
@@ -1851,7 +1838,7 @@ public:
 
 } }		// otawa::msp
 
-otawa::arm2::Loader otawa_arm2_loader;
+otawa::msp::Loader otawa_msp_loader;
 ELM_PLUGIN(otawa_msp_loader, OTAWA_LOADER_HOOK);
 otawa::msp::Plugin msp_plugin;
 ELM_PLUGIN(msp_plugin, OTAWA_PROC_HOOK);
@@ -1886,16 +1873,16 @@ S_MEM_WRITE)
 
 	otawa::Inst *_start;
 	hard::Platform *oplatform;
-	arm_platform_t *_platform;
-	arm_memory_t *_memory;
-	arm_decoder_t *_decoder;
+	msp_platform_t *_platform;
+	msp_memory_t *_memory;
+	msp_decoder_t *_decoder;
 	gel_line_map_t *map;
 	gel_file_t *_file;
 	int argc;
 	char **argv, **envp;
 	bool no_stack;
 	bool init;
-#	ifdef MSP_THUMB
+#	ifdef MSP
 		area_tree_t area_tree;
 #	endif
 #	ifdef MSP_MEM_IO
