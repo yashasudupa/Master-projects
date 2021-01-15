@@ -1,6 +1,7 @@
 # Master-projects
 
 1. Research Project - Investigation on Worst-Case-Execution computational framework for MS430 executable files
+2. Master's thesis - Implementation of data processing functions and automation concepts fr ARM M4 based XMC4700 uc.
 2. Modelling - Sensor fusion, MATLAB
 3. Neural networks
 4. Principles of Brain Computation - Spiking neural networks,
